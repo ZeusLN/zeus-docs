@@ -1,22 +1,21 @@
 {
-  "name": "btcpayserver-docs",
-  "version": "1.0.0",
-  "description": "BTCPay Server Official Documentation",
-  "author": "BTCPay Server",
-  "license": "MIT",
-  "bugs": "https://github.com/btcpayserver/btcpayserver-doc/issues",
-  "homepage": "https://github.com/btcpayserver/btcpayserver-doc",
+  "name": "zeus-docs",
+  "version": "0.1",
+  "description": "Zeus Official Documentation",
+  "author": "Zeus",
+  "license": "AGPL v3",
+  "bugs": "",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/btcpayserver/btcpayserver-doc.git"
+    "url": ""
   },
   "keywords": [
-    "btcpayserver"
+    "zeus"
   ],
   "config": {
     "dist": "docs/.vuepress/dist",
-    "port": "8080",
-    "linkcheck": "blc -ro --filter-level 2 --requests 1 --exclude edit/master --exclude issues/new --exclude 127.0.0.1 --exclude directory.btcpayserver.org --exclude foundation.btcpayserver.org --exclude install.btcpayserver.org --exclude bitma.tk --exclude coincards.com --exclude cyberciti.biz --exclude drupal.org --exclude dyn.com --exclude example.com --exclude facebook.com --exclude figma.com --exclude ipchicken.com --exclude linkedin.com --exclude linuxize.com --exclude linuxconfig.org --exclude nuget.org --exclude pnxbet.com --exclude pi-hole.net --exclude reddit.com  --exclude t.me --exclude transifex.com --exclude twitter.com --exclude wiki.ion.radar.tech"
+    "port": "8080"
   },
   "scripts": {
     "prestart": "rm -rf $npm_package_config_dist",
@@ -27,7 +26,6 @@
     "linkcheck": "start-server-and-test linkcheck:serve $npm_package_config_port linkcheck:local",
     "linkcheck:serve": "serve -p $npm_package_config_port $npm_package_config_dist",
     "linkcheck:local": "$npm_package_config_linkcheck http://localhost:$npm_package_config_port",
-    "linkcheck:prod": "$npm_package_config_linkcheck https://docs.btcpayserver.org",
     "redirects": "node create-redirects.js"
   },
   "devDependencies": {

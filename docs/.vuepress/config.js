@@ -1,15 +1,14 @@
 const { resolve } = require('path')
-const include = require('markdown-it-include')
 const implicitFigures = require('markdown-it-implicit-figures')
 const slugify = require('./slugify')
 const preprocessMarkdown = resolve(__dirname, 'preprocessMarkdown')
 
-const title = 'BTCPay Server'
-const baseUrl = 'https://docs.btcpayserver.org'
+const title = ''
+const baseUrl = ''
 const pageSuffix = '/'
 const info = {
   name: title,
-  twitter: 'btcpayserver'
+  twitter: 'zeusln'
 }
 const extractDescription = text => {
   if (!text) return
@@ -18,85 +17,134 @@ const extractDescription = text => {
 }
 
 const sidebarUserGuide = [
-  {
-    title: 'Basics',
-    collapsable: false,
-    children: [
       ['/Guide', 'Introduction'],
-      ['/UseCase', 'Use Case'],
-      ['/Walkthrough', 'Walkthrough'],
-      ['/BTCPayVsOthers', 'BTCPay Server vs. Others'],
-      ['/TryItOut', 'Try it out']
-    ]
-  },
   {
     title: 'Getting Started',
     collapsable: false,
     children: [
-      '/RegisterAccount',
-      '/CreateStore',
+      ['/use-cases', 'Use cases'],
       {
-        title: '(3) Wallet Setup',
-        path: '/WalletSetup',
-        collapsable: false,
+        title: 'Node operators',
+        path: '/node-operators',
+        collapsable: true,
         initialOpenGroupIndex: -1,
         children: [
           {
-            title: 'Connect Wallet',
-            path: '/ConnectWallet'
+            title: 'Umbrel',
+            path: '/connect-umbrel'
           },
           {
-            title: 'Create Wallet',
-            path: '/CreateWallet'
+            title: 'MyNode',
+            path: '/connect-mynode'
+          },
+          {
+            title: 'Nodl',
+            path: '/connect-nodl'
+          },
+          {
+            title: 'RaspiBlitz',
+            path: '/connect-raspiblitz'
+          },
+        ]
+      },
+      {
+        title: 'Merchants',
+        path: '/merchants',
+        collapsable: true,
+        initialOpenGroupIndex: -1,
+        children: [
+          {
+            title: 'BTCPay Server',
+            path: '/connect-btcpayserver'
           }
         ]
       },
-      ['/WhatsNext', '(4) What\'s Next?']
+      {
+        title: 'Individuals',
+        path: '/individuals',
+        collapsable: true,
+        initialOpenGroupIndex: -1,
+        children: [
+          {
+            title: 'LNDHub',
+            path: '/connect-lndhub'
+          },
+          {
+            title: 'Nayuta Core',
+            path: '/connect-nayuta-core'
+          }
+        ]
+      },
     ]
   },
   {
-    title: 'Features',
+    title: 'Using Zeus',
     collapsable: false,
     children: [
-      ['/Apps', 'Apps'],
       {
-        title: 'Wallet',
-        path: '/Wallet',
+        title: 'Configuring Zeus',
+        path: '/configuring',
+        collapsable: true,
+        initialOpenGroupIndex: -1,
         children: [
-          ['/HardwareWalletIntegration', 'Hardware Wallet Integration']
+          {
+            title: 'Node',
+            path: '/node'
+          },
+          {
+            title: 'Accounts',
+            path: '/accounts'
+          },
+          {
+            title: 'Contacts',
+            path: '/contacts'
+          },
+          {
+            title: 'Privacy',
+            path: '/privacy'
+          },
+          {
+            title: 'Security',
+            path: '/security'
+          },
+          {
+            title: 'Messages',
+            path: '/messages'
+          },
+          {
+            title: 'Localisation',
+            path: '/localisation'
+          }
         ]
       },
-      ['/Invoices', 'Invoices'],
       {
-        title: 'Pull Payments',
-        path: '/PullPayments',
+        title: 'Payments',
+        path: '/payments',
+        collapsable: true,
+        initialOpenGroupIndex: -1,
         children: [
-          ['/Refund', 'Refunds']
+          {
+            title: 'Requesting bitcoin',
+            path: '/requesting-bitcoin'
+          },
+          {
+            title: 'Sending bitcoin',
+            path: '/sending-bitcoin'
+          }
         ]
       },
-      ['/PaymentRequests', 'Payment Requests'],
-      ['/LightningNetwork', 'Lightning Network'],
-      ['/Accounting', 'Accounting'],
       {
-        title: 'Payjoin',
-        path: '/Payjoin',
+        title: 'Channels',
+        path: '/channels',
+        collapsable: true,
+        initialOpenGroupIndex: -1,
         children: [
-          ['https://github.com/bitcoin/bips/blob/master/bip-0078.mediawiki', 'Payjoin specification', { type: 'external' }]
+          {
+            title: 'Balances',
+            path: '/balances'
+          },
         ]
-      }
-    ]
-  },
-  {
-    title: 'Integrations',
-    collapsable: false,
-    children: [
-      ['/WooCommerce', 'WooCommerce'],
-      ['/Shopify', 'Shopify'],
-      ['/Drupal', 'Drupal'],
-      ['/Magento', 'Magento'],
-      ['/PrestaShop', 'PrestaShop'],
-      ['https://github.com/lampsolutions/LampSBtcPayShopware', 'Shopware', { type: 'external' }],
-      ['/CustomIntegration', 'Custom Integration']
+      },
     ]
   },
   {
@@ -111,121 +159,12 @@ const sidebarUserGuide = [
   }
 ]
 
-const sidebarDeployment = [
-  {
-    title: 'Deployment',
-    collapsable: false,
-    children: [
-      '/Deployment/',
-      '/Deployment/ThirdPartyHosting',
-      '/Configurator/'
-    ]
-  },
-  {
-    title: 'Docker',
-    collapsable: false,
-    children: [
-      ['/Docker/', 'Introduction'],
-      {
-        title: 'Web Deployment',
-        path: '/Deployment/LunaNode'
-      },
-      {
-        title: 'Azure',
-        path: '/Deployment/Azure',
-        children: [
-          ['/Deployment/AzurePennyPinching', 'Reducing Cost on Azure'],
-          ['/Deployment/ChangeDomain', 'Changing domain']
-        ]
-      },
-      {
-        title: 'Google Cloud Deployment',
-        path: '/Deployment/GoogleCloud'
-      },
-      {
-        title: 'Hardware Deployment',
-        path: '/Deployment/Hardware',
-        children: [
-          ['/Deployment/DynamicDNS', 'Dynamic DNS'],
-          ['/Deployment/ReverseSSHtunnel', 'Reverse SSH Tunnel'],
-          ['/Deployment/ReverseProxyToTor', 'Reverse Proxy to Tor'],
-          {
-            title: 'Hardware As A Service',
-            path: '/Deployment/HardwareAsAService'
-          }
-        ]
-      },
-      {
-        title: 'Raspberry Pi Deployment',
-        path: '/Deployment/RaspberryPi',
-        children: [
-          '/Deployment/RPi3',
-          '/Deployment/RPi4'
-        ]
-      },
-      {
-        title: 'Docker Plugins',
-        children: [
-          {
-            title: 'Transmuter',
-            path: '/Transmuter/',
-            children: [
-              ['/Transmuter/DCA', 'Dollar Cost Average Preset'],
-              ['/Transmuter/EmailReceiptsPreset', 'Email Receipts Preset']
-            ]
-          },
-          ['/ElectrumX', 'Electrum X'],
-          ['/ElectrumPersonalServer', 'Electrum Personal Server'],
-          '/Docker/joinmarket',
-          '/Docker/pihole',
-          '/Docker/fireflyiii',
-          '/Docker/ndlc'
-        ]
-      }
-    ]
-  },
-  {
-    title: 'Manual Deployment',
-    collapsable: false,
-    children: [
-      '/Deployment/ManualDeployment',
-      '/Deployment/ManualDeploymentExtended'
-    ]
-  }
-]
-
 const sidebarDevelopment = [
-  {
-    title: 'Greenfield API',
-    collapsable: false,
-    children: [
-      [`${baseUrl}/API/Greenfield/v1`, 'Greenfield API v1', { type: 'external' }],
-      '/Development/GreenFieldExample'
-    ]
-  },
   {
     title: 'Development',
     collapsable: false,
     children: [
-      '/Development/',
-      '/Development/LocalDevelopment',
-      '/Development/Altcoins',
-      '/Development/Theme'
-    ]
-  },
-  {
-    title: 'More',
-    collapsable: false,
-    initialOpenGroupIndex: -1,
-    children: [
-      {
-        title: 'BTCPay Server Vault',
-        path: '/Vault/',
-        children: [
-          '/Vault/HowToVerify'
-        ]
-      },
-      ['/BTCPayServer/Security', 'Security Disclosures']
+      '/Development/'
     ]
   }
 ]
@@ -251,8 +190,7 @@ const sidebarContribute = [
         collapsable: false,
         children: [
           ['/Contribute/WriteSoftware', 'Software Stack'],
-          ['/Contribute/WriteDocs', 'Documentation'],
-          ['/Contribute/WriteBlog', 'Blog']
+          ['/Contribute/WriteDocs', 'Documentation']
         ]
       },
       ['/Contribute/Design', 'Design'],
@@ -269,26 +207,17 @@ const sidebarFAQ = [
     path: '/FAQ/',
     collapsable: false,
     children: [
-      'General',
-      'Deployment',
-      'Synchronization',
-      'Integrations',
-      'ServerSettings',
-      'Stores',
-      'Wallet',
-      'Apps',
-      'LightningNetwork',
-      'Altcoin'
+      'General'
     ]
   }
 ]
 
 module.exports = {
   title,
-  description: 'BTCPay Server Official Documentation',
+  description: 'Zeus Official Documentation',
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1.0'}],
-    ['link', { rel: 'stylesheet', href: '/styles/btcpayserver-variables.css' }]
+    ['link', { rel: 'stylesheet', href: '/styles/zeus-variables.css' }]
   ],
   chainWebpack (config) {
     config.module
@@ -304,7 +233,7 @@ module.exports = {
       title: $page => $page.title,
       description: $page => $page.frontmatter.description || extractDescription($page._strippedContent),
       author: (_, $site) => info,
-      tags: $page => ($page.frontmatter.tags || ['BTCPay Server']),
+      tags: $page => ($page.frontmatter.tags || ['Zeus']),
       twitterCard: _ => 'summary',
       type: $page => 'article',
       url: (_, $site, path) => `${baseUrl}${path.replace('.html', pageSuffix)}`,
@@ -329,41 +258,23 @@ module.exports = {
   markdown: {
     extendMarkdown (md) {
       md.use(implicitFigures)
-      md.use(include, { root: resolve(__dirname, 'includes') })
     },
     pageSuffix,
     slugify
   },
   themeConfig: {
     domain: baseUrl,
-    logo: '/img/btcpay-logo.svg',
+    logo: '/img/zeus-logo.svg',
     displayAllHeaders: false,
-    repo: 'btcpayserver/btcpayserver-doc',
+    repo: '',
     docsDir: 'docs',
     editLinks: true,
     notSatisfiedLinks: true, // our own addition, see theme/components/PageEdit.vue
     sidebarDepth: 0,
-    algolia: {
-      indexName: 'btcpayserver',
-      apiKey: '6a3a4c4380385cb5c9f9070247fdfca6',
-      // See https://www.algolia.com/doc/api-reference/api-parameters/
-      algoliaOptions: {
-        // hitsPerPage: 10,
-        typoTolerance: 'min'
-      },
-      // See https://community.algolia.com/docsearch/behavior.html#autocompleteoptions
-      autocompleteOptions: {
-        openOnFocus: true
-      }
-    },
     nav: [
       {
         text: 'User Guide',
         link: '/Guide'
-      },
-      {
-        text: 'Deployment',
-        link: '/Deployment/'
       },
       {
         text: 'Developers',
@@ -381,36 +292,28 @@ module.exports = {
     social: [
       {
         text: 'Website',
-        link: 'https://btcpayserver.org/',
+        link: 'https://zeusln.app/',
         rel: 'noopener noreferrer website'
       },
       {
         text: 'Chat',
-        link: 'https://chat.btcpayserver.org/',
+        link: 'https://t.me/zeusLN',
         rel: 'noopener noreferrer chat'
       },
       {
         text: 'GitHub',
-        link: 'https://github.com/btcpayserver/',
+        link: 'https://github.com/ZeusLN',
         rel: 'noopener noreferrer github'
       },
       {
         text: 'Twitter',
-        link: 'https://twitter.com/BtcpayServer',
+        link: 'https://twitter.com/ZeusLN',
         rel: 'noopener noreferrer twitter'
       }
     ],
     sidebar: {
       '/Development': sidebarDevelopment,
       '/Contribute': sidebarContribute,
-      '/Vault': sidebarDevelopment,
-      '/BTCPayServer': sidebarDevelopment,
-      '/Configurator': sidebarDeployment,
-      '/Deployment': sidebarDeployment,
-      '/Docker': sidebarDeployment,
-      '/ElectrumX': sidebarDeployment,
-      '/ElectrumPersonalServer': sidebarDeployment,
-      '/Transmuter': sidebarDeployment,
       '/FAQ/': sidebarFAQ,
       '/': sidebarUserGuide
     }

@@ -3,12 +3,4 @@
 /node_modules
 
 # External repos
-/docs/BTCPayServer
-/docs/Configurator
-/docs/Docker
-/docs/Transmuter
-/docs/Vault
 /docs/.vuepress/public/API/Greenfield/**/*.json
-
-# Constructed docs
-/docs/Development/LocalDevelopment.md

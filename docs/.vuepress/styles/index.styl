@@ -1,6 +1,6 @@
 // import this file as a stylus file here, because this is the only way
 // how its styles take precedence over the vuepress theme styles.
-@import "btcpayserver-main"
+@import "zeus-main"
 
 // VuePress Default Theme Overrides
 html,
@@ -17,45 +17,45 @@ h5, h6 {
   font-size: 1rem;
 }
 
-// styles originating from .btcpay-header
+// styles originating from .zeus-header
 .navbar {
-  color: var(--btcpay-header-text);
-  background-color: var(--btcpay-header-bg);
+  color: var(--zeus-header-text);
+  background-color: var(--zeus-header-bg);
 }
 
 .navbar a {
-  color: var(--btcpay-header-link);
+  color: var(--zeus-header-link);
   text-decoration: none;
 }
 
 .navbar a:focus,
 .navbar a:hover {
-  color: var(--btcpay-header-link-accent);
+  color: var(--zeus-header-link-accent);
 }
 
-:root[data-btcpay-theme="dark"] a.nav-link[rel]:before {
+:root[data-zeus-theme="dark"] a.nav-link[rel]:before {
   filter: contrast(0) brightness(200%);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-btcpay-theme="light"]) a.nav-link[rel]:before {
+  :root:not([data-zeus-theme="light"]) a.nav-link[rel]:before {
     filter: contrast(0) brightness(200%);
   }
 }
 
-:root[data-btcpay-theme="dark"] #app .navbar .search-box input {
-  background-color: var(--btcpay-neutral-900) !important;
+:root[data-zeus-theme="dark"] #app .navbar .search-box input {
+  background-color: var(--zeus-neutral-900) !important;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-btcpay-theme="dark"]) #app .navbar .search-box input {
-    background-color: var(--btcpay-body-bg) !important;
+  :root:not([data-zeus-theme="dark"]) #app .navbar .search-box input {
+    background-color: var(--zeus-body-bg) !important;
   }
 }
 
 // image zoom
 .medium-zoom--opened .medium-zoom-overlay {
-  background: var(--btcpay-header-bg) !important;
+  background: var(--zeus-header-bg) !important;
   opacity: .9 !important;
 }
 
@@ -75,7 +75,7 @@ h5, h6 {
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--btcpay-header-bg);
+    background-color: var(--zeus-header-bg);
     height: 58px;
   }
 
@@ -104,18 +104,18 @@ h5, h6 {
   }
 
   .navbar a {
-    color: var(--btcpay-header-link);
+    color: var(--zeus-header-link);
   }
 
   .navbar .search-box {
     order: 10;
-    margin: 0 0 0 var(--btcpay-space-s);
+    margin: 0 0 0 var(--zeus-space-s);
   }
 
   .search-box input {
-    color: var(--btcpay-header-text);
-    background-color: var(--btcpay-header-bg);
-    border-color: var(--btcpay-body-border-medium);
+    color: var(--zeus-header-text);
+    background-color: var(--zeus-header-bg);
+    border-color: var(--zeus-body-border-medium);
     font-size: 1rem;
     left: 0 !important;
   }
@@ -124,18 +124,13 @@ h5, h6 {
     display: none !important;
   }
 
-  .navbar .btcpay-theme-switch {
-    order: 20;
-    margin: 0 0 0 var(--btcpay-space-s);
-  }
-
   .navbar .nav-links .nav-item {
-    margin-left: var(--btcpay-space-xs);
+    margin-left: var(--zeus-space-xs);
     display: inline-block;
   }
 
   .navbar .nav-links .nav-item a {
-    padding: var(--btcpay-space-xs)  var(--btcpay-space-s);
+    padding: var(--zeus-space-xs)  var(--zeus-space-s);
   }
 
   .nav-links .repo-link {
@@ -145,9 +140,9 @@ h5, h6 {
   .nav-links a {
     font-size: 14px;
     font-weight: bold;
-    color: var(--btcpay-header-link);
+    color: var(--zeus-header-link);
     border: 0;
-    padding: var(--btcpay-space-xs)0;
+    padding: var(--zeus-space-xs)0;
   }
 
   .nav-links a svg {
@@ -156,11 +151,11 @@ h5, h6 {
 
   .nav-links a:hover,
   .nav-links a:focus  {
-    color: var(--btcpay-header-link-accent);
+    color: var(--zeus-header-link-accent);
   }
 
   .nav-links a.router-link-active {
-    color: var(--btcpay-header-link-active);
+    color: var(--zeus-header-link-active);
   }
 
   a.nav-link[rel*="website"],
@@ -219,8 +214,8 @@ h5, h6 {
     margin: 0;
     border: 0;
     padding: 0 !important;
-    color: var(--btcpay-header-text);
-    background-color: var(--btcpay-header-bg);
+    color: var(--zeus-header-text);
+    background-color: var(--zeus-header-bg);
   }
 
   .algolia-autocomplete .ds-dropdown-menu::before {
@@ -238,15 +233,15 @@ h5, h6 {
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--no-results {
-    padding: var(--btcpay-space-m) !important;
+    padding: var(--zeus-space-m) !important;
   }
 
   .algolia-docsearch-footer {
-    margin: var(--btcpay-space-s) !important;
+    margin: var(--zeus-space-s) !important;
   }
 
   .algolia-search-wrapper .algolia-autocomplete .ds-dropdown-menu .ds-suggestion {
-    border-color: var(--btcpay-body-border-medium);
+    border-color: var(--zeus-body-border-medium);
   }
 
   .algolia-docsearch-suggestion--wrapper {
@@ -254,10 +249,10 @@ h5, h6 {
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
-    color: var(--btcpay-light-text) !important;
-    background: var(--btcpay-light-dim-bg) !important;
-    border-color: var(--btcpay-body-border-medium);
-    padding: var(--btcpay-space-s) var(--btcpay-space-m) !important;
+    color: var(--zeus-light-text) !important;
+    background: var(--zeus-light-dim-bg) !important;
+    border-color: var(--zeus-body-border-medium);
+    padding: var(--zeus-space-s) var(--zeus-space-m) !important;
   }
 
   .algolia-search-wrapper .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
@@ -268,7 +263,7 @@ h5, h6 {
       display: block !important;
       width: 100% !important;
       text-align: left !important;
-      padding: var(--btcpay-space-s) var(--btcpay-space-m) !important;
+      padding: var(--zeus-space-s) var(--zeus-space-m) !important;
   }
 
   .algolia-docsearch-suggestion--subcategory-column-text:after {
@@ -277,22 +272,22 @@ h5, h6 {
 
   .algolia-autocomplete .algolia-docsearch-suggestion--content:before,
   .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column:before {
-    background: var(--btcpay-body-border-medium);
+    background: var(--zeus-body-border-medium);
   }
 
   .ds-cursor .algolia-docsearch-suggestion--content,
   .algolia-search-wrapper .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
-    color: var(--btcpay-light-text) !important;
-    background: var(--btcpay-light-dim-bg) !important;
+    color: var(--zeus-light-text) !important;
+    background: var(--zeus-light-dim-bg) !important;
   }
 
   .algolia-search-wrapper .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column-text {
-    color: var(--btcpay-light-text);
+    color: var(--zeus-light-text);
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--text,
   .algolia-search-wrapper .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--title {
-    color: var(--btcpay-body-text);
+    color: var(--zeus-body-text);
   }
 
   .algolia-autocomplete .suggestions {
@@ -300,36 +295,36 @@ h5, h6 {
   }
 
   .algolia-autocomplete .suggestions a {
-    color: var(--btcpay-header-link);
+    color: var(--zeus-header-link);
     text-decoration: none;
   }
 
   .algolia-autocomplete .suggestions a:focus,
   .algolia-autocomplete .suggestions a:hover {
-    color: var(--btcpay-header-link-accent);
+    color: var(--zeus-header-link-accent);
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl0 .algolia-docsearch-suggestion--highlight,
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl1 .algolia-docsearch-suggestion--highlight,
   .algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
-    box-shadow: inset 0 -2px 0 0 var(--btcpay-body-link-accent);
+    box-shadow: inset 0 -2px 0 0 var(--zeus-body-link-accent);
   }
 
   .sidebar {
-    color: var(--btcpay-nav-link);
-    background: var(--btcpay-body-bg);
+    color: var(--zeus-nav-link);
+    background: var(--zeus-body-bg);
     border-color: transparent;
   }
 
   .sidebar-mask {
-    background: var(--btcpay-header-bg);
+    background: var(--zeus-header-bg);
     opacity: .9;
   }
 
   .sidebar > .nav-links,
   .sidebar > .sidebar-links {
     padding: 1rem 0;
-    border-bottom-color: var(--btcpay-body-border-medium);
+    border-bottom-color: var(--zeus-body-border-medium);
   }
 
   .sidebar-group-items,
@@ -342,7 +337,7 @@ h5, h6 {
     opacity: 1;
   }
   .sidebar-group.is-sub-group.collapsable > .sidebar-heading:not(.clickable):hover {
-    color: var(--btcpay-nav-link-accent);
+    color: var(--zeus-nav-link-accent);
     cursor: pointer;
   }
 
@@ -353,43 +348,43 @@ h5, h6 {
 
   a.sidebar-link,
   .sidebar-heading.clickable {
-    color: var(--btcpay-nav-link);
+    color: var(--zeus-nav-link);
   }
 
   a.sidebar-link:focus,
   a.sidebar-link:hover,
   .sidebar-heading.clickable:focus,
   .sidebar-heading.clickable:hover {
-    color: var(--btcpay-nav-link-accent);
+    color: var(--zeus-nav-link-accent);
   }
 
   a.sidebar-link.active,
   .sidebar-heading.clickable.active,
   .sidebar-heading.clickable.router-link-exact-active {
-    color: var(--btcpay-nav-link-active);
+    color: var(--zeus-nav-link-active);
     font-weight: 600;
   }
 
   a.sidebar-heading.active,
   a.sidebar-link.active,
   .sidebar-group > .sidebar-heading.clickable.router-link-exact-active  {
-    border-color: var(--btcpay-primary);
+    border-color: var(--zeus-primary);
   }
 
   .arrow.left {
-    border-right-color: var(--btcpay-neutral-500);
+    border-right-color: var(--zeus-neutral-500);
   }
 
   .arrow.right {
-    border-left-color: var(--btcpay-neutral-500);
+    border-left-color: var(--zeus-neutral-500);
   }
 
   .arrow.up {
-    border-bottom-color: var(--btcpay-neutral-500);
+    border-bottom-color: var(--zeus-neutral-500);
   }
 
   .arrow.down {
-    border-top-color: var(--btcpay-neutral-500);
+    border-top-color: var(--zeus-neutral-500);
   }
 
   .page-nav,
@@ -403,20 +398,20 @@ h5, h6 {
   }
 
   h2 {
-    border-color: var(--btcpay-body-border-medium);
+    border-color: var(--zeus-body-border-medium);
   }
 
   hr {
-    border-color: var(--btcpay-body-border-light);
+    border-color: var(--zeus-body-border-light);
   }
 
   figure {
-    margin: var(--btcpay-space-m) 0;
+    margin: var(--zeus-space-m) 0;
   }
 
   blockquote {
-    color: var(--btcpay-body-text-muted);
-    border-left-color: var(--btcpay-body-border-medium);
+    color: var(--zeus-body-text-muted);
+    border-left-color: var(--zeus-body-border-medium);
   }
 
   // hide outbound link markers for videos and images
@@ -425,32 +420,32 @@ h5, h6 {
   }
 
   code {
-    font-family: var(--btcpay-font-family-monospace);
-    border-radius: var(--btcpay-border-radius);
-    color: var(--btcpay-code-text);
-    background-color: var(--btcpay-code-bg);
+    font-family: var(--zeus-font-family-monospace);
+    border-radius: var(--zeus-border-radius);
+    color: var(--zeus-code-text);
+    background-color: var(--zeus-code-bg);
     word-break: break-word;
   }
 
   pre {
-    font-family: var(--btcpay-font-family-monospace);
-    border-radius: var(--btcpay-border-radius);
-    color: var(--btcpay-pre-text);
-    background-color: var(--btcpay-pre-bg);
+    font-family: var(--zeus-font-family-monospace);
+    border-radius: var(--zeus-border-radius);
+    color: var(--zeus-pre-text);
+    background-color: var(--zeus-pre-bg);
   }
 
   pre code {
-    color: var(--btcpay-white);
+    color: var(--zeus-white);
     background: transparent;
   }
 
   th, td {
-    border-color: var(--btcpay-body-border-light);
+    border-color: var(--zeus-body-border-light);
   }
 
   div[class*="language-"] {
     background: transparent;
-    border-radius: var(--btcpay-border-radius);
+    border-radius: var(--zeus-border-radius);
   }
 
   tr:nth-child(2n) {
@@ -458,7 +453,7 @@ h5, h6 {
   }
 
   .custom-block {
-    background-color: var(--btcpay-bg-dark);
+    background-color: var(--zeus-bg-dark);
   }
 
   .custom-block .custom-block-title {
@@ -471,37 +466,37 @@ h5, h6 {
   }
 
   .custom-block.danger {
-    color: var(--btcpay-danger-text);
-    background: var(--btcpay-danger);
-    border-color: var(--btcpay-danger-bg-hover);
+    color: var(--zeus-danger-text);
+    background: var(--zeus-danger);
+    border-color: var(--zeus-danger-bg-hover);
   }
 
   .custom-block.warning {
-    color: var(--btcpay-warning-text);
-    background: var(--btcpay-warning);
-    border-color: var(--btcpay-warning-bg-hover);
+    color: var(--zeus-warning-text);
+    background: var(--zeus-warning);
+    border-color: var(--zeus-warning-bg-hover);
   }
 
   .custom-block.tip {
-    color: var(--btcpay-info-text);
-    background: var(--btcpay-info);
-    border-color: var(--btcpay-info-bg-hover);
+    color: var(--zeus-info-text);
+    background: var(--zeus-info);
+    border-color: var(--zeus-info-bg-hover);
   }
 
   .page-edit .edit-link a,
   .page-nav .inner a {
-    color: var(--btcpay-secondary);
+    color: var(--zeus-secondary);
   }
 
   .page-edit .edit-link a:hover,
   .page-edit .edit-link a:focus,
   .page-nav .inner a:hover,
   .page-nav .inner a:focus {
-    color: var(--btcpay-secondary-accent);
+    color: var(--zeus-secondary-accent);
   }
 
   .page-nav .inner {
-    border-top-color: var(--btcpay-body-border-light);
+    border-top-color: var(--zeus-body-border-light);
   }
 
   .supporters {
@@ -523,18 +518,19 @@ h5, h6 {
   }
 
   .supporters .logos a {
-    color: var(--btcpay-secondary);
+    color: var(--zeus-secondary);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
 
-  .supporters .logos svg {
-    max-height: 60px;
-
+  .supporters .logos img {
+    max-height: 70px;
+    max-width: 70px;
     @media (max-width: 519px) {
-      max-height: 45px;
+      max-height: 50px;
+      max-width: 50px;
     }
   }
 
@@ -549,7 +545,7 @@ h5, h6 {
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-    background-color: var(--btcpay-bg-dark);
+    background-color: var(--zeus-bg-dark);
   }
 
   .ytEmbed:before {

@@ -1,6 +1,6 @@
-# How to contribute to BTCPay Server?
+# How to contribute Zeus?
 
-BTCPay Server is built and maintained entirely by volunteer contributors around the internet.
+Zeus Server is built and maintained entirely by volunteer contributors around the internet.
 
 We welcome, appreciate and encourage new contributions.
 
@@ -12,7 +12,6 @@ Depending on your skills and interest, you can help in a number of ways:
 * [Writing](./Write.md)
   * [Tools](./WriteSoftware.md)
   * [Documentation](./WriteDocs.md)
-  * [Blog](./WriteBlog.md)
 * [Designing](./Design.md)
 * [Translating](./Translate.md)
 * [Miscellaneous](./Misc.md)
