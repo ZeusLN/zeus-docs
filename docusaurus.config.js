@@ -93,8 +93,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/about-zeus',
+                label: 'For users',
+                to: '/',
+              },
+              {
+                label: 'Contribute',
+                to: 'contribute/how-you-can-contribute',
               },
             ],
           },
