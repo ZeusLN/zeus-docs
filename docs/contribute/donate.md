@@ -24,3 +24,6 @@ We have several ways you can donate bitcoin to the Zeus project. All our options
 ## Sponsor Zeus
 
 If you would like a more formal way to contribute to Zeus you can sponsor the project which will get you some sponsorship perks depending on your level of sponsorship.
+
+- [Sponsor Portal](https://zeusln.app/sponsor)
+- [Zeus About Page](https://zeusln.app/about)
