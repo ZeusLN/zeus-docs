@@ -69,4 +69,4 @@ import TabItem from '@theme/TabItem';
 5. Disable **Certificate Verification**.
 6. Enable **Use Tor** if you would like.
 7. Click on **SAVE NODE CONFIG**.
-8. You can now use @lntxbot with Zeus.
+8. You can now use your @lntxbot wallet with Zeus.
