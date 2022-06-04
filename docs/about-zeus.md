@@ -9,7 +9,7 @@ slug: /
 
 Zeus is a mobile bitcoin wallet that makes bitcoin payments simple, gives users complete control of their finances, and allows more advanced users to manage their Lightning nodes from the palm of their hand.
 
-Zeus is available to download on the [Google play store](https://play.google.com/store/apps/details?id=app.zeusln.zeus), [Apple app store](https://apps.apple.com/us/app/zeus-ln/id1456038895) and [F-Droid](https://f-droid.org/packages/app.zeusln.zeus/).
+Zeus is available to download on [Google Play](https://play.google.com/store/apps/details?id=app.zeusln.zeus), [Apple App Store](https://apps.apple.com/us/app/zeus-ln/id1456038895), and [F-Droid](https://f-droid.org/packages/app.zeusln.zeus/).
 
 If you are having trouble using Zeus, would like to contribute to the project, or are just interested in learning more, you can read these docs, reach out to our community on [Telegram](https://t.me/zeusLN), keep up with us on [Twitter](https://twitter.com/ZeusLN), join our [developer slack](https://zeusln.slack.com/join/shared_invite/zt-qw205nqa-o4VJJC0zPI7HiSfToZGoVw#/) or open an issue on [GitHub](https://github.com/ZeusLN/zeus).
 
