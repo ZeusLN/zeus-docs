@@ -60,12 +60,12 @@ import TabItem from '@theme/TabItem';
 
 </Tabs>
 
-## Connect lntxbot with Zeus
+## Connect lntxbot to Zeus
 
 1. In your Telegram chat with @lntxbot, type /bluewallet to get your lndhub QR code.
 2. Open Zeus app and go to **Settings -> Connect a node -> +**.
 3. Click on **Node interface** and select **LNDHUB**.
-4. Scroll down and press **SCAN LNDHUB QR**. Scan the QR code from @lntxbot.
+4. Scroll down and press **SCAN LNDHUB QR**. Scan the lndhub QR code.
 5. Disable **Certificate Verification**.
 6. Enable **Use Tor** if you would like.
 7. Click on **SAVE NODE CONFIG**.
