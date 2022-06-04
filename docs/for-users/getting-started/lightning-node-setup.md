@@ -15,19 +15,25 @@ To start using Zeus you will need to be running your own lightning node.
 
 <TabItem value="LND">
 
-> Android developers may be familiar with this concept.
+> Lightning Network Daemon
+  
+[GitHub](https://github.com/lightningnetwork/lnd/)
 
 </TabItem>
 
 <TabItem value="Core Lightning">
-
-> Android developers may be familiar with this concept.
+  
+> Core Lightning
+  
+[GitHub](https://github.com/ElementsProject/lightning)
 
 </TabItem>
 
 <TabItem value="Eclair">
 
-> Android developers may be familiar with this concept.
+> Eclair
+  
+[GitHub](https://github.com/ACINQ/eclair)
 
 </TabItem>
 
