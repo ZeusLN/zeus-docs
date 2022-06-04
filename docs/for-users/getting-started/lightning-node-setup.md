@@ -22,9 +22,9 @@ To start using Zeus you will need to be running your own lightning node.
 </TabItem>
 
 <TabItem value="Core Lightning">
-  
+
 > Core Lightning
-  
+
 [GitHub](https://github.com/ElementsProject/lightning)
 
 </TabItem>
