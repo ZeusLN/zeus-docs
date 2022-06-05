@@ -25,10 +25,13 @@ import TabItem from '@theme/TabItem';
 
 >
 
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+1. Open Zeus and go to **Settings -> Connect a node -> +**.
+2. Scroll down and press **SCAN LNDHUB QR**.
+3. Open your Citadel dashboard and go to **Connect Wallet -> Select your wallet -> Zeus**.
+4. Scan the QR Code.
+5. Enable **Use Tor**.
+6. Click on **SAVE NODE CONFIG**.
+7. Zeus is now connected to your Citadel.
 
 </TabItem>
 <TabItem value="MyNode">
