@@ -68,16 +68,27 @@ myNodeBTC is using LND implementation.
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND**.
 3. Scroll down and press **SCAN LND node QR**.
-4. Open your Citadel dashboard and go to **Connect Wallet -> Select your wallet -> Zeus**.
+4. Open your myNodeBTC dashboard and go to **Connect Wallet -> Select your wallet -> Zeus**.
 5. Scan the QR Code.
 6. Enable **Use Tor**.
 7. Click on **SAVE NODE CONFIG**.
-8. Zeus is now connected to your Citadel.
+8. Zeus is now connected to your myNodeBTC.
 
 </TabItem>
 <TabItem value="Nodl">
 
 > NODL
+
+NODL is using LND implementation.
+
+1. Open Zeus and go to **Settings -> Connect a node -> +**.
+2. Click on **Node interface** and select **LND**.
+3. Scroll down and press **SCAN LND node QR**.
+4. Open your NODL dashboard and go to **Connect Wallet -> Select your wallet -> Zeus**.
+5. Scan the QR Code.
+6. Enable **Use Tor**.
+7. Click on **SAVE NODE CONFIG**.
+8. Zeus is now connected to your NODL.
 
 </TabItem>
 </Tabs>
