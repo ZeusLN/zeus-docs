@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 
 <TabItem value="Umbrel">
-## Connect a Umbrel LN Node to Zeus
+
 Umbrel is using CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
 
 A - Connect Umbrel using LND interface:
@@ -42,7 +42,7 @@ B - Connect Umbrel using CLN interface:
 
 </TabItem>
 <TabItem value="Citadel">
-## Connect a Citadel LN Node to Zeus
+
 Citadel is using LND implementation.
 
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
@@ -53,10 +53,10 @@ Citadel is using LND implementation.
 6. Enable **Use Tor**.
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Citadel.
-</TabItem>
 
+</TabItem>
 <TabItem value="MyNode">
-## Connect a myNodeBTC LN Node to Zeus
+
 myNodeBTC is using LND implementation.
 
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
@@ -67,8 +67,8 @@ myNodeBTC is using LND implementation.
 6. Enable **Use Tor**.
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Citadel.
-</TabItem>
 
+</TabItem>
 <TabItem value="Nodl">
 
 > Web developers may be familiar with this concept.
@@ -86,7 +86,7 @@ myNodeBTC is using LND implementation.
 
 </TabItem>
 <TabItem value="LNBits">
-## Connect LNbits account to Zeus. 
+
 LNbits is using LNDhub interface for accounts.
 
 1. In your your LNbits instance, go to LNDhub extension and select the wallet you want to connect in Zeus (if you have many).
@@ -98,10 +98,10 @@ LNbits is using LNDhub interface for accounts.
 7. Enable **Use Tor** if your LNbits is running behind Tor.
 8. Click on **SAVE NODE CONFIG**.
 9. You can now use your LNbits account as a LN wallet with Zeus.
-</TabItem>
 
+</TabItem>
 <TabItem value="LNtxBot">
-## Connect lntxbot account to Zeus
+
 LNtxBot is using LNDhub interface for accounts.
 
 1. In your Telegram chat with @lntxbot, type /bluewallet to get your lndhub QR code.
@@ -112,6 +112,7 @@ LNtxBot is using LNDhub interface for accounts.
 6. Enable **Use Tor** if you would like (but not recommended)
 7. Click on **SAVE NODE CONFIG**.
 8. You can now use your @lntxbot wallet with Zeus, as any other LN wallet.
+
 </TabItem>
 
 </Tabs>
