@@ -13,6 +13,8 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="Umbrel">
 
+> Umbrel
+
 Umbrel is using CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
 
 A - Connect Umbrel using LND interface:
@@ -57,6 +59,8 @@ Citadel is using LND implementation.
 </TabItem>
 <TabItem value="MyNode">
 
+> MyNodeBTC
+
 myNodeBTC is using LND implementation.
 
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
@@ -87,6 +91,8 @@ myNodeBTC is using LND implementation.
 </TabItem>
 <TabItem value="LNBits">
 
+> LNbits
+
 LNbits is using LNDhub interface for accounts.
 
 1. In your your LNbits instance, go to LNDhub extension and select the wallet you want to connect in Zeus (if you have many).
@@ -101,6 +107,8 @@ LNbits is using LNDhub interface for accounts.
 
 </TabItem>
 <TabItem value="LNtxBot">
+
+>LNtxBot
 
 LNtxBot is using LNDhub interface for accounts.
 
