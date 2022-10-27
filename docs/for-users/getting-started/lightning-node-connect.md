@@ -40,10 +40,12 @@ B - Connect Umbrel using CLN interface:
 </TabItem>
 <TabItem value="Raspiblitz">
 
-> iOS developers may be familiar with this concept.
+> Raspiblitz
 
 </TabItem>
 <TabItem value="Citadel">
+
+> Citadel
 
 Citadel is using LND implementation.
 
@@ -75,7 +77,7 @@ myNodeBTC is using LND implementation.
 </TabItem>
 <TabItem value="Nodl">
 
-> Web developers may be familiar with this concept.
+> NODL
 
 </TabItem>
 </Tabs>
@@ -86,7 +88,7 @@ myNodeBTC is using LND implementation.
 
 <TabItem value="BTCPay Server">
 
-> Android developers may be familiar with this concept.
+> BTCPay Server
 
 </TabItem>
 <TabItem value="LNBits">
