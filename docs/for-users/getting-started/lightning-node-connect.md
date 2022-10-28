@@ -101,6 +101,46 @@ NODL is using LND implementation.
 
 > BTCPay Server
 
+BTCPay Server could be used with two modes: as node management (CLN or LND) or as LNDhub with the plugin LNBank activated on BTCPay.
+
+A. Using CLN/LND interface to connect BTCPay Server
+1. In your your BTCPay instance, go to services and select Zeus. It will show you a QR code to scan.
+2. Open Zeus app and go to **Settings -> Connect a node -> +**.
+4. Click on **Node interface** and select **LND** or **CLN**.
+5. Scroll down and press **SCAN LND QR**. Scan the lnd/cln  QR code from your BTCPay Server config.
+6. Disable **Certificate Verification**.
+7. Enable **Use Tor** if your BTCPay is running behind Tor.
+8. Click on **SAVE NODE CONFIG**.
+9. You can now use your BTCPay account as a LN wallet with Zeus.
+
+B. Using LNBank plugin of BTCPay Server to connect Zeus:
+Unfortunately there is [an issue with Zeus, which prevents import via QR scan](https://github.com/ZeusLN/zeus/issues/1081). Until this is fixed you have to import the wallet by entrering the details manually.
+
+In Zeus you can use this path to import the wallet:
+
+- Open the settings by clicking on the node icon in the top left corner.
+- In the settings click the node (first row) to get to the list of nodes.
+- Click the plus icon in the top right corner to add a new node/wallet.
+You will land on the following screen and have to …
+
+- Choose "LNDHub" as the "Node Interface"
+- Enable the "Existing account" toggle
+![image](../static/img/zeus-lnbank-btcpay.png)
+
+On that screen you then have to fill in the host, username and password fields. The values for these fields are included in the account URL which you can copy on the LNbank wallet settings page.
+
+Copy the account URL and paste it into a note app on your mobile device. It consists of the following parts:
+
+```lndhub:// USERNAME : PASSWORD @ HOST```
+
+You can ignore the ```lndhub:// part```, the username and password are separated by an ```:``` and the host is what comes after the ```@```. Copy those values into the corresponding fields in Zeus and then click "Save node config".
+
+The parts map like this:
+
+- Username = LNbank Wallet ID
+- Password = LNbank Wallet Access Key (Admin)
+- Host = ```YOUR_BTCPAY/plugins/lnbank/api/lndhub```
+
 </TabItem>
 <TabItem value="LNBits">
 
