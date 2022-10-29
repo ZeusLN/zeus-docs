@@ -5,9 +5,7 @@ title: Connecting to Zeus
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Connecting to Zeus
-
-## Full node solutions
+# Connecting Umbrel to Zeus
 
 <Tabs>
 
@@ -53,7 +51,7 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 </TabItem>
 <TabItem value="Raspiblitz">
 
-> Connect to your Raspiblitz node
+> Connect to your Raspiblitz node to Zeus
 
 Raspiblitz is using CLN and LND implementations.
 
@@ -89,7 +87,7 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 </TabItem>
 <TabItem value="Citadel">
 
-> Connect to your Citadel node
+> Connect to your Citadel node to Zeus
 
 Citadel is using LND implementation.
 ### A - Connect Citadel with LND interface, using Tor network:
@@ -127,7 +125,7 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 </TabItem>
 <TabItem value="MyNode">
 
-> Connect to MyNodeBTC
+> Connect Zeus to MyNodeBTC
 
 myNodeBTC is using LND implementation.
 ### A - Connect myNodeBTC with LND interface, using Tor network:
@@ -155,7 +153,7 @@ myNodeBTC is using LND implementation.
 </TabItem>
 <TabItem value="Embassy">
 
-> Connect to Embassy node (Start9)
+> Connect Zeus to Embassy node (Start9)
 
 Embassy is using LND implementation.
 
@@ -171,7 +169,7 @@ Embassy is using LND implementation.
 </TabItem>
 <TabItem value="Nodl">
 
-> Connect to NODL
+> Connect NODL to Zeus
 
 NODL is using LND implementation.
 
@@ -185,17 +183,11 @@ NODL is using LND implementation.
 8. Zeus is now connected to your NODL.
 
 </TabItem>
-</Tabs>
+<TabItem value="BTCPay">
 
-## Payment platforms
+> Connect Zeus to your BTCPay Server
 
-<Tabs>
-
-<TabItem value="BTCPay Server">
-
-> Connect to your BTCPay Server
-
-BTCPay Server could be used with two modes: as node management (CLN or LND) or as LNDhub with the plugin LNBank activated on BTCPay.
+BTCPay Server is a payment processor system and could connect to Zeus in two modes: as node management (CLN or LND) or as LNDhub with the plugin LNBank activated on BTCPay.
 ### A. Using CLN/LND interface to connect BTCPay Server
 1. In your your BTCPay instance, go to services and select Zeus. It will show you a QR code to scan.
 2. Open Zeus app and go to **Settings -> Connect a node -> +**.
@@ -238,7 +230,7 @@ The parts map like this:
 
 > Connect to LNbits account
 
-LNbits is using LNDhub interface for accounts.
+LNbits is using LNDhub interface and is an accounting system on top of your LN node. That means, it will use lndhub accounts instead of wallets to manage users balances and payments. But will use your node liquidity, in their limits.
 
 Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
 
@@ -257,7 +249,7 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 
 >Connect your LNtxBot account
 
-LNtxBot is using LNDhub interface for accounts.
+LNtxBot is using LNDhub interface for accounts and is a custodial service bot for Telegram. [See more details here](https://darthcoin.substack.com/p/lntxbot-users-guide).
 
 Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
 
