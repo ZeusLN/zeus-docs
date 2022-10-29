@@ -70,4 +70,5 @@ Here is a list of resources that will explain in detail what is, how it works, w
 - [Video tutorials about Lightning Nodes](https://www.youtube.com/c/MinistryofNodes/videos) – by Ministry of Nodes
 - [Getting started with LN channels](https://www.youtube.com/watch?v=KhU_sTiaN8w) – by Start9
 
-<Tabs>
+</TabItem>
+</Tabs>
