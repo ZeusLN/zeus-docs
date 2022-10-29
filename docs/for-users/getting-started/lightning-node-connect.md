@@ -15,7 +15,7 @@ Here we present you, in simple steps, how can connect your specific type of node
 
 <TabItem value="Umbrel">
 
-> Connect your Umbrel node
+> Connect your Umbrel node with Zeus
 
 Umbrel is using CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
 
@@ -242,11 +242,12 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 2. You could use two types of accounts: "invoice only" (only receive) or "admin" (send/receive).
 3. Open Zeus app and go to **Settings -> Connect a node -> +**.
 4. Click on **Node interface** and select **LNDHUB**.
-5. Scroll down and press **SCAN LNDHUB QR**. Scan the lndhub QR code from your LNbits lndhub extension.
-6. Disable **Certificate Verification**.
-7. Enable **Use Tor** if your LNbits is running behind Tor.
-8. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
-9. You can now use your LNbits account as a LN wallet with Zeus.
+5. Scroll down and press **SCAN LNDHUB QR**. 
+6. Scan the lndhub QR code from your LNbits lndhub extension, **admin mode** (if you want full access) or **invoice mode** (if you want restricted access, only to receive).
+7. Disable **Certificate Verification**.
+8. Enable **Use Tor** if your LNbits is running behind Tor.
+9. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
+10. You can now use your LNbits account as a LN wallet with Zeus.
 
 </TabItem>
 <TabItem value="LNtxBot">
@@ -260,11 +261,12 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 1. In your Telegram chat with @lntxbot, type /bluewallet to get your lndhub QR code.
 2. Open Zeus app and go to **Settings -> Connect a node -> +**.
 3. Click on **Node interface** and select **LNDHUB**.
-4. Scroll down and press **SCAN LNDHUB QR**. Scan the lndhub QR code.
-5. Disable **Certificate Verification**.
-6. Enable **Use Tor** if you would like (but not recommended)
-7. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
-8. You can now use your @lntxbot wallet with Zeus, as any other LN wallet.
+4. Scroll down and press **SCAN LNDHUB QR**.
+5. Scan the lndhub QR code.
+6. Disable **Certificate Verification**.
+7. Enable **Use Tor** if you would like (but not recommended)
+8. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
+9. You can now use your @lntxbot wallet with Zeus, as any other LN wallet.
 
 </TabItem>
 
