@@ -106,14 +106,15 @@ BTCPay Server could be used with two modes: as node management (CLN or LND) or a
 A. Using CLN/LND interface to connect BTCPay Server
 1. In your your BTCPay instance, go to services and select Zeus. It will show you a QR code to scan.
 2. Open Zeus app and go to **Settings -> Connect a node -> +**.
-4. Click on **Node interface** and select **LND** or **CLN**.
-5. Scroll down and press **SCAN LND QR**. Scan the lnd/cln  QR code from your BTCPay Server config.
-6. Disable **Certificate Verification**.
-7. Enable **Use Tor** if your BTCPay is running behind Tor.
-8. Click on **SAVE NODE CONFIG**.
-9. You can now use your BTCPay account as a LN wallet with Zeus.
+3. Click on **Node interface** and select **LND** or **CLN**.
+4. Scroll down and press **SCAN BTCPAY config QR**. Scan the lnd/cln QR code from your BTCPay Server config.
+5. Disable **Certificate Verification**.
+6. Enable **Use Tor** if your BTCPay is running behind Tor.
+7. Click on **SAVE NODE CONFIG**.
+8. You can now use your BTCPay account as a LN wallet with Zeus.
 
 B. Using LNBank plugin of BTCPay Server to connect Zeus:
+Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
 Unfortunately there is [an issue with Zeus, which prevents import via QR scan](https://github.com/ZeusLN/zeus/issues/1081). Until this is fixed you have to import the wallet by entrering the details manually.
 
 In Zeus you can use this path to import the wallet:
@@ -146,7 +147,8 @@ The parts map like this:
 
 > LNbits
 
-LNbits is using LNDhub interface for accounts.
+LNbits is using LNDhub interface for accounts. 
+Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
 
 1. In your your LNbits instance, go to LNDhub extension and select the wallet you want to connect in Zeus (if you have many).
 2. You could use two types of accounts: "invoice only" (only receive) or "admin" (send/receive).
@@ -155,7 +157,7 @@ LNbits is using LNDhub interface for accounts.
 5. Scroll down and press **SCAN LNDHUB QR**. Scan the lndhub QR code from your LNbits lndhub extension.
 6. Disable **Certificate Verification**.
 7. Enable **Use Tor** if your LNbits is running behind Tor.
-8. Click on **SAVE NODE CONFIG**.
+8. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
 9. You can now use your LNbits account as a LN wallet with Zeus.
 
 </TabItem>
@@ -164,6 +166,7 @@ LNbits is using LNDhub interface for accounts.
 >LNtxBot
 
 LNtxBot is using LNDhub interface for accounts.
+Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
 
 1. In your Telegram chat with @lntxbot, type /bluewallet to get your lndhub QR code.
 2. Open Zeus app and go to **Settings -> Connect a node -> +**.
@@ -171,7 +174,7 @@ LNtxBot is using LNDhub interface for accounts.
 4. Scroll down and press **SCAN LNDHUB QR**. Scan the lndhub QR code.
 5. Disable **Certificate Verification**.
 6. Enable **Use Tor** if you would like (but not recommended)
-7. Click on **SAVE NODE CONFIG**.
+7. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
 8. You can now use your @lntxbot wallet with Zeus, as any other LN wallet.
 
 </TabItem>
