@@ -5,7 +5,11 @@ title: Connecting to Zeus
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Connecting Umbrel to Zeus
+# Connecting to Zeus
+
+Zeus is a mobile app that can manage multiple nodes connections. You can connect various nodes not just one, depending on your needs and usage.
+
+Here we present you, in simple steps, how can connect your specific type of node with Zeus.
 
 <Tabs>
 
