@@ -31,7 +31,7 @@ Umbrel is using CLN and LND implementations. Also after Umbrel v 0.5.2 you can r
 
 <p>What is Tailscale?</p>
 <p>Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.</p>
-<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Umbrel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.</p>
+<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Umbrel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard Noise protocol encryption, a peer-reviewed and trusted standard.</p>
 <p>The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.</p>
 
 1. Go to [Tailscale.com](https://tailscale.com) and create an account. No need to use real identity.
@@ -67,7 +67,7 @@ Raspiblitz is using CLN and LND implementations.
 ### B - Connect Raspiblitz with LND/CLN interface, using Tailscale/ZeroTier network.
 <p>What is Tailscale?</p>
 <p>Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.</p>
-<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Raspiblitz node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.</p>
+<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Raspiblitz node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard Noise protocol encryption, a peer-reviewed and trusted standard.</p>
 <p>The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.</p<>>
 
 1. Go to [Tailscale.com](https://tailscale.com) or [ZeroTier.com](https://zerotier.com) and create an account. No need to use real identity.
@@ -100,7 +100,7 @@ Citadel is using LND implementation.
 ### B - Connect Umbrel with LND interface, using Tailscale network.
 <p>What is Tailscale?</p>
 <p>Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.</p>
-<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Citadel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Citadel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.</p>
+<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Citadel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Citadel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard Noise protocol encryption, a peer-reviewed and trusted standard.</p>
 <p>The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.</p>
 
 1. Go to [Tailscale.com](https://tailscale.com) and create an account. No need to use real identity.
