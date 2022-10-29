@@ -102,7 +102,7 @@ Citadel is using LND implementation.
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Citadel.
 
-### B - Connect Umbrel with LND interface, using Tailscale network.
+### B - Connect Citadel with LND interface, using Tailscale network.
 What is Tailscale?
 
 Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.
@@ -151,6 +151,22 @@ myNodeBTC is using LND implementation.
 8. Scan the QR Code.
 9. Before hit save config, remove the **Use Tor** option and replace all the onion address with that Tailscale/ZeroTier IP of your node (see point 2).
 10. Click on **SAVE NODE CONFIG** and you will connect in few moments. Zeus is now connected to your myNodeBTC and you can use it manage your node and make payments.
+
+</TabItem>
+<TabItem value="Embassy">
+
+> Connect to Embassy node (Start9)
+
+Embassy is using LND implementation.
+
+1. Open Zeus and go to **Settings -> Connect a node -> +**.
+2. Click on **Node interface** and select **LND**.
+3. Scroll down and press **SCAN LND node QR**.
+4. Open your Embassy dashboard and go to **Services -> LND tile -> Properties - lndconnect REST URL**.
+5. Scan the QR Code.
+6. Enable **Use Tor**.
+7. Click on **SAVE NODE CONFIG**.
+8. Zeus is now connected to your Embassy node.
 
 </TabItem>
 <TabItem value="Nodl">
