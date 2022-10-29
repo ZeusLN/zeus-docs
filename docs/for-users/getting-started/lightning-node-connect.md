@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 Umbrel is using CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
 
-A - Connect Umbrel with LND/CLN interface, using Tor or clearnet (domain/IP) network:
+### A - Connect Umbrel with LND/CLN interface, using Tor or clearnet (domain/IP) network:
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND** or **C-lightning REST** (depending on which LN implementation you run your node).
 3. Scroll down and press **SCAN LN node QR**.
@@ -27,12 +27,12 @@ A - Connect Umbrel with LND/CLN interface, using Tor or clearnet (domain/IP) net
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Umbrel and you can use it manage your node and make payments.
 
-B - Connect Umbrel with LND/CLN interface, using Tailscale network.
+### B - Connect Umbrel with LND/CLN interface, using Tailscale network.
 
-What is Tailscale?
-Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices. 
-Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Umbrel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.
-The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.
+<p>What is Tailscale?</p>
+<p>Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.</p>
+<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Umbrel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.</p>
+<p>The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.</p>
 
 1. Go to [Tailscale.com](https://tailscale.com) and create an account. No need to use real identity.
 2. Install Tailscale app in Umbrel (see App Store) and login with that Tailscale account you just created. In your Tailscale account you would see all your devices connected and each one will have a dedicated private IP.
@@ -45,7 +45,7 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 9. Before hit save config, remove the **Use Tor** option and replace all the onion address with that Tailscale IP of your node (see point 2).
 10. Click on **SAVE NODE CONFIG** and you will connect in few moments. Zeus is now connected to your Umbrel and you can use it manage your node and make payments.
 
-Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com](https://zerotier.com) (works the same as Tailscale) or [WireGuard](https://wireguard.com) (more advanced).
+<p>Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com](https://zerotier.com) (works the same as Tailscale) or [WireGuard](https://wireguard.com) (more advanced).</p>
 
 </TabItem>
 <TabItem value="Raspiblitz">
@@ -54,7 +54,7 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 
 Raspiblitz is using CLN and LND implementations.
 
-A - Connect Raspiblitz with LND/CLN interface, using Tor or clearnet (domain/IP) network:
+### A - Connect Raspiblitz with LND/CLN interface, using Tor or clearnet (domain/IP) network:
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND** or **C-lightning REST** (depending on which LN implementation you run your node).
 3. Scroll down and press **SCAN LN node QR**.
@@ -64,11 +64,11 @@ A - Connect Raspiblitz with LND/CLN interface, using Tor or clearnet (domain/IP)
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Raspiblitz and you can use it manage your node and make payments.
 
-B - Connect Raspiblitz with LND/CLN interface, using Tailscale/ZeroTier network.
-What is Tailscale?
-Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices. 
-Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Umbrel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.
-The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.
+### B - Connect Raspiblitz with LND/CLN interface, using Tailscale/ZeroTier network.
+<p>What is Tailscale?</p>
+<p>Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.</p>
+<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Raspiblitz node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.</p>
+<p>The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.</p<>>
 
 1. Go to [Tailscale.com](https://tailscale.com) or [ZeroTier.com](https://zerotier.com) and create an account. No need to use real identity.
 2. Install Tailscale on your Raspiblitz machine. [Here is a guide how to install ZeroTier on Raspiblitz](https://openoms.github.io/bitcoin-tutorials/zerotier/) (is the same for Tailscale). Then login with that Tailscale/ZeroTier account you just created. In your Tailscale account you would see all your devices connected and each one will have a dedicated private IP.
@@ -87,8 +87,7 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 > Connect to your Citadel node
 
 Citadel is using LND implementation.
-
-A - Connect Citadel with LND interface, using Tor network:
+### A - Connect Citadel with LND interface, using Tor network:
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND**.
 3. Scroll down and press **SCAN LND node QR**.
@@ -98,12 +97,11 @@ A - Connect Citadel with LND interface, using Tor network:
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Citadel.
 
-B - Connect Umbrel with LND interface, using Tailscale network.
-
-What is Tailscale?
-Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices. 
-Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Citadel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Citadel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.
-The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.
+### B - Connect Umbrel with LND interface, using Tailscale network.
+<p>What is Tailscale?</p>
+<p>Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.</p>
+<p>Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Citadel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Citadel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard®’s Noise protocol encryption, a peer-reviewed and trusted standard.</p>
+<p>The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.</p>
 
 1. Go to [Tailscale.com](https://tailscale.com) and create an account. No need to use real identity.
 2. Install Tailscale app in Citadel (see App Store) and login with that Tailscale account you just created. In your Tailscale account you would see all your devices connected and each one will have a dedicated private IP.
@@ -116,7 +114,7 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 9. Before hit save config, remove the **Use Tor** option and replace all the onion address with that Tailscale IP of your node (see point 2).
 10. Click on **SAVE NODE CONFIG** and you will connect in few moments. Zeus is now connected to your Citadel and you can use it manage your node and make payments.
 
-Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com](https://zerotier.com) (works the same as Tailscale) or [WireGuard](https://wireguard.com) (more advanced).
+<p>Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com](https://zerotier.com) (works the same as Tailscale) or [WireGuard](https://wireguard.com) (more advanced).</p>
 
 </TabItem>
 <TabItem value="MyNode">
@@ -124,8 +122,7 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 > Connect to MyNodeBTC
 
 myNodeBTC is using LND implementation.
-
-A - Connect myNodeBTC with LND interface, using Tor network:
+### A - Connect myNodeBTC with LND interface, using Tor network:
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND**.
 3. Scroll down and press **SCAN LND node QR**.
@@ -135,7 +132,7 @@ A - Connect myNodeBTC with LND interface, using Tor network:
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your myNodeBTC.
 
-A - Connect myNodeBTC with LND interface, using Tailscale/ZeroTier network:
+### B - Connect myNodeBTC with LND interface, using Tailscale/ZeroTier network:
 1. Go to [Tailscale.com](https://tailscale.com) or [ZeroTier.com](https://zerotier.com) and create an account. No need to use real identity.
 2. Install Tailscale on your myNodeBTC machine. [Here is a guide how to install ZeroTier on myNodeBTC](https://docs.nodl.it/guides/zerotier.html) (is the same for Tailscale). Then login with that Tailscale/ZeroTier account you just created. In your Tailscale account you would see all your devices connected and each one will have a dedicated private IP.
 3. Install Tailscale in your mobile device and login with that same created account. Immediately you will see in the app the IP of your node. Will be a private IP, not a public one. Copy it.
@@ -175,8 +172,7 @@ NODL is using LND implementation.
 > Connect to your BTCPay Server
 
 BTCPay Server could be used with two modes: as node management (CLN or LND) or as LNDhub with the plugin LNBank activated on BTCPay.
-
-A. Using CLN/LND interface to connect BTCPay Server
+### A. Using CLN/LND interface to connect BTCPay Server
 1. In your your BTCPay instance, go to services and select Zeus. It will show you a QR code to scan.
 2. Open Zeus app and go to **Settings -> Connect a node -> +**.
 3. Click on **Node interface** and select **LND** or **CLN**.
@@ -186,15 +182,14 @@ A. Using CLN/LND interface to connect BTCPay Server
 7. Click on **SAVE NODE CONFIG**.
 8. You can now use your BTCPay account as a LN wallet with Zeus.
 
-B. Using LNBank plugin of BTCPay Server to connect Zeus:
+### B. Using LNBank plugin of BTCPay Server to connect Zeus:
 Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
 Unfortunately there is [an issue with Zeus, which prevents import via QR scan](https://github.com/ZeusLN/zeus/issues/1081). Until this is fixed you have to import the wallet by entrering the details manually.
 
 In Zeus you can use this path to import the wallet:
-
-- Open the settings by clicking on the node icon in the top left corner.
-- In the settings click the node (first row) to get to the list of nodes.
-- Click the plus icon in the top right corner to add a new node/wallet.
+1. Open the settings by clicking on the node icon in the top left corner.
+2. In the settings click the node (first row) to get to the list of nodes.
+3. Click the plus icon in the top right corner to add a new node/wallet.
 You will land on the following screen and have to …
 
 - Choose "LNDHub" as the "Node Interface"
@@ -219,8 +214,8 @@ The parts map like this:
 
 > Connect to LNbits account
 
-LNbits is using LNDhub interface for accounts. 
-Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
+<p>LNbits is using LNDhub interface for accounts.</p>
+<p>Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.</p>
 
 1. In your your LNbits instance, go to LNDhub extension and select the wallet you want to connect in Zeus (if you have many).
 2. You could use two types of accounts: "invoice only" (only receive) or "admin" (send/receive).
@@ -237,8 +232,8 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 
 >Connect your LNtxBot account
 
-LNtxBot is using LNDhub interface for accounts.
-Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
+<p>LNtxBot is using LNDhub interface for accounts.</p>
+<p>Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.</p>
 
 1. In your Telegram chat with @lntxbot, type /bluewallet to get your lndhub QR code.
 2. Open Zeus app and go to **Settings -> Connect a node -> +**.
