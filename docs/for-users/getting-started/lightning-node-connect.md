@@ -126,6 +126,10 @@ You will land on the following screen and have to …
 
 - Choose "LNDHub" as the "Node Interface"
 - Enable the "Existing account" toggle
+<<<<<<< HEAD
+=======
+![image](../static/img/zeus-lnbank-btcpay.png)
+>>>>>>> 15665dc196736ce83418f48f5113244e358aff31
 
 On that screen you then have to fill in the host, username and password fields. The values for these fields are included in the account URL which you can copy on the LNbank wallet settings page.
 
