@@ -17,7 +17,7 @@ Here we present you, in simple steps, how can connect your specific type of node
 
 ### Connect Umbrel with Zeus
 
-Umbrel is using CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
+Umbrel supports CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
 
 **A - Connect Umbrel with LND/CLN interface, using Tor or clearnet (domain/IP) network:**
 
@@ -56,9 +56,9 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 </TabItem>
 <TabItem value="Raspiblitz">
 
-###Connect Raspiblitz with Zeus
+### Connect Raspiblitz with Zeus
 
-Raspiblitz is using CLN and LND implementations.
+Raspiblitz supports CLN and LND implementations.
 
 ***A - Connect Raspiblitz with LND/CLN interface, using Tor or clearnet (domain/IP) network:***
 
