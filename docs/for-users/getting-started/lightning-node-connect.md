@@ -15,11 +15,12 @@ Here we present you, in simple steps, how can connect your specific type of node
 
 <TabItem value="Umbrel">
 
-> Connect your Umbrel node with Zeus
+### Connect Umbrel with Zeus
 
 Umbrel is using CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
 
-### A - Connect Umbrel with LND/CLN interface, using Tor or clearnet (domain/IP) network:
+**A - Connect Umbrel with LND/CLN interface, using Tor or clearnet (domain/IP) network:**
+
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND** or **C-lightning REST** (depending on which LN implementation you run your node).
 3. Scroll down and press **SCAN LN node QR**.
@@ -29,7 +30,7 @@ Umbrel is using CLN and LND implementations. Also after Umbrel v 0.5.2 you can r
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Umbrel and you can use it manage your node and make payments.
 
-### B - Connect Umbrel with LND/CLN interface, using Tailscale network.
+**B - Connect Umbrel with LND/CLN interface, using Tailscale network.**
 
 What is Tailscale?
 
