@@ -12,13 +12,21 @@ To start using Zeus you will need to be running your own Bitcoin lightning node.
 Zeus LN app is supporting the following Lightning implementations: LND, CLN, Eclair and also lndhub accounts. Bellow you will find more documentation about these LN implementations and much more information needed to manage your Lightning Node.
 
 ### What is a Bitcoin Lightning Network (LN) node?
+A Bitcoin Node is a computer that connects to Bitcoin network and uses peer-to-peer protocol that allows nodes communicating with each other within the network as well as spreading information on transactions and blocks. Information is distributed among such nodes and they are what blockchain network consists of. [See more details here](https://en.bitcoinwiki.org/wiki/Node).
+
+Lightning Network is the additional payment protocol (Layer 2), a layer embedded on top of a blockchain to enable users to send or receive payments instantly and at almost zero cost. It involves the use of peer-to-peer payment channels that mean users can defer broadcasting their transactions to the blockchain, making it scale. It is intended to help Bitcoin to scale. [See more details here](https://en.bitcoinwiki.org/wiki/Lightning_Network).
+
+In short: 
+- Bitcoin network Layer 1 (onchain) is the base settlement network
+- Lightning Network Layer 2 (LN) is the payment network
+
 Here is a list of resources that will explain in detail what is, how it works, what you should do as a node LN operator, how to manage your LN node.
 
 <Tabs>
 
 <TabItem value="LN implementations">
 
-> Lightning Network implementations supported in Zeus LN app
+### LN implementations supported by Zeus
   
 1. LND - Lightning Network Daemon: [GitHub](https://github.com/lightningnetwork/lnd/) | [Documentation](https://docs.lightning.engineering/)
 2. CLN - Core Lightning: [GitHub](https://github.com/ElementsProject/lightning) | [Documentation](https://lightning.readthedocs.io/index.html)
@@ -28,7 +36,7 @@ Here is a list of resources that will explain in detail what is, how it works, w
 </TabItem>
 <TabItem value="LN explained">
 
-> General information about Lightning Network
+### LN explained
 
 - [Explain LN - The Airport analogy](https://twitter.com/CoinCornerDanny/status/1584628950588076032) - by Danny Scott
 - [An Overview of Lightning Network Implementations](https://medium.com/@fulgur.ventures/an-overview-of-lightning-network-implementations-d670255a6cfa) - by Fulgur Ventures
@@ -39,10 +47,9 @@ Here is a list of resources that will explain in detail what is, how it works, w
 </TabItem>
 <TabItem value="LN Guides">
 
-> Guides about Lightning Network nodes
+### LN Guides
 
 - [Lightning Node Management](https://www.lightningnode.info/) – by openoms, excellent guide (also in Spanish)
-- [Payment Channels on Lightning Network](https://youtu.be/Hzv9WuqIzA0) (Youtube) – by MIT OpenCourseWare
 - [Lightning Liquidity Management Guide](https://blog.lopp.net/lightning-network-liquidity-management-guide/) (article) – by Jameson Lopp
 - [RaspiBlitz Documentation](https://github.com/rootzoll/raspiblitz) - by Rootzoll and openoms
 - [Raspibolt Lightning Node Manual](https://raspibolt.org/guide/lightning/) (docs) - by Raspibolt Team
@@ -57,6 +64,8 @@ Here is a list of resources that will explain in detail what is, how it works, w
 </TabItem>
 <TabItem value="LN Videos">
 
+### LN Videos
+
 - [What is a Bitcoin node](https://youtu.be/sVeolsQ3cvU) (Youtube) - by Blockgeeks
 - [Everything you need to know about LN](https://youtu.be/bW7hvvjum9o) (Youtube) – by Till Musshoff
 - [How Lightning channels work?](https://youtu.be/pOZaLbUUZUs) (Youtube) – by Decentralized Thought
@@ -69,6 +78,7 @@ Here is a list of resources that will explain in detail what is, how it works, w
 - [LND Lightning Node](https://www.youtube.com/watch?v=q0siLF9zmWo&list=PLmoQ11MXEmajsUw95Fq6fHzXnVmoMPIeV) - YT playlist by 402 Payment Required
 - [Video tutorials about Lightning Nodes](https://www.youtube.com/c/MinistryofNodes/videos) – by Ministry of Nodes
 - [Getting started with LN channels](https://www.youtube.com/watch?v=KhU_sTiaN8w) – by Start9
+- [Payment Channels on Lightning Network](https://youtu.be/Hzv9WuqIzA0) (Youtube) – by MIT OpenCourseWare
 
 </TabItem>
 </Tabs>

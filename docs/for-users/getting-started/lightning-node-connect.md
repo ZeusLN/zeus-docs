@@ -181,7 +181,7 @@ Embassy is using LND implementation.
 </TabItem>
 <TabItem value="Nodl">
 
-### Connect NODL to Zeus
+### Connect NODL with Zeus
 
 NODL is using LND implementation.
 
