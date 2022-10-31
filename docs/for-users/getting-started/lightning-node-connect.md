@@ -185,8 +185,9 @@ Embassy is using LND implementation.
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Embassy node.
 
-</TabItem>
-<TabItem value="Nodl">
+
+<details>
+  <summary>Connect to NODL</summary>
 
 ### Connect NODL with Zeus
 
