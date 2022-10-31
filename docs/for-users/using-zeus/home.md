@@ -25,3 +25,6 @@ You slide right any of the wallets (LN or onchain) and you will be prompted with
 **Transactions log**
 
 By sliding up the small arrow **^** at the bottom of the main screen you could access the full log of wallet transactions. Click on any of the listed items and you could see more details about that transaction.
+
+Here is a home if you have Zeus connected to your own Tor node:
+![Zeus home Tor node](../../../static/img/zeus-home-node.jpg)
