@@ -3,13 +3,13 @@
 ---
 
 # Overview
-Zeus is an app designed to give you an easy access to your Bitcoin Lightning Nodes and lndhub accounts. 
+Zeus is an advanced app designed to give you an easy access to your Bitcoin Lightning Nodes and lndhub accounts. 
 
 You could configure Zeus with multiple nodes and accounts, switching between them, instantly without restarting the app.
 
 Managing your home/office LN node from your mobile device, with Zeus, was never so easy. In this way you could have a full control of your self-custody funds from your own node, in a private and secure way, wherever you are traveling, anytime.
 
-Keep in mind that Zeus is not a wallet in itself, is just an app that connects to your node wallets and access the channels so you could manage it directly, remotely.
+Keep in mind that Zeus is not just a Bitcoin Lightning wallet in itself, but an advanced app that connects to your node wallets and access the channels so you could manage it directly, remotely.
 
 Also another important aspect is that from your Zeus you will have full access to all your node funds. So keep it protected with a PIN. For more privacy, when you are using it in public places, you could activate the option to hide balances. 
 

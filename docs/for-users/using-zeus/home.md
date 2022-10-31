@@ -21,3 +21,7 @@ You have two options:
 **To receive a payment**
 
 You slide right any of the wallets (LN or onchain) and you will be prompted with a screen, where you can choose from top tabs **Lightning** or **Onchain**. Optional you could put a description / memo to the payment and will be displayed also to the payer. Put the amount in sats and will display also the amount in fiat currency bellow. Click on **Create invoice** and will display a QR code and invoice string to be shared with your payer.
+
+**Transactions log**
+
+By sliding up the small arrow **^** at the bottom of the main screen you could access the full log of wallet transactions. Click on any of the listed items and you could see more details about that transaction.
