@@ -222,7 +222,7 @@ In Zeus you can use this path to import the wallet:
 2. In the settings click the node (first row) to get to the list of nodes.
 3. Click the plus icon in the top right corner to add a new node/wallet.
 You will land on the following screen and have to …
-![LNBank image](../static/img/zeus-lnbank.jpg)
+![LNBank image](/static/img/zeus-lnbank.jpg)
 
 - Choose "LNDHub" as the "Node Interface"
 - Enable the "Existing account" toggle
