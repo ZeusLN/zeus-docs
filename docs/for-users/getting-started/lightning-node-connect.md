@@ -94,19 +94,8 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 
 </details>
 
-<Tabs>
-
-<TabItem value="Umbrel">
-
-
-
-</TabItem>
-<TabItem value="Raspiblitz">
-
-
-
-</TabItem>
-<TabItem value="Citadel">
+<details>
+  <summary>Connect to Citadel</summary>
 
 ### Connect Citadel with Zeus
 
@@ -145,8 +134,10 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 
 Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com](https://zerotier.com) (works the same as Tailscale) or [WireGuard](https://wireguard.com) (more advanced).
 
-</TabItem>
-<TabItem value="MyNode">
+</details>
+
+<details>
+  <summary>Connect to myNodeBTC</summary>
 
 ### Connect MyNodeBTC with Zeus
 
@@ -176,8 +167,10 @@ myNodeBTC is using LND implementation.
 9. Before hit save config, remove the **Use Tor** option and replace all the onion address with that Tailscale/ZeroTier IP of your node (see point 2).
 10. Click on **SAVE NODE CONFIG** and you will connect in few moments. Zeus is now connected to your myNodeBTC and you can use it manage your node and make payments.
 
-</TabItem>
-<TabItem value="Embassy">
+</details>
+
+<details>
+  <summary>Connect to Embassy</summary>
 
 ### Connect Embassy (Start9) with Zeus
 
@@ -208,8 +201,10 @@ NODL is using LND implementation.
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your NODL.
 
-</TabItem>
-<TabItem value="BTCPay">
+</details>
+
+<details>
+  <summary>Connect to BTCPay Server</summary>
 
 ### Connect BTCPay with Zeus
 
@@ -254,8 +249,10 @@ The parts map like this:
 - Password = LNbank Wallet Access Key (Admin)
 - Host = ```YOUR_BTCPAY/plugins/lnbank/api/lndhub```
 
-</TabItem>
-<TabItem value="LNBits">
+</details>
+
+<details>
+  <summary>Connect to BTCPay Server</summary>
 
 ### Connect LNbits with Zeus
 
@@ -274,8 +271,10 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 9. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
 10. You can now use your LNbits account as a LN wallet with Zeus.
 
-</TabItem>
-<TabItem value="LNtxBot">
+</details>
+
+<details>
+  <summary>Connect to BTCPay Server</summary>
 
 ### Connect LNtxBot with Zeus
 
@@ -293,6 +292,4 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 8. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
 9. You can now use your @lntxbot wallet with Zeus, as any other LN wallet.
 
-</TabItem>
-
-</Tabs>
+</details>
