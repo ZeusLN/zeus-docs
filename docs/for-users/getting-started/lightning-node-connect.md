@@ -11,9 +11,8 @@ Zeus is a mobile app that can manage multiple nodes connections. You can connect
 
 Here we present you, in simple steps, how can connect your specific type of node with Zeus.
 
-<Tabs>
-
-<TabItem value="Umbrel">
+<details>
+  <summary>Connect to Umbrel</summary>
 
 ### Connect Umbrel with Zeus
 
@@ -53,10 +52,12 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 
 Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com](https://zerotier.com) (works the same as Tailscale) or [WireGuard](https://wireguard.com) (more advanced).
 
-</TabItem>
-<TabItem value="Raspiblitz">
+</details>
 
-### Connect Raspiblitz with Zeus
+<details>
+  <summary>Connect to Raspiblitz</summary>
+
+  ### Connect Raspiblitz with Zeus
 
 Raspiblitz supports CLN and LND implementations.
 
@@ -90,6 +91,19 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 8. Scan the QR Code.
 9. Before hit save config, remove the **Use Tor** option and replace all the onion address with that Tailscale IP of your node (see point 2).
 10. Click on **SAVE NODE CONFIG** and you will connect in few moments. Zeus is now connected to your Umbrel and you can use it manage your node and make payments.
+
+</details>
+
+<Tabs>
+
+<TabItem value="Umbrel">
+
+
+
+</TabItem>
+<TabItem value="Raspiblitz">
+
+
 
 </TabItem>
 <TabItem value="Citadel">
