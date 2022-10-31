@@ -14,7 +14,7 @@ Here we present you, in simple steps, how can connect your specific type of node
 <details>
   <summary>Connect to Umbrel</summary>
 
-### Connect Umbrel with Zeus
+**Connect Umbrel with Zeus**
 
 Umbrel supports CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
 
@@ -57,11 +57,11 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 <details>
   <summary>Connect to Raspiblitz</summary>
 
-  ### Connect Raspiblitz with Zeus
+**Connect Raspiblitz with Zeus**
 
 Raspiblitz supports CLN and LND implementations.
 
-***A - Connect Raspiblitz with LND/CLN interface, using Tor or clearnet (domain/IP) network:***
+**A - Connect Raspiblitz with LND/CLN interface, using Tor or clearnet (domain/IP) network:**
 
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND** or **C-lightning REST** (depending on which LN implementation you run your node).
@@ -72,7 +72,7 @@ Raspiblitz supports CLN and LND implementations.
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Raspiblitz and you can use it manage your node and make payments.
 
-***B - Connect Raspiblitz with LND/CLN interface, using Tailscale/ZeroTier network.***
+**B - Connect Raspiblitz with LND/CLN interface, using Tailscale/ZeroTier network.**
 
 What is Tailscale?
 
@@ -97,11 +97,11 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 <details>
   <summary>Connect to Citadel</summary>
 
-### Connect Citadel with Zeus
+**Connect Citadel with Zeus**
 
 Citadel is using LND implementation.
 
-***A - Connect Citadel with LND interface, using Tor network:***
+**A - Connect Citadel with LND interface, using Tor network:**
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND**.
 3. Scroll down and press **SCAN LND node QR**.
@@ -111,9 +111,9 @@ Citadel is using LND implementation.
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your Citadel.
 
-***B - Connect Citadel with LND interface, using Tailscale network.***
+**B - Connect Citadel with LND interface, using Tailscale network.**
 
-What is Tailscale?
+**What is Tailscale?**
 
 Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.
 
@@ -139,11 +139,11 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 <details>
   <summary>Connect to myNodeBTC</summary>
 
-### Connect MyNodeBTC with Zeus
+**Connect MyNodeBTC with Zeus**
 
 myNodeBTC is using LND implementation.
 
-***A - Connect myNodeBTC with LND interface, using Tor network:***
+**A - Connect myNodeBTC with LND interface, using Tor network:**
 
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
 2. Click on **Node interface** and select **LND**.
@@ -154,7 +154,7 @@ myNodeBTC is using LND implementation.
 7. Click on **SAVE NODE CONFIG**.
 8. Zeus is now connected to your myNodeBTC.
 
-***B - Connect myNodeBTC with LND interface, using Tailscale/ZeroTier network:***
+**B - Connect myNodeBTC with LND interface, using Tailscale/ZeroTier network:**
 
 1. Go to [Tailscale.com](https://tailscale.com) or [ZeroTier.com](https://zerotier.com) and create an account. No need to use real identity.
 2. Install Tailscale on your myNodeBTC machine. [Here is a guide how to install ZeroTier on myNodeBTC](https://docs.nodl.it/guides/zerotier.html) (is the same for Tailscale). Then login with that Tailscale/ZeroTier account you just created. In your Tailscale account you would see all your devices connected and each one will have a dedicated private IP.
@@ -172,7 +172,7 @@ myNodeBTC is using LND implementation.
 <details>
   <summary>Connect to Embassy</summary>
 
-### Connect Embassy (Start9) with Zeus
+**Connect Embassy (Start9) with Zeus**
 
 Embassy is using LND implementation.
 
@@ -190,7 +190,7 @@ Embassy is using LND implementation.
 <details>
   <summary>Connect to NODL</summary>
 
-### Connect NODL with Zeus
+**Connect NODL with Zeus**
 
 NODL is using LND implementation.
 
@@ -208,7 +208,7 @@ NODL is using LND implementation.
 <details>
   <summary>Connect to BTCPay Server</summary>
 
-### Connect BTCPay with Zeus
+**Connect BTCPay with Zeus**
 
 BTCPay Server is a payment processor system and could connect to Zeus in two modes: as node management (CLN or LND) or as LNDhub with the plugin LNBank activated on BTCPay.
 
@@ -257,9 +257,9 @@ The parts map like this:
 </details>
 
 <details>
-  <summary>Connect to BTCPay Server</summary>
+  <summary>Connect to LNBits account</summary>
 
-### Connect LNbits with Zeus
+**Connect LNbits account with Zeus**
 
 LNbits is using LNDhub interface and is an accounting system on top of your LN node. That means, it will use lndhub accounts instead of wallets to manage users balances and payments. But will use your node liquidity, in their limits.
 
@@ -279,9 +279,9 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 </details>
 
 <details>
-  <summary>Connect to BTCPay Server</summary>
+  <summary>Connect to LNTXBOT account</summary>
 
-### Connect LNtxBot with Zeus
+**Connect LNtxBot account with Zeus**
 
 LNtxBot is using LNDhub interface for accounts and is a custodial service bot for Telegram. [See more details here](https://darthcoin.substack.com/p/lntxbot-users-guide).
 
