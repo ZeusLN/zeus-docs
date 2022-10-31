@@ -13,16 +13,17 @@ Home screen sections are the following:
 
 ![Zeus Home Screen examples](../../../static/img/zeus-home-examples.jpg)
 
-![Zeus wallet slide](../../../static/img/zeus-send-receive.jpg)
-
 ### Operations
 **To make a payment**
 
 You have two options:
 - click on the camera button on top right corner, scan the QR code for the LN invoice or bitcoin address and continue to the nest screen with preview details about the payment you are about to make and then click on **Send** button.
-- slide right the wallet you want to use (LN or onchain) and click on **Send** button. You will be prompted to paste a LN invoice, bitcoin address, Lightning Address, LNURL, node public key for a keysend.
 
 ![Zeus send payment](../../../static/img/zeus-send.jpg)
+
+- slide right the wallet you want to use (LN or onchain) and click on **Send** button. You will be prompted to paste a LN invoice, bitcoin address, Lightning Address, LNURL, node public key for a keysend.
+
+![Zeus wallet slide](../../../static/img/zeus-send-receive.jpg)
 
 **To receive a payment**
 
