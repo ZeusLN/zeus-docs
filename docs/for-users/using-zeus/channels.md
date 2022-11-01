@@ -17,11 +17,13 @@ In this section, you could manage your Lightning node channels. As you can see i
 - If you click on a channel, you will open a new menu to manage that specific channel. You can set specific routing fees and initiate the closure of the channel.
 - You can also check the fees your node is charging for forwarding payments through your channels (routing).
 
-![zeus-channel-details](../../../static/img/zeus-channel-details.jpg)
+![zeus-routing-fees](../../../static/img/zeus-routing-fees.jpg)
 
-As you can see in this example, you have displayed a lot of information about the channel status, organized in three parts:
+As you can see in this examples, you have displayed a lot of information about the channel status, organized in three parts:
 
-**Channel General Information**
+### Channel General Information
+
+![zeus-channel-details-1](../../../static/img/zeus-channel-details-1.jpg)
 
 - The peer node alias and its nodeID
 - Channel balance (local and remote)
@@ -31,14 +33,18 @@ As you can see in this example, you have displayed a lot of information about th
 - Capacity of the channel in sats
 - Commit fees, that can vary in time. Read more here: [commit fee Q1](https://old.reddit.com/r/lightningnetwork/comments/cjtbjt/question_regarding_commit_fee/) | [commit fee Q2](https://bitcoin.stackexchange.com/questions/89232/why-is-my-spendable-msat-much-lower-than-msatoshi-to-us/89235#89235) | [Lightning fees](https://lightningwiki.net/index.php/Fees)
 
-**Counterparty Channel Settings**
+### Counterparty Channel Settings**
+
+![zeus-channel-details-2](../../../static/img/zeus-channel-details-2.jpg)
 
 - Peer Fees applied to the channel: base fee is fixed per transaction, Fee rate is ppm, applied to the amount of the transaction.
 - Min / Max HTLC: minimum can be set in milisats and maximum can be no more than total channel size, minus channel reserve (1%). [Read more about what is HTLC here](https://docs.lightning.engineering/the-lightning-network/multihop-payments/hash-time-lock-contract-htlc).
 - TimeLock Delta: depending on which LN implementation is used, will have a different default value (but can be changed). Default values: LND 40 blocks, CLN 34 blocks, Eclair 144 blocks. Read more about CLTV Delta here: [What is CLTV TimeLock?](https://docs.lightning.engineering/the-lightning-network/multihop-payments/timelocks) | [What is a decent value for CLTV?](https://bitcoin.stackexchange.com/questions/89658/what-is-a-decent-value-for-time-lock-delta-on-a-lightning-network-node)
 - Last Update: displays when was last update of the channel from your peers side (changing fees, status etc).
 
-**Intitating Party (Your node)**
+### Intitating Party (Your node)
+
+![zeus-channel-details-3](../../../static/img/zeus-channel-details-3.jpg)
 
 - Your Fees applied to the channel
 - Min / Max HTLC
