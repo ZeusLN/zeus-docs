@@ -19,7 +19,7 @@ In this section, you could manage your Lightning node channels. As you can see i
 
 ![zeus-routing-fees](../../../static/img/zeus-routing-fees.jpg)
 
-As you can see in this examples, you have displayed a lot of information about the channel status, organized in three parts:
+As you can see in the following examples, you have displayed a lot of information about the channel status, organized in three parts:
 
 ### Channel General Information
 
@@ -33,7 +33,7 @@ As you can see in this examples, you have displayed a lot of information about t
 - Capacity of the channel in sats
 - Commit fees, that can vary in time. Read more here: [commit fee Q1](https://old.reddit.com/r/lightningnetwork/comments/cjtbjt/question_regarding_commit_fee/) | [commit fee Q2](https://bitcoin.stackexchange.com/questions/89232/why-is-my-spendable-msat-much-lower-than-msatoshi-to-us/89235#89235) | [Lightning fees](https://lightningwiki.net/index.php/Fees)
 
-### Counterparty Channel Settings**
+### Counterparty Channel Settings
 
 ![zeus-channel-details-2](../../../static/img/zeus-channel-details-2.jpg)
 
