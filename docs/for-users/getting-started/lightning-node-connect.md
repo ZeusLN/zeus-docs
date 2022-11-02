@@ -12,7 +12,7 @@ Zeus is a mobile app that can manage multiple nodes connections. You can connect
 Here we present you, in simple steps, how can connect your specific type of node with Zeus.
 
 <details>
-  <summary>Connect to Umbrel</summary>
+  <summary id="connect-umbrel">Connect to Umbrel</summary>
 
 **Connect Umbrel with Zeus**
 
@@ -55,7 +55,7 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 </details>
 
 <details>
-  <summary>Connect to Raspiblitz</summary>
+  <summary id="connect-raspiblitz">Connect to Raspiblitz</summary>
 
 **Connect Raspiblitz with Zeus**
 
