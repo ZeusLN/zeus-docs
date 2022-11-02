@@ -16,7 +16,7 @@ Here we present you, in simple steps, how can connect your specific type of node
 
 **Connect Umbrel with Zeus**
 
-Umbrel supports CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor.
+Umbrel supports CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor. Umbrel node also include BTCPay and LNbits, so you could use those connections too. See bellow the specific section with instructions for those.
 
 **A - Connect Umbrel with LND/CLN interface, using Tor or clearnet (domain/IP) network:**
 
@@ -59,7 +59,7 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 
 **Connect Raspiblitz with Zeus**
 
-Raspiblitz supports CLN and LND implementations.
+Raspiblitz supports CLN and LND implementations. Raspiblitz node also include BTCPay and LNbits, so you could use those connections too. See bellow the specific section with instructions for those.
 
 **A - Connect Raspiblitz with LND/CLN interface, using Tor or clearnet (domain/IP) network:**
 
@@ -99,7 +99,7 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 
 **Connect Citadel with Zeus**
 
-Citadel is using LND implementation.
+Citadel is using LND implementation. Citadel node also include BTCPay and LNbits, so you could use those connections too. See bellow the specific section with instructions for those.
 
 **A - Connect Citadel with LND interface, using Tor network:**
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
@@ -141,7 +141,7 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 
 **Connect MyNodeBTC with Zeus**
 
-myNodeBTC is using LND implementation.
+myNodeBTC is using LND implementation. MyNodeBTC node also include BTCPay and LNbits, so you could use those connections too. See bellow the specific section with instructions for those.
 
 **A - Connect myNodeBTC with LND interface, using Tor network:**
 
@@ -174,12 +174,12 @@ myNodeBTC is using LND implementation.
 
 **Connect Embassy (Start9) with Zeus**
 
-Embassy is using LND implementation.
+Embassy supports LND and CLN implementation. Embassy node also include BTCPay and LNbits, so you could use those connections too. See bellow the section with specific instructions for those.
 
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
-2. Click on **Node interface** and select **LND**.
+2. Click on **Node interface** and select **LND** or **C-Lightning REST**.
 3. Scroll down and press **SCAN LND node QR**.
-4. Open your Embassy dashboard and go to **Services -> LND tile -> Properties - lndconnect REST URL**.
+4. Open your Embassy dashboard and go to **Services -> LND tile -> Properties - lndconnect REST URL or C-lightning REST**.
 5. Scan the QR Code.
 6. Enable **Use Tor**.
 7. Click on **SAVE NODE CONFIG**.
@@ -216,7 +216,7 @@ BTCPay Server is a payment processor system and could connect to Zeus in two mod
 
 1. In your your BTCPay instance, go to services and select Zeus. It will show you a QR code to scan.
 2. Open Zeus app and go to **Settings -> Connect a node -> +**.
-3. Click on **Node interface** and select **LND** or **CLN**.
+3. Click on **Node interface** and select **LND** or **C-lightning REST**.
 4. Scroll down and press **SCAN BTCPAY config QR**. Scan the lnd/cln QR code from your BTCPay Server config.
 5. Disable **Certificate Verification**.
 6. Enable **Use Tor** if your BTCPay is running behind Tor.
