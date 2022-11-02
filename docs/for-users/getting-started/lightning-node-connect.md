@@ -12,9 +12,9 @@ Zeus is a mobile app that can manage multiple nodes connections. You can connect
 Here we present you, in simple steps, how can connect your specific type of node with Zeus.
 
 <details>
-  <summary id="connect-umbrel">Connect to Umbrel</summary>
+  <summary>Connect to Umbrel</summary>
 
-**Connect Umbrel with Zeus**
+### Connect Umbrel with Zeus
 
 Umbrel supports CLN and LND implementations. Also after Umbrel v 0.5.2 you can run it on clearnet too, not only Tor. Umbrel node also include BTCPay and LNbits, so you could use those connections too. See bellow the specific section with instructions for those.
 
@@ -55,9 +55,9 @@ Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com]
 </details>
 
 <details>
-  <summary id="connect-raspiblitz">Connect to Raspiblitz</summary>
+  <summary>Connect to Raspiblitz</summary>
 
-**Connect Raspiblitz with Zeus**
+### Connect Raspiblitz with Zeus
 
 Raspiblitz supports CLN and LND implementations. Raspiblitz node also include BTCPay and LNbits, so you could use those connections too. See bellow the specific section with instructions for those.
 
