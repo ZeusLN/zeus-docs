@@ -7,7 +7,7 @@ slug: /
 
 ![Banner image](../static/img/banner.png)
 
-Zeus is a mobile bitcoin wallet that makes bitcoin payments simple, gives users complete control of their finances, and allows more advanced users to manage their Lightning nodes from the palm of their hand.
+Zeus is a mobile node management app with full functionalities of a bitcoin lightning wallet that makes bitcoin payments simple, gives users complete control of their finances, and allows more advanced users to manage their Lightning nodes from the palm of their hand.
 
 Zeus is available to download on [Google Play](https://play.google.com/store/apps/details?id=app.zeusln.zeus), [Apple App Store](https://apps.apple.com/us/app/zeus-ln/id1456038895), and [F-Droid](https://f-droid.org/packages/app.zeusln.zeus/).
 
@@ -66,9 +66,11 @@ If you are having trouble using Zeus, would like to contribute to the project, o
 
 ## Who is Zeus for?
 
+In order to be able to use Zeus, is required to have a running Lightning node. Nevertheless it can be used without your own node, if you configure it to use lndhub accounts from other nodes (LNbits, lntxbot, various lndhub servers).
+
 Currently Zeus is for people running [Lightning Network Daemon (LND)](https://lightning.engineering/), [Eclair](https://acinq.co/) or [Core lightning](https://blockstream.com/lightning/) (REST or Spark API) lightning nodes.
 
-Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) can also connect to, use, and manage their nodes from Zeus. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use Zeus.
+Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [LNtxBot](https://lntxbot.com) can also connect to, use, and manage their nodes from Zeus. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use Zeus.
 
 Coming in 2022 Zeus will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a built-in mobile Lightning node with an integrated [lightning service provider (LSP)](https://medium.com/breez-technology/introducing-lightning-service-providers-fe9fb1665d5f).
 
