@@ -70,7 +70,7 @@ Currently Zeus is for people running [Lightning Network Daemon (LND)](https://li
 
 Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) can also connect to, use, and manage their nodes from Zeus. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use Zeus.
 
-Coming in 2022 Zeus will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a built-in mobile Lightning node with an integrated [lightning service provider (LSP)](https://medium.com/breez-technology/introducing-lightning-service-providers-fe9fb1665d5f).
+Coming in 2023, Zeus will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a built-in mobile Lightning node with an integrated [lightning service provider (LSP)](https://medium.com/breez-technology/introducing-lightning-service-providers-fe9fb1665d5f).
 
 ## Supporters
 
