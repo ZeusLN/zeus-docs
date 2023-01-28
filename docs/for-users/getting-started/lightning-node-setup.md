@@ -31,7 +31,7 @@ Here is a list of resources that will explain in detail what is, how it works, w
 1. LND - Lightning Network Daemon: [GitHub](https://github.com/lightningnetwork/lnd/) | [Documentation](https://docs.lightning.engineering/)
 2. CLN - Core Lightning: [GitHub](https://github.com/ElementsProject/lightning) | [Documentation](https://lightning.readthedocs.io/index.html)
 3. Eclair: [GitHub](https://github.com/ACINQ/eclair)
-4. LNDHUB: [Github](https://github.com/BlueWallet/LndHub) | [Documentation](https://bluewallet.io/lndhub/)
+4. LNDHub: [GitHub](https://github.com/BlueWallet/LndHub) | [Documentation](https://bluewallet.io/lndhub/)
 
 </TabItem>
 <TabItem value="LN explained">
