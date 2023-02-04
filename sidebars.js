@@ -13,14 +13,15 @@ const sidebars = {
       collapsed: true,
       items: [
         'for-users/getting-started/lightning-node-setup',
-        {
-        type: 'category',
-        label: 'How to connect Zeus',
-        link: {
-        type: 'generated-index',
-        },
-        collapsed: true,
-        items: [
+      ],
+    {
+      type: 'category',
+      label: 'How to connect Zeus',
+      link: {
+      type: 'generated-index',
+      },
+      collapsed: true,
+      items: [
         'for-users/connecting-zeus/connect-umbrel',
         'for-users/connecting-zeus/connect-citadel',
         'for-users/connecting-zeus/connect-raspiblitz',
@@ -29,9 +30,9 @@ const sidebars = {
         'for-users/connecting-zeus/connect-nodl',
         'for-users/connecting-zeus/connect-btcpay',
         'for-users/connecting-zeus/connect-lndhub',
-        ],
-      },
-  },
+      ],
+    },
+      
     {
       type: 'category',
       label: 'Using Zeus',
