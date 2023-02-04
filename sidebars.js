@@ -13,16 +13,6 @@ const sidebars = {
       collapsed: true,
       items: [
         'for-users/getting-started/lightning-node-setup',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'How to connect Zeus',
-      link: {
-      type: 'generated-index',
-      },
-      collapsed: true,
-      items: [
         'for-users/connecting-zeus/connect-umbrel',
         'for-users/connecting-zeus/connect-citadel',
         'for-users/connecting-zeus/connect-raspiblitz',
