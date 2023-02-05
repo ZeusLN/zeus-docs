@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # Connecting lndhub accounts with Zeus
 A lndhub account is not a real LN wallet, but can be used as a LN wallet with all funcionalities of a LN wallet. Practically is an accounting system on top of a LN node, that means is a credit based account.
-LNDHub: [GitHub](https://github.com/BlueWallet/LndHub) | [Documentation]()
+LNDHub: [GitHub](https://github.com/BlueWallet/LndHub) | [Documentation](https://bluewallet.io/lndhub/)
 
 ### Connect lndhub.io account**
 
