@@ -18,6 +18,24 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Connecting Zeus',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: true,
+      items: [
+        'for-users/connecting-zeus/connect-umbrel',
+        'for-users/connecting-zeus/connect-citadel',
+        'for-users/connecting-zeus/connect-raspiblitz',
+        'for-users/connecting-zeus/connect-mynode',
+        'for-users/connecting-zeus/connect-embassy',
+        'for-users/connecting-zeus/connect-nodl',
+        'for-users/connecting-zeus/connect-btcpay',
+        'for-users/connecting-zeus/connect-lndhub',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Using Zeus',
       link: {
         type: 'generated-index',
