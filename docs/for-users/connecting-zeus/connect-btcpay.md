@@ -1,5 +1,5 @@
 ---
-title: Connecting BTCPay Server with Zeus
+title: Connect with BTCPayServer
 ---
 
 import Tabs from '@theme/Tabs';

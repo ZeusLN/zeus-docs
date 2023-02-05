@@ -1,5 +1,5 @@
 ---
-title: Connecting RaspiBlitz with Zeus
+title: Connect with RaspiBlitz
 ---
 
 import Tabs from '@theme/Tabs';
@@ -38,7 +38,7 @@ What is Tailscale?
 
 Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.
 
-Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Umbrel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard Noise protocol encryption, a peer-reviewed and trusted standard.
+Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your RaspiBlitz node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your RaspiBlitz machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard Noise protocol encryption, a peer-reviewed and trusted standard.
 
 The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.
 

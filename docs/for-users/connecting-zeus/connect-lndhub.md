@@ -1,5 +1,5 @@
 ---
-title: Connecting lndhub accounts with Zeus
+title: Connect with lndhub
 ---
 
 import Tabs from '@theme/Tabs';

@@ -1,5 +1,5 @@
 ---
-title: Connecting Umbrel with Zeus
+title: Connect with Umbrel
 ---
 
 import Tabs from '@theme/Tabs';

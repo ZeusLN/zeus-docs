@@ -1,5 +1,5 @@
 ---
-title: Connecting NODL with Zeus
+title: Connect with NODL
 ---
 
 import Tabs from '@theme/Tabs';
@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # Connecting NODL with Zeus
 
-Umbrel supports LND implementations and by default is using only Tor network.
+NODL supports LND implementations and by default is using only Tor network.
 Another new type of connection is through LNC (Lightning Node Connect), a kind of private encrypted connection, using the Lightning Terminal. [See more details about LNC here](https://docs.lightning.engineering/lightning-network-tools/lightning-terminal/lightning-node-connect).
 
 ### Using Tor network
@@ -38,7 +38,7 @@ What is Tailscale?
 
 Tailscale is zero config VPN that creates a secure private network between your home Tor node and your other devices.
 
-Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your Umbrel node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your Umbrel machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard Noise protocol encryption, a peer-reviewed and trusted standard.
+Even when separated by firewalls or subnets, Tailscale just works. Tailscale will assign to your NODL node machine a stable private IP and an auto-assigned domain that stays consistent, no matter what network your NODL machine is connected to. It’s like a local network that works everywhere. Tailscale builds on top of WireGuard Noise protocol encryption, a peer-reviewed and trusted standard.
 
 The connection through Tailscale will be much faster and stable than Tor, encrypted and safe.
 
