@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 A lndhub account is not a real LN wallet, but can be used as a LN wallet with all funcionalities of a LN wallet. Practically is an accounting system on top of a LN node, that means is a credit based account.
 LNDHub: [GitHub](https://github.com/BlueWallet/LndHub) | [Documentation](https://bluewallet.io/lndhub/)
 
-### Connect lndhub.io account**
+### Connect lndhub.io account
 
 [Bluewallet LNDhub](https://bluewallet.io/lndhub/) is using LNDhub interface for accounts and is a custodial service on any LND node that run the Bluewallet LNDhub server. You can also use the default lndhub server from Bluewallet, from https://lndhub.io.
 
@@ -42,7 +42,7 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 9. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
 10. You can now use your LNbits account as a LN wallet with Zeus.
 
-### Connect LNTipBot account**
+### Connect LNTipBot account
 
 [LNtipBot](https://t.me/LightningTipBot) is using LNDhub interface for accounts and is a custodial service bot for Telegram.
 
