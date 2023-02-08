@@ -10,6 +10,8 @@ import TabItem from '@theme/TabItem';
 RaspiBlitz supports CLN and LND implementations. You can also activate clearnet access from its interface, after you will have to do some precise steps.
 Another new type of connection is through LNC (Lightning Node Connect), a kind of private encrypted connection, using the Lightning Terminal. [See more details about LNC here](https://docs.lightning.engineering/lightning-network-tools/lightning-terminal/lightning-node-connect).
 
+Being quite similar in construction (RaspiBlitz and RaspiBolt), [here are the instructions to connect a RaspiBolt](https://raspibolt.org/guide/lightning/mobile-app.html) platfom node to your Zeus.
+
 ### Using Tor or clearnet (domain/IP) network
 
 1. Open Zeus and go to **Settings -> Connect a node -> +**.
