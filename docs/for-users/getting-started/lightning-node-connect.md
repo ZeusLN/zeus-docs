@@ -11,4 +11,4 @@ Zeus is a mobile app that can manage multiple nodes connections. You can connect
 
 Right now Zeus is supporting connections for LND, CLN, Eclair and lndhub accounts, through different types of platforms, networks, tunnels etc.
 
-[Please choose your specific node platform](/docs/for-users/connecting-zeus/) to see more details about how to configure your Zeus connection.
+[Please choose your specific node platform](/category/connecting-zeus/) to see more details about how to configure your Zeus connection.
