@@ -66,7 +66,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'pos/setup',
+            docId: 'category/using-the-zeus-point-of-sale',
             position: 'left',
             label: 'Point of Sale',
           },
