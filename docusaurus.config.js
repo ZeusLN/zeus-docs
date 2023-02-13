@@ -66,6 +66,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'pos/setup',
+            position: 'left',
+            label: 'Point of Sale',
+          },
+          {
+            type: 'doc',
             docId: 'contribute/how-you-can-contribute',
             position: 'left',
             label: 'Contribute',
