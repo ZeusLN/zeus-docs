@@ -126,7 +126,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ZeusLN, Inc. Content Released under AGPL v3 license. `,
+        copyright: `Copyright © ${new Date().getFullYear()} ZeusLN LLC. Content Released under AGPL v3 license. `,
       },
       prism: {
         theme: lightCodeTheme,
