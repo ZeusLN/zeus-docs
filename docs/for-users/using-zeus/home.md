@@ -28,7 +28,7 @@ You have two options:
 
 ### Receive a payment
 
-You slide right any of the wallets (LN or onchain) and you will be prompted with a screen, where you can choose from top tabs **Lightning** or **Onchain**. Optional you could put a description / memo to the payment and will be displayed also to the payer. Put the amount in sats and will display also the amount in fiat currency bellow. Click on **Create invoice** and will display a QR code and invoice string to be shared with your payer.
+You slide right any of the wallets (LN or onchain) and you will be prompted with a screen, where you can choose from top tabs **Lightning** or **Onchain**. Optional you could put a description / memo to the payment and will be displayed also to the payer. Put the amount in sats and will display also the amount in fiat currency below. Click on **Create invoice** and will display a QR code and invoice string to be shared with your payer.
 
 ![Zeus receive payment](../../../static/img/zeus-receive.jpg)
 

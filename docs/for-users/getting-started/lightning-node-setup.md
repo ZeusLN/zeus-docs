@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem'
 
 To start using Zeus you will need to be running your own Bitcoin lightning node. And for those that just started with Bitcoin, will be better to read these resources about Bitcoin Lightning Network, before start their own Lightning node. It is very important to understand these new concepts, technical terms that you will encounter by using Zeus LN app.
 
-Zeus LN app is supporting the following Lightning implementations: LND, CLN, Eclair and also lndhub accounts. Bellow you will find more documentation about these LN implementations and much more information needed to manage your Lightning Node.
+Zeus LN app is supporting the following Lightning implementations: LND, CLN, Eclair and also lndhub accounts. Below you will find more documentation about these LN implementations and much more information needed to manage your Lightning Node.
 
 ### What is a Bitcoin Lightning Network (LN) node?
 A Bitcoin Node is a computer that connects to Bitcoin network and uses peer-to-peer protocol that allows nodes communicating with each other within the network as well as spreading information on transactions and blocks. Information is distributed among such nodes and they are what blockchain network consists of. [See more details here](https://en.bitcoinwiki.org/wiki/Node).
