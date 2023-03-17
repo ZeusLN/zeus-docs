@@ -7,23 +7,14 @@ import TabItem from '@theme/TabItem';
 
 # Connecting lndhub accounts with Zeus
 A lndhub account is not a real LN wallet, but can be used as a LN wallet with all funcionalities of a LN wallet. Practically is an accounting system on top of a LN node, that means is a credit based account.
+
+**Remember: the operator of the server can take your funds at any time and can surveil your activity. Not your keys, not your coins.**
+
 LNDHub: [GitHub](https://github.com/BlueWallet/LndHub) | [Documentation](https://bluewallet.io/lndhub/)
 
-### Connect lndhub.io account
+### Connect an Alby account
 
-[Bluewallet LNDhub](https://bluewallet.io/lndhub/) is using LNDhub interface for accounts and is a custodial service on any LND node that run the Bluewallet LNDhub server. You can also use the default lndhub server from Bluewallet, from https://lndhub.io.
-
-Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
-
-1. Open Zeus app and go to **Settings -> Connect a node -> +**.
-2. Click on **Node interface** and select **LNDHUB**.
-3. In the host box, type: **https://lndhub.io**
-4. Leave **Existing account** disabled.
-5. Enable **Use Tor** if you would like (but not recommended)
-6. Click on **Create LNDHUB account**. It will popup an alert about certificate validation, just click "I understand".
-7. Click on **SAVE NODE CONFIG**.
-8. You can now use your new LNDHUB account with Zeus, as any other LN wallet.
-9. Save that URI address created, in a safe place, out of your Zeus app. That is the only way you could recover your LNDHUB account.
+Vist the [Alby guides website](https://guides.getalby.com/overall-guide/alby-lightning-wallet/connect-your-alby-lightning-wallet-to-other-apps/connect-to-mobile-apps/connect-to-zeus) for a full tutorial on how to connect your Alby account to Zeus.
 
 ### Connect a LNbits account
 
