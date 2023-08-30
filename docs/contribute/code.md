@@ -5,5 +5,6 @@
 # Code
 
 - [Zeus GitHub](https://github.com/ZeusLN/zeus/)
-- [Building Zeus from scratch](https://github.com/ZeusLN/zeus/#building-zeus-from-source)
+- [Starting development](https://github.com/ZeusLN/zeus#starting-development)
 - [Contributing](https://github.com/ZeusLN/zeus/#contributing)
+- [Reproducible builds](https://github.com/ZeusLN/zeus#reproducible-builds)
