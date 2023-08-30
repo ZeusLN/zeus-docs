@@ -66,11 +66,11 @@ If you are having trouble using Zeus, would like to contribute to the project, o
 
 ## Who is Zeus for?
 
-In order to be able to use Zeus, is required to have a running Lightning node. Nevertheless it can be used without your own node, if you configure it to use lndhub accounts from other nodes (LNbits, lntxbot, various lndhub servers).
+In order to be able to use Zeus, is required to have a running Lightning node. Nevertheless it can be used without your own node, if you configure it to use lndhub accounts from other nodes (LNbits, Alby, various lndhub servers).
 
 Currently Zeus is for people running [Lightning Network Daemon (LND)](https://lightning.engineering/), [Eclair](https://acinq.co/) or [Core Lightning](https://blockstream.com/lightning/) lightning nodes.
 
-Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [LNtxBot](https://lntxbot.com) can also connect to, use, and manage their nodes from Zeus. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use Zeus.
+Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [Alby](https://getalby.com) can also connect to, use, and manage their nodes from Zeus. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use Zeus.
 
 Starting in v0.8, Zeus will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a built-in mobile Lightning node with an integrated [lightning service provider (LSP)](https://medium.com/breez-technology/introducing-lightning-service-providers-fe9fb1665d5f).
 

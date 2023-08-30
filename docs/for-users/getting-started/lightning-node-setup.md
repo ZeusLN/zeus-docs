@@ -59,7 +59,6 @@ Here is a list of resources that will explain in detail what is, how it works, w
 - [NODL Documentation](https://docs.nodl.it/) - by NODL Team
 - [BTCPay Server Documentation](https://docs.btcpayserver.org/) - by BTCPay Team
 - [LNbits Documentation](https://github.com/cryptoteun/awesome-lnbits) - by LNbits Team
-- [LNtxBot User Manual](https://darthcoin.substack.com/p/lntxbot-users-guide) - by DarthCoin
 
 </TabItem>
 <TabItem value="LN Videos">
