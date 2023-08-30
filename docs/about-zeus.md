@@ -40,7 +40,7 @@ If you are having trouble using Zeus, would like to contribute to the project, o
 - Replace-by-fee (RBF) and Child-pays-for-parent (CPFP) support
 - SegWit support
 - Fiat currency integrations
-- [Multiple languages](https://www.transifex.com/ZeusLN/zeus/)
+- [Multiple languages](https://explore.transifex.com/ZeusLN/zeus/)
 - Multi-theme
 
 ## Work-in-progress features

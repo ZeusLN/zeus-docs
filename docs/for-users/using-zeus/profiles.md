@@ -20,6 +20,6 @@ In this section, you could configure and personalize your Zeus, connect to vario
 ![security-screen](../../../static/img/zeus-security.jpg)
 
 5. **Currency menu** - to set a local fiat currency conversion
-6. **Language menu** - set your Zeus language displayed (30+ languages available). If you want to contribute with another language translation, you can join to [Zeus Transifex here](https://explore.transifex.com/ZeusLN/zeus/).
-7. **Theme** - choose a colored theme for Zeus (dark, light, junkie, BPM, orange)
+6. **Language menu** - set your Zeus language displayed (27+ languages available). If you want to contribute with another language translation, you can join our [Transifex page](https://explore.transifex.com/ZeusLN/zeus/).
+7. **Theme** - choose a theme for Zeus
 8. **About** - links to more Zeus contact and information
