@@ -53,7 +53,7 @@ const sidebars = {
   ],
   contribute: [
     'contribute/how-you-can-contribute', 'contribute/code', 'contribute/design', 'contribute/write', 'contribute/translate',
-    'contribute/community-call', 'contribute/donate', 'contribute/other',
+    'contribute/donate', 'contribute/other',
 
   ],
 
