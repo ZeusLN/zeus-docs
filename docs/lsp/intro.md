@@ -4,7 +4,7 @@
 
 # What's an LSP?
 
-A LSP, or lightning service provider, helps connect users to the Lightning network by opening up payment channels to their nodes. Read more about them [here](https://medium.com/breez-technology/envisioning-lsps-in-the-lightning-economy-832b45871992).
+An LSP, or lightning service provider, helps connect users to the Lightning network by opening up payment channels to their nodes. Read more about them [here](https://medium.com/breez-technology/envisioning-lsps-in-the-lightning-economy-832b45871992).
 
 Zeus has a new LSP integrated into it called [OLYMPUS by ZEUS](https://amboss.space/node/031b301307574bbe9b9ac7b79cbe1700e31e544513eae0b5d7497483083f99e581), that is available to all users who use the new embedded node that is available in v0.8.
 
