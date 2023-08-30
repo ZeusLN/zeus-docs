@@ -66,10 +66,17 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'lsp/intro',
+            position: 'left',
+            label: 'Lightning Service Provider',
+          },
+          {
+            type: 'doc',
             docId: 'pos/setup',
             position: 'left',
             label: 'Point of Sale',
           },
+          
           {
             type: 'doc',
             docId: 'contribute/how-you-can-contribute',

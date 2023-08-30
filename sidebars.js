@@ -47,6 +47,11 @@ const sidebars = {
       ],
     }
   ],
+  lsp: [
+    'lsp/intro',
+    'lsp/wrapped-invoices',
+    'lsp/api',
+  ],
   pos: [
     'pos/setup',
     'pos/checkout',
