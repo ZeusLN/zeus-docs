@@ -54,7 +54,7 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'Zeus Site Logo',
+          alt: 'Zeus Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -66,7 +66,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: '/category/using-the-zeus-point-of-sale',
+            docId: 'pos/setup',
             position: 'left',
             label: 'Point of Sale',
           },
@@ -113,6 +113,10 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'Nostr',
+                href: 'https://iris.to/zeus@zeusln.app',
+              },
+              {
                 label: 'Telegram',
                 href: 'https://t.me/zeusLN',
               },
@@ -126,13 +130,17 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Official website',
+                href: 'https://zeusln.app',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/ZeusLN/zeus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ZeusLN LLC. Content Released under AGPL v3 license. `,
+        copyright: `Copyright © ${new Date().getFullYear()} Atlas 21 Inc. Content released under AGPL v3 license. `,
       },
       prism: {
         theme: lightCodeTheme,

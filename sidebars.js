@@ -45,19 +45,11 @@ const sidebars = {
         'for-users/using-zeus/overview','for-users/using-zeus/home', 'for-users/using-zeus/accounts', 'for-users/using-zeus/profiles',
         'for-users/using-zeus/channels',
       ],
-    },
-    {
-      type: 'category',
-      label: 'Using the Zeus point of sale',
-      link: {
-        type: 'generated-index',
-      },
-      collapsed: true,
-      items: [
-        'pos/setup',
-        'pos/checkout',
-      ],
     }
+  ],
+  pos: [
+    'pos/setup',
+    'pos/checkout',
   ],
   contribute: [
     'contribute/how-you-can-contribute', 'contribute/code', 'contribute/design', 'contribute/write', 'contribute/translate',
