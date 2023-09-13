@@ -53,6 +53,7 @@ const sidebars = {
     'lsp/api',
   ],
   pos: [
+    'pos/overview',
     'pos/setup',
     'pos/checkout',
   ],
