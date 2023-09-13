@@ -45,6 +45,17 @@ const sidebars = {
         'for-users/using-zeus/overview','for-users/using-zeus/home', 'for-users/using-zeus/accounts', 'for-users/using-zeus/profiles',
         'for-users/using-zeus/channels',
       ],
+    },
+    {
+      type: 'category',
+      label: 'Embedded Node',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: true,
+      items: [
+        'for-users/embedded-node/open-channel-to-embedded-node','for-users/embedded-node/trusted-funding'
+      ],
     }
   ],
   lsp: [
