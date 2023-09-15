@@ -23,7 +23,15 @@ From the Connect Peer mode, enter in the remote node's pubkey and host, and then
 ![zeus-screen1](../../../static/img/zeus-screen1.png)
 
 
-### 2. From the remote node, open up a trusted funding channel using Balance of Satoshis (BOS)
+### 2. Add your remote node as a zero conf peer
+
+Navigate to `Settings` > `Embedded Node` > `Peers` > `Zero conf Peers`, and add your remote node's public key to the Zero conf peers list.
+
+![zeus-screen2](../../../static/img/zeus-screen-zeroconf.png)
+
+
+
+### 3. From the remote node, open up a trusted funding channel using Balance of Satoshis (BOS)
 
 Now that you've established a peer connection from the embedded node to the remote node, you can now open up a channel from the remote node to the embedded node.
 
