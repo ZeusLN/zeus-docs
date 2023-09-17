@@ -72,7 +72,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'pos/setup',
+            docId: 'pos/overview',
             position: 'left',
             label: 'Point of Sale',
           },
