@@ -61,6 +61,7 @@ const sidebars = {
   lsp: [
     'lsp/intro',
     'lsp/wrapped-invoices',
+    'lsp/fees',
     'lsp/api',
   ],
   pos: [
