@@ -40,13 +40,13 @@ You <b>CANNOT</b> currently use the embedded node wallet on multiple devices.
 
 ## Preparing to restore a wallet
 
-Restoring a wallet in ZEUS will trigger a force close of all your existing channels, providing you're using our channel backup service (on by default) or provide ZEUS with a static channel backup string on restore.
+Restoring a wallet in ZEUS will trigger a force close of all your existing channels, providing that you're using our channel backup service (on by default) or if you input a static channel backup string during the restore process.
 
 Force closes are more expensive than mutual closes. Force closes will also take longer for you to reclaim your funds: up to two weeks. If possible, it is recommended to first close out all your existing channels on your old device before restoring your seed phrase on a new device.
 
 ## Restoring a wallet
 
-One you're ready to recover, go to the Settings menu in ZEUS. It is accessible from the top left corner on the main view (typically an icon of Zeus) if you have a wallet configured already, or by pressing 'Advanced set-up' on the splash screen of a new install.
+Once you're ready to recover, go to the Settings menu in ZEUS. It is accessible from the top left corner on the main view (typically an icon of Zeus) if you have a wallet configured already, or by pressing 'Advanced set-up' on the splash screen of a new install.
 
 From there you can add a new node by pressing the top field (it will either say 'No Nodes', or the name of your active connection), and then hitting the plus (+) icon in the top right corner.
 
