@@ -60,7 +60,7 @@ Please leave ZEUS running the first time you restore the seed. It has to go thro
 
 Alternatively, if you want a more manual approach, you may be able to spam the create on-chain address function to get all your addresses indexed in LND's DB and restore your balances. You will likely have to generate both Taproot and SegWit addresses for this approach to work. Since new addreses are generated every time you create an invoice, you may have to generate several hundred addresses of each type.
 
-Using the 'Rescan' functionality under the Embedded Node settings may also prove to be helpful, after your addresess have been generated and indexed.
+Then, after your addresess have been generated and indexed, use the 'Rescan' functionality under the Embedded Node settings.
 
 ## Have bigger issues?
 
