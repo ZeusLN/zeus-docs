@@ -54,9 +54,11 @@ From there, enter your 24 word seed phrase in the field labeled 'Recovery Cipher
 
 Then press 'Restore mainnet wallet' if you're dealing with real funds or 'Restore testnet wallet' if you're using Bitcoin's test network.
 
+Please leave ZEUS running the first time you restore the seed. It has to go through the recovery process to restore your balance. It is not uncommon for this to take 15 min+.
+
 ## Having issues recovering a wallet?
 
-Please leave ZEUS running the first time you restore the seed. It has to go through the recovery process to restore your balance. It is not uncommon for this to take 15 min+.
+You must leave ZEUS running the first time you restore the seed. It has to go through the recovery process to restore your balance. It is not uncommon for this to take 15 min+. It is advised to reinstall ZEUS and reinitialize the wallet with your seed if you closed it or restarted it before seeing your full balance.
 
 Alternatively, if you want a more manual approach, you may be able to spam the create on-chain address function to get all your addresses indexed in LND's DB and restore your balances. You will likely have to generate both Taproot and SegWit addresses for this approach to work. Since new addreses are generated every time you create an invoice, you may have to generate several hundred addresses of each type.
 
