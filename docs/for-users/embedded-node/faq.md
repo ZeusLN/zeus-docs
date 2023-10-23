@@ -34,7 +34,7 @@ Learn more on our [Backups and Recovery](https://docs.zeusln.app/for-users/embed
 
 Here's a less technical explanation from [Bitcoin Magazine](https://bitcoinmagazine.com/technical/why-bitcoin-wallets-need-block-filters).
 
-Here's are more technical resources from [Bitcoin Optech](https://bitcoinops.org/en/topics/compact-block-filters/).
+Here are more technical resources from [Bitcoin Optech](https://bitcoinops.org/en/topics/compact-block-filters/).
 
 ## Does ZEUS PAY work if you use another LSP or if you have your own channels set up?
 
