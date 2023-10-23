@@ -21,3 +21,7 @@ Read our documentation on [Backup and Recovery](https://docs.zeusln.app/for-user
 You can move on-chain funds to lightning by opening up a channel and move lightning funds on-chain by closing a channel.
 
 ZEUS currently doesn't have a swap service, but we're considering launching one in the future.
+
+## I've previously installed ZEUS, and now I can't install the Android package from your website / GitHub. What's going on?
+
+Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
