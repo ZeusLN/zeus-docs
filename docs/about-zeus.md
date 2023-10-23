@@ -45,7 +45,7 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 
 ## Work-in-progress features
 
-- Non-custodial mobile node using Zeus our Lightning service provider (LSP)
+- Self-custodial mobile node using ZEUS our Lightning service provider (LSP)
 - Multiple profile types (Payments, node, merchant)
 - Contact lists
 - Watch-only accounts
@@ -54,8 +54,7 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 - Taproot support
 - External signer accounts
 - Vault (multisig) accounts
-- Generate your own name@zeusln.app Lightning address
-- Zeus usernames - easily send between other Zeus users
+- Self-custodial lightning addresses (@zeuspay.com)
 - Connect a Lightning watchtower
 - Advanced security center
 - Notifications
