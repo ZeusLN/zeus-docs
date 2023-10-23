@@ -22,6 +22,14 @@ You can move on-chain funds to lightning by opening up a channel and move lightn
 
 ZEUS currently doesn't have a swap service, but we're considering launching one in the future.
 
+## How are backups handled?
+
+On-chain funds: you are presented with a 24 word seed phrase that you can back up at any time
+
+LN funds: By default we send encrypted (w/ seed phrase) backups to our server, you can also do manual backups to our server or to your clipboard under `Settings` -> `Embedded node` -> `Disaster recovery`.
+
+Learn more on our [Backups and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery) page.
+
 ## I've previously installed ZEUS, and now I can't install the Android package from your website / GitHub. What's going on?
 
 Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
