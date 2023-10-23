@@ -36,6 +36,12 @@ Here's a less technical explanation from [Bitcoin Magazine](https://bitcoinmagaz
 
 Here's are more technical resources from [Bitcoin Optech](https://bitcoinops.org/en/topics/compact-block-filters/).
 
+## Does ZEUS PAY work if you use another LSP or if you have your own channels set up?
+
+Yes, but for best results, a 0-conf channel from OLYMPUS will work best because then you'll reap the benefits of the zero fee routing.
+
+There's a fixed routing budget and it can be tricky trying to redeem small amounts if OLYMPUS cannot find a cheap enough route to you.
+
 ## I've previously installed ZEUS, and now I can't install the Android package from your website / GitHub. What's going on?
 
 Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
