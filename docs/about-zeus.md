@@ -29,8 +29,8 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 - Send to Lightning addresses
 - Full LNURL support (Pay, withdraw, auth, channel)
 - Connect over Tor
+- Connect to your own Lightning node
 - Connect LNDHub instances
-- Connect your own Lightning node(s) (LND, c-lightning (REST or Spark), Eclair, BTCPay)
 - Lighting channel management
 - Detailed routing reports
 - Manage routing fees
@@ -71,7 +71,7 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 
 In order to use ZEUS, you must be running a Lightning node at home or in the cloud to connect to. Alternatively, it can be used without your own node, if you configure it to use lndhub accounts from other nodes (LNbits, Alby, various lndhub servers).
 
-Currently ZEUS is for people running [Lightning Network Daemon (LND)](https://lightning.engineering/), [Eclair](https://acinq.co/) or [Core Lightning](https://blockstream.com/lightning/) lightning nodes.
+Currently ZEUS is for people running [Lightning Network Daemon (LND)](https://lightning.engineering/) or [Core Lightning](https://blockstream.com/lightning/) lightning nodes.
 
 Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [Alby](https://getalby.com) can also connect to, use, and manage their nodes from ZEUS. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use ZEUS.
 
