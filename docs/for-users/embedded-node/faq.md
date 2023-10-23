@@ -30,6 +30,12 @@ LN funds: By default we send encrypted (w/ seed phrase) backups to our server, y
 
 Learn more on our [Backups and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery) page.
 
+## Where can I read more about Neutrino and the privacy that block filters provide when syncing ZEUS to the blockchain?
+
+Here's a less technical explanation from [Bitcoin Magazine](https://bitcoinmagazine.com/technical/why-bitcoin-wallets-need-block-filters).
+
+Here's are more technical resources from [Bitcoin Optech](https://bitcoinops.org/en/topics/compact-block-filters/).
+
 ## I've previously installed ZEUS, and now I can't install the Android package from your website / GitHub. What's going on?
 
 Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
