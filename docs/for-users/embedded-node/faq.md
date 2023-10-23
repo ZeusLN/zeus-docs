@@ -42,6 +42,10 @@ Yes, but for best results, a 0-conf channel from OLYMPUS will work best because 
 
 There's a fixed routing budget and it can be tricky trying to redeem small amounts if OLYMPUS cannot find a cheap enough route to you.
 
+## How do I open up a channel to the embedded node? The hostname isn't shown.
+
+Please read our document on how to [Open a channel to the embedded LND node](https://docs.zeusln.app/for-users/embedded-node/open-channel-to-embedded-node).
+
 ## I've previously installed ZEUS, and now I can't install the Android package from your website / GitHub. What's going on?
 
 Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
