@@ -15,3 +15,9 @@ If you still can't complete a payment after running Express Graph Sync, you may 
 ## I'm having issues restoring my wallet
 
 Read our documentation on [Backup and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery#restoring-a-wallet). Please be patient and leave ZEUS running for at least 10 minutes after going through the restore process.
+
+## Can I move on-chain funds to lightning or vice versa?
+
+You can move on-chain funds to lightning by opening up a channel and move lightning funds on-chain by closing a channel.
+
+ZEUS currently doesn't have a swap service, but we're considering launching one in the future.
