@@ -46,6 +46,13 @@ There's a fixed routing budget and it can be tricky trying to redeem small amoun
 
 Please read our document on how to [Open a channel to the embedded LND node](https://docs.zeusln.app/for-users/embedded-node/open-channel-to-embedded-node).
 
+## Simple Taproot Channels sound great. Is there any reason to not use them?
+
+Simple Taproot Chans offer up better on-chain privacy and lower fees on channel closing. There are only two reasons you wouldn't want to use them:
+
+1. They are new, and there still may be bugs in LND when using them.
+2. Your counterparty doesn't support them. Even LND nodes have to explicitly opt into them, for now.
+
 ## I've previously installed ZEUS, and now I can't install the Android package from your website / GitHub. What's going on?
 
 Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
