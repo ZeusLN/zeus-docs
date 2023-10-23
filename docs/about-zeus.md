@@ -16,7 +16,7 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 ## Features
 
 - Bitcoin only wallet
-- Non-custodial
+- Self-custodial
 - No processing fees
 - No KYC
 - Fully open source (APGLv3)
@@ -42,22 +42,26 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 - Fiat currency integrations
 - [Multiple languages](https://explore.transifex.com/ZeusLN/zeus/)
 - Multi-theme
+- [Point of Sale](https://docs.zeusln.app/pos/overview)
+- Contact book
+- [Embedded LND Node](https://docs.zeusln.app/category/embedded-node)
+- [Lightning Service Provider: OLYMPUS by ZEUS](https://docs.zeusln.app/lsp/intro)
+- Taproot support
+- Simple Taproot Channels
+- Self-custodial lightning addresses (@zeuspay.com)
 
 ## Work-in-progress features
 
-- Self-custodial mobile node using ZEUS our Lightning service provider (LSP)
-- Multiple profile types (Payments, node, merchant)
-- Contact lists
+- Standalone Point of Sale
+- Contact book Nostr integration
 - Watch-only accounts
 - Hidden profiles
-- Coin control
-- Taproot support
+- Full LND coin control
 - External signer accounts
 - Vault (multisig) accounts
-- Self-custodial lightning addresses (@zeuspay.com)
 - Connect a Lightning watchtower
 - Advanced security center
-- Notifications
+- Advanced notifications
 - Batch transactions
 - Broadcast transactions
 - Partially-signed-bitcoin-transaction (PSBT) Support
@@ -65,14 +69,14 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 
 ## Who is ZEUS for?
 
-In order to be able to use ZEUS, is required to have a running Lightning node. Nevertheless it can be used without your own node, if you configure it to use lndhub accounts from other nodes (LNbits, Alby, various lndhub servers).
+In order to use ZEUS, you must be running a Lightning node at home or in the cloud to connect to. Alternatively, it can be used without your own node, if you configure it to use lndhub accounts from other nodes (LNbits, Alby, various lndhub servers).
 
 Currently ZEUS is for people running [Lightning Network Daemon (LND)](https://lightning.engineering/), [Eclair](https://acinq.co/) or [Core Lightning](https://blockstream.com/lightning/) lightning nodes.
 
 Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [Alby](https://getalby.com) can also connect to, use, and manage their nodes from ZEUS. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use ZEUS.
 
-Starting in v0.8, ZEUS will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a built-in mobile Lightning node with an integrated [lightning service provider (LSP)](lsp/intro).
+Starting in v0.8, ZEUS will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a [built-in mobile Lightning node](https://docs.zeusln.app/category/embedded-node) with an integrated [lightning service provider (LSP)](lsp/intro).
 
 ## Supporters
 
-To see our supporters, or become one yourself, check out our about page on our [official website](https://zeusln.app/about). You can also contribute and support to ZEUS in [many other ways](/contribute/how-you-can-contribute).
+To a list of all our community sponzors, or become one yourself, check out our about page on our [official website](https://zeusln.app/about). You can also contribute and support to ZEUS in [many other ways](/contribute/how-you-can-contribute).
