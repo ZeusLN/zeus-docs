@@ -3,15 +3,15 @@ sidebar_position: 1
 slug: /
 ---
 
-# About Zeus
+# About ZEUS
 
 ![Banner image](../static/img/banner.png)
 
-Zeus is a mobile node management app with full functionalities of a bitcoin lightning wallet that makes bitcoin payments simple, gives users complete control of their finances, and allows more advanced users to manage their Lightning nodes from the palm of their hand.
+ZEUS is a mobile Bitcoin wallet and node management app with full functionalities of a bitcoin lightning wallet that makes bitcoin payments simple, gives users complete control of their finances, and allows more advanced users to manage their Lightning nodes from the palm of their hand.
 
-Zeus is available to download on [Google Play](https://play.google.com/store/apps/details?id=app.zeusln.zeus), [Apple App Store](https://apps.apple.com/us/app/zeus-ln/id1456038895), and [F-Droid](https://zeusln.app/download/).
+ZEUS is available to download on [Google Play](https://play.google.com/store/apps/details?id=app.zeusln.zeus), [Apple App Store](https://apps.apple.com/us/app/zeus-ln/id1456038895), and [F-Droid](https://zeusln.app/download/).
 
-If you are having trouble using Zeus, would like to contribute to the project, or are just interested in learning more, you can read these docs, reach out to our community on [Telegram](https://t.me/zeusLN), keep up with us on [Twitter](https://twitter.com/ZeusLN), join our [developer slack](https://zeusln.slack.com/join/shared_invite/zt-qw205nqa-o4VJJC0zPI7HiSfToZGoVw#/) or open an issue on [GitHub](https://github.com/ZeusLN/zeus).
+If you are having trouble using ZEUS, would like to contribute to the project, or are just interested in learning more, you can read these docs, reach out to our community on [Telegram](https://t.me/zeusLN), keep up with us on [Twitter](https://twitter.com/ZeusLN), join our [developer slack](https://zeusln.slack.com/join/shared_invite/zt-qw205nqa-o4VJJC0zPI7HiSfToZGoVw#/) or open an issue on [GitHub](https://github.com/ZeusLN/zeus).
 
 ## Features
 
@@ -64,16 +64,16 @@ If you are having trouble using Zeus, would like to contribute to the project, o
 - Partially-signed-bitcoin-transaction (PSBT) Support
 - PayJoin
 
-## Who is Zeus for?
+## Who is ZEUS for?
 
-In order to be able to use Zeus, is required to have a running Lightning node. Nevertheless it can be used without your own node, if you configure it to use lndhub accounts from other nodes (LNbits, Alby, various lndhub servers).
+In order to be able to use ZEUS, is required to have a running Lightning node. Nevertheless it can be used without your own node, if you configure it to use lndhub accounts from other nodes (LNbits, Alby, various lndhub servers).
 
-Currently Zeus is for people running [Lightning Network Daemon (LND)](https://lightning.engineering/), [Eclair](https://acinq.co/) or [Core Lightning](https://blockstream.com/lightning/) lightning nodes.
+Currently ZEUS is for people running [Lightning Network Daemon (LND)](https://lightning.engineering/), [Eclair](https://acinq.co/) or [Core Lightning](https://blockstream.com/lightning/) lightning nodes.
 
-Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [Alby](https://getalby.com) can also connect to, use, and manage their nodes from Zeus. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use Zeus.
+Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [Alby](https://getalby.com) can also connect to, use, and manage their nodes from ZEUS. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use ZEUS.
 
-Starting in v0.8, Zeus will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a built-in mobile Lightning node with an integrated [lightning service provider (LSP)](lsp/intro).
+Starting in v0.8, ZEUS will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a built-in mobile Lightning node with an integrated [lightning service provider (LSP)](lsp/intro).
 
 ## Supporters
 
-To see our supporters, or become one yourself, check out our about page on our [official website](https://zeusln.app/about). You can also contribute and support to Zeus in [many other ways](/contribute/how-you-can-contribute).
+To see our supporters, or become one yourself, check out our about page on our [official website](https://zeusln.app/about). You can also contribute and support to ZEUS in [many other ways](/contribute/how-you-can-contribute).

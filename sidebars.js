@@ -18,7 +18,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Connecting Zeus',
+      label: 'Connecting ZEUS',
       link: {
         type: 'generated-index',
       },
@@ -36,7 +36,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Using Zeus',
+      label: 'Using ZEUS',
       link: {
         type: 'generated-index',
       },

@@ -1,15 +1,15 @@
 ---
-title: Before using Zeus
+title: Before using ZEUS
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem'
 
-# Before using Zeus
+# Before using ZEUS
 
-To start using Zeus you will need to be running your own Bitcoin lightning node. And for those that just started with Bitcoin, will be better to read these resources about Bitcoin Lightning Network, before starting their own Lightning node. It is very important to understand these new concepts and technical terms that you will encounter by using the Zeus LN app.
+To start using ZEUS you will need to be running your own Bitcoin lightning node. And for those that just started with Bitcoin, will be better to read these resources about Bitcoin Lightning Network, before starting their own Lightning node. It is very important to understand these new concepts and technical terms that you will encounter while using ZEUS.
 
-Zeus LN app is supporting the following Lightning implementations: LND, CLN, Eclair and also lndhub accounts. Below you will find more documentation about these LN implementations and much more information needed to manage your Lightning Node.
+ZEUS supports following Lightning implementations: LND, CLN, Eclair and also lndhub accounts. Below you will find more documentation about these LN implementations and much more information needed to manage your Lightning Node.
 
 ### What is a Bitcoin Lightning Network (LN) node?
 A Bitcoin Node is a computer that connects to Bitcoin network and uses a peer-to-peer protocol that allows nodes to communicate with each other within the network as well as spreading information on transactions and blocks. Information is distributed among such nodes and they are what the blockchain network consists of. [See more details here](https://en.bitcoinwiki.org/wiki/Node).
@@ -26,7 +26,7 @@ Here is a list of resources that will explain in detail what is, how it works, w
 
 <TabItem value="LN implementations">
 
-### LN implementations supported by Zeus
+### LN implementations supported by ZEUS
   
 1. LND - Lightning Network Daemon: [GitHub](https://github.com/lightningnetwork/lnd/) | [Documentation](https://docs.lightning.engineering/)
 2. CLN - Core Lightning: [GitHub](https://github.com/ElementsProject/lightning) | [Documentation](https://lightning.readthedocs.io/index.html)

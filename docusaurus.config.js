@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Zeus documentation',
-  tagline: 'Zeus node manager official documentation',
+  title: 'ZEUS Documentation',
+  tagline: 'Zeus wallet official documentation',
   url: 'https://docs.zeusln.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
