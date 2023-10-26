@@ -8,7 +8,7 @@ Frequently asked questions
 
 ## I'm having problems making a payment / I can't find a route
 
-By default, ZEUS finds out information about the lightning network graph using P2P. This can take some time. To speed up the graph sync and improve your payment success probability, go to `Settings` -> `Embedded Node` -> `Express Graph Sync`. Enable it and restart ZEUS to take effect. You can go to Settings > Network Info at any point to see how much of the lightning network your node knows about.
+By default, ZEUS finds out information about the lightning network graph using P2P. This can take some time. To speed up the graph sync and improve your payment success probability, go to `Settings` -> `Embedded Node` -> `Express Graph Sync`. Enable it and restart ZEUS to take effect. You can go to `Settings` > `Network Info` at any point to see how much of the lightning network your node knows about.
 
 If you still can't complete a payment after running Express Graph Sync, you may need to bump up your max payment fee. You can see this tucked away under 'Advanced settings' on the payment request view or under `Settings` -> `Payments`.
 
@@ -24,9 +24,9 @@ ZEUS currently doesn't have a swap service, but we're considering launching one 
 
 ## How are backups handled?
 
-On-chain funds: you are presented with a 24 word seed phrase that you can back up at any time
+On-chain funds: You are presented with a 24 word seed phrase that you can back up at any time.
 
-LN funds: By default we send encrypted (w/ seed phrase) backups to our server, you can also do manual backups to our server or to your clipboard under `Settings` -> `Embedded node` -> `Disaster recovery`.
+LN funds: By default we send encrypted (with your seed phrase) backups to our server, you can also do manual backups to our server or to your clipboard under `Settings` -> `Embedded node` -> `Disaster recovery`.
 
 Learn more on our [Backups and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery) page.
 
@@ -48,7 +48,7 @@ Please read our document on how to [Open a channel to the embedded LND node](htt
 
 ## Simple Taproot Channels sound great. Is there any reason to not use them?
 
-Simple Taproot Chans offer up better on-chain privacy and lower fees on channel closing. There are only two reasons you wouldn't want to use them:
+Simple Taproot Channels offer up better on-chain privacy and lower fees on channel closing. There are only two reasons you wouldn't want to use them:
 
 1. They are new, and there still may be bugs in LND when using them.
 2. Your counterparty doesn't support them. Even LND nodes have to explicitly opt into them, for now.
@@ -74,4 +74,4 @@ The nsec will never leave your ZEUS wallet.
 
 ## I've previously installed ZEUS, and now I can't install the Android package from your website / GitHub. What's going on?
 
-Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
+Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded and installed it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
