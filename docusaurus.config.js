@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ZEUS Documentation',
-  tagline: 'Zeus wallet official documentation',
+  tagline: 'ZEUS wallet official documentation',
   url: 'https://docs.zeusln.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -54,7 +54,7 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: 'Zeus Logo',
+          alt: 'ZEUS Logo',
           src: 'img/logo.svg',
         },
         items: [
