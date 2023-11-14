@@ -7,6 +7,8 @@ slug: /
 
 ![Banner image](../static/img/banner.png)
 
+![Screenshots](../static/img/screenshots.png)
+
 ZEUS is a mobile Bitcoin wallet and node management app with full functionalities of a bitcoin lightning wallet that makes bitcoin payments simple, gives users complete control of their finances, and allows more advanced users to manage their Lightning nodes from the palm of their hand.
 
 ZEUS is available to download on [Google Play](https://play.google.com/store/apps/details?id=app.zeusln.zeus), [Apple App Store](https://apps.apple.com/us/app/zeus-ln/id1456038895), and [F-Droid](https://zeusln.app/download/).
