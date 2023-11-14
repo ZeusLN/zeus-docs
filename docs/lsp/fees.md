@@ -25,5 +25,6 @@ Our self-custodial lightning address incurs the following fees:
 
 | Amount sent to you                         | Fee           |
 | -----------------------------------------  | ------------- |
-| <= 200 sats                                | 50%           |
-| > 200 sats                                 | 100 sats      |
+| <= 20 sats                                 | 50%           |
+| <= 2500 sats                               | 10%           |
+| > 2500 sats                                | 250 sats      |
