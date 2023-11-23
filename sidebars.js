@@ -55,6 +55,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'for-users/embedded-node/backup-and-recovery',
+        'for-users/embedded-node/lightning-onboarding',
         'for-users/embedded-node/privacy',
         'for-users/embedded-node/open-channel-to-embedded-node',
         'for-users/embedded-node/trusted-funding',

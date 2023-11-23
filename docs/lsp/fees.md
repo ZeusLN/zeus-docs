@@ -4,7 +4,7 @@
 
 # Fees
 
-Our LSP currently charges the following fees:
+Our LSP currently charges the following fees, in low fee environments:
 
 | Event                                      | Fee           |
 | -----------------------------------------  | ------------- |
@@ -14,8 +14,9 @@ Our LSP currently charges the following fees:
 | Forwarding Base Fee                        | 0 sats        |
 | Forwarding Fee Rate                        | 0 ppm         |
 
+In high fee environments, channel open fees will vary based on block space demand. You can visit [Mempool.space](https://mempool.space/) to observe the current fee environment on the blockchain.
 
-Note that zero fee forwarding is only applied to purchased 0-conf channels.
+Also note that zero fee forwarding is only applied to purchased 0-conf channels.
 
 Learn more about channel fees [here](https://docs.lightning.engineering/lightning-network-tools/lnd/channel-fees).
 

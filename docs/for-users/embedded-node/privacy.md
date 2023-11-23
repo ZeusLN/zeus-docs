@@ -20,7 +20,7 @@ The LSP is on by default, but users can choose to opt out of it. It is currently
 
 ## Simple Taproot Channels
 
-ZEUS v0.8.0 is also the first mobile wallet to include support for Simple Taproot Channels. When closing these channels, users are incur less fees and are given more privacy as they appear to like any other Taproot spend when examining their on-chain footprint.
+ZEUS v0.8.0 is the first mobile wallet to include support for Simple Taproot Channels. When closing these channels, users are incur less fees and are given more privacy as they appear to like any other Taproot spend when examining their on-chain footprint.
 
 Simple Taproot Channels can also be requested from our LSP, OLYMPUS by ZEUS.
 
