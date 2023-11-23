@@ -6,7 +6,7 @@
 
 Learn about the privacy properties of the Embedded Node + LSP
 
-## Invoice Wrapping
+## Invoice wrapping
 
 Onboarding to lightning can be difficult and overwhelming to new users. So we've lowered the barrier to entry with a channel service from our new lightning service provider (LSP), OLYMPUS by ZEUS.
 
