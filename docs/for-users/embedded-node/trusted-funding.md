@@ -59,4 +59,4 @@ The `--avoid-broadcast` flag will ensure that sure you never broadcast the trans
 
 In our experience, we've had some of these trusted channels get out of wack and go into 'borked' states on LND. To close them out we've had to use the `lncli abandonchannel` command which requires building LND with the devrpc flag enabled.
 
-**Note that this is a dangerous command**. You should not use it without understanding the consequences of it. You should ensure that the channel opening and closing were never broadcasted before use it.
+**Note that this is a dangerous command**. You should not use it without understanding the consequences of it. You should ensure that the channel opening and closing were never broadcasted before using it.
