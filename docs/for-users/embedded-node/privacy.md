@@ -39,3 +39,7 @@ Client-side path finding: ZEUS constructs users' lightning payment paths on thei
 Not only do we not want to know how you're using your money, but we're building things in a way that we can't.
 
 Not all wallets can say the same.
+
+## How does ZEUS stack up against other lightning wallets?
+
+![Lightning wallet privacy comparison](../../../static/img/lightning-wallet-privacy.png)
