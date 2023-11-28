@@ -53,8 +53,8 @@ Testnet: https://testnet-0conf.lnolymp.us
 
 ```
 {
-  "amount_msat": 2500000,    #Fee amount in msats, charged in the wrapped invoice
-  "id": "9b1deb4d-...-2b0d7b3dcb6d"     #Fee rate id, to be passed into the /proposal endpoint
+  "amount_msat": 2500000,              #Fee amount in msats, charged in the wrapped invoice
+  "id": "9b1deb4d-...-2b0d7b3dcb6d"    #Fee rate id, to be passed into the /proposal endpoint
 }
 ```
 
@@ -64,11 +64,11 @@ Testnet: https://testnet-0conf.lnolymp.us
 
 ```
 {
-    "bolt11": "lntb1...",   #Original Lightning invoice from the client.
+    "bolt11": "lntb1...",                   #Original Lightning invoice from the client.
     "fee_id": "9b1deb4d-...-2b0d7b3dcb6d"   #Fee ID returned from the /fee endpoint
-    "simpleTaproot": true  #Optional flag to request a Simple Taproot Channel. If not specified, a standard anchor channel will be opened.
-    "host": "1.2.3.4",      #Optional Host connection information for the client. Not needed if client peers to the LSP first.
-    "port": 9735           #Optional Port connection information for the client. Not needed if client peers to the LSP first.
+    "simpleTaproot": true                   #Optional flag to request a Simple Taproot Channel. If not specified, a standard anchor channel will be opened.
+    "host": "1.2.3.4",                      #Optional Host connection information for the client. Not needed if client peers to the LSP first.
+    "port": 9735                            #Optional Port connection information for the client. Not needed if client peers to the LSP first.
 }
 ```
 
