@@ -32,7 +32,7 @@ Block sync with ZEUS' embedded node is done using block filters and the Neutrino
 
 You can get a great technical resources on block filters over at [Bitcoin Optech](https://bitcoinops.org/en/topics/compact-block-filters/), and a more digestable overview over at [Bitcoin Magazine](https://bitcoinmagazine.com/technical/why-bitcoin-wallets-need-block-filters).
 
-## Client side path finding
+## Client-side path finding
 
 Client-side path finding: ZEUS constructs users' lightning payment paths on their devices, so we don't know the final destinations of our users' payments, even when they're forwarded through our channels.
 
