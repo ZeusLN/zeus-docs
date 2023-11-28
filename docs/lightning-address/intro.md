@@ -10,8 +10,6 @@ ZEUS PAY leverages user-generated preimage hashes, hodl invoices, and the Zaploc
 
 We hope that more wallets adopt this scheme to improve the UX for their users. But even without any updates, ZEUS PAY can easily receive payments from all lightning-enabled Bitcoin wallets today.
 
-Furthermore, ZEUS PAY can function as an onboarding method. Users have the ability to automatically request new channels from our LSP, OLYMPUS by ZEUS, with the service.
-
 We think this is a fantastic solution for service workers, nomads, dissidents, and others to accept tips and donations without sacrificing custody. We eagerly look forward to all the new people that are onboarded to Bitcoin with this new functionality.
 
 ZEUS PAY is available, not only just to embedded node users, but also remote LND users.
