@@ -69,6 +69,10 @@ const sidebars = {
     'lsp/fees',
     'lsp/api',
   ],
+  lightningAddress: [
+    'lightning-address/intro',
+    'lightning-address/fees',
+  ],
   pos: [
     'pos/overview',
     'pos/setup',

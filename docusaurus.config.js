@@ -72,6 +72,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'lightning-address/intro',
+            position: 'left',
+            label: 'Lightning Address',
+          },
+          {
+            type: 'doc',
             docId: 'pos/overview',
             position: 'left',
             label: 'Point of Sale',
