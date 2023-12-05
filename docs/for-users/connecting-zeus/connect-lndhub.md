@@ -1,5 +1,5 @@
 ---
-title: Connect with lndhub
+title: Connect with lndhub / Alby / LNbits
 ---
 
 import Tabs from '@theme/Tabs';
@@ -14,7 +14,7 @@ LNDHub: [GitHub](https://github.com/BlueWallet/LndHub) | [Documentation](https:/
 
 ### Connect an Alby account
 
-Vist the [Alby guides website](https://guides.getalby.com/overall-guide/alby-lightning-wallet/connect-your-alby-lightning-wallet-to-other-apps/connect-to-mobile-apps/connect-to-zeus) for a full tutorial on how to connect your Alby account to ZEUS.
+Vist the [Alby guides website](https://guides.getalby.com/user-guide/v/alby-account-and-browser-extension/alby-lightning-account/connect-your-alby-lightning-account-to-other-apps/connect-to-mobile-apps/connect-to-zeus) for a full tutorial on how to connect your Alby account to ZEUS.
 
 ### Connect a LNbits account
 
