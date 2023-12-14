@@ -76,7 +76,7 @@ The nsec will never leave your ZEUS wallet.
 
 Many Android systems do not allow you to install app upgrades from sources that aren't where you initially downloaded and installed it from. Unfortunately, you'll have to uninstall and reinstall the new version. Be aware, this will clear out your settings so make sure you have backups of your seeds and/or connection strings.
 
-## Help! My wallet balance has dissappeared!
+## Help! My wallet balance has disappeared!
 
 ### What's happened?
 
