@@ -80,9 +80,18 @@ Many Android systems do not allow you to install app upgrades from sources that 
 
 ### What's happened?
 
+#### If it's on-chain funds that have gone missing
+
 ZEUS uses Neutrino block filters to fetch on-chain information in private manner. Sometimes your wallet can get out of sync with the default Neutrino peers.
 
+#### If it's lightning funds that have gone missing
+
+It is possible that your lightning channel has been closed. You will receive the funds on-chain once the channel has been closed.
+
+
 ### What should I do?
+
+#### If it's on-chain funds that have gone missing
 
 First, you should try doing a rescan by going to `Settings` -> `Embedded node` -> `Rescan` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Settings` -> `Embedded node` -> `LND Logs`.
 
@@ -91,3 +100,7 @@ If rescan fails to correct the balance, you'll likely have to add some more Neut
 To add more Neutrino peers got to `Settings` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. Then uncheck `Connect only to the specified peers`, restart the app, and try another rescan. This will allow your ZEUS wallet node to find new peers to connect to automatically.
 
 If you have your own remote node, you may also want manually add it in the Peers list. You can [use this guide to enabled 'Neutrino mode' in Bitcoin Core](https://docs.lightning.engineering/lightning-network-tools/lnd/enable-neutrino-mode-in-bitcoin-core). BTCD has Neutrino on by default.
+
+#### If it's lightning funds that have gone missing
+
+Go to the Channels view by hitting the icon in the bottom right corner of the main view then, hit the header at the top of the Channels view to toggle between open, pending, and closed channels. Mutually closed channels should return to your on-chain balance once they settle on-chain. Force closed channels can take up to two weeks to return to your on-chain wallet. These channels will appear in the pending channels list until settled.
