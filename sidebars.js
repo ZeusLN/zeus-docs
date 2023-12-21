@@ -36,18 +36,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Using ZEUS',
-      link: {
-        type: 'generated-index',
-      },
-      collapsed: true,
-      items: [
-        'for-users/using-zeus/overview','for-users/using-zeus/home', 'for-users/using-zeus/accounts', 'for-users/using-zeus/profiles',
-        'for-users/using-zeus/channels',
-      ],
-    },
-    {
-      type: 'category',
       label: 'Embedded Node',
       link: {
         type: 'generated-index',
@@ -60,6 +48,18 @@ const sidebars = {
         'for-users/embedded-node/open-channel-to-embedded-node',
         'for-users/embedded-node/trusted-funding',
         'for-users/embedded-node/faq'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Using ZEUS',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: true,
+      items: [
+        'for-users/using-zeus/overview','for-users/using-zeus/home', 'for-users/using-zeus/accounts', 'for-users/using-zeus/profiles',
+        'for-users/using-zeus/channels',
       ],
     }
   ],
