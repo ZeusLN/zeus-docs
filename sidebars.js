@@ -18,6 +18,22 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Embedded Node',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: true,
+      items: [
+        'for-users/embedded-node/backup-and-recovery',
+        'for-users/embedded-node/lightning-onboarding',
+        'for-users/embedded-node/privacy',
+        'for-users/embedded-node/open-channel-to-embedded-node',
+        'for-users/embedded-node/trusted-funding',
+        'for-users/embedded-node/faq'
+      ],
+    },
+    {
+      type: 'category',
       label: 'Remote connections',
       link: {
         type: 'generated-index',
@@ -32,22 +48,6 @@ const sidebars = {
         'for-users/remote-connections/nodl',
         'for-users/remote-connections/btcpay',
         'for-users/remote-connections/lndhub',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Embedded Node',
-      link: {
-        type: 'generated-index',
-      },
-      collapsed: true,
-      items: [
-        'for-users/embedded-node/backup-and-recovery',
-        'for-users/embedded-node/lightning-onboarding',
-        'for-users/embedded-node/privacy',
-        'for-users/embedded-node/open-channel-to-embedded-node',
-        'for-users/embedded-node/trusted-funding',
-        'for-users/embedded-node/faq'
       ],
     },
     {
