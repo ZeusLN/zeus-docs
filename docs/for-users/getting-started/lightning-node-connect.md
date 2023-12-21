@@ -11,4 +11,4 @@ ZEUS is a mobile app that can manage multiple nodes connections. You can connect
 
 Right now ZEUS is supporting connections for LND, CLN, and lndhub accounts, through different types of platforms, networks, tunnels etc.
 
-[Please choose your specific node platform](/category/connecting-zeus/) to see more details about how to configure your ZEUS connection.
+[Please choose your specific node platform](/category/remote-connections/) to see more details about how to configure your ZEUS connection.

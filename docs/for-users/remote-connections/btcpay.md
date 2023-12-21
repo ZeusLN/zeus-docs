@@ -1,5 +1,5 @@
 ---
-title: Connect with BTCPayServer
+title: BTCPayServer
 ---
 
 import Tabs from '@theme/Tabs';

@@ -1,5 +1,5 @@
 ---
-title: Connect with lndhub / Alby / LNbits
+title: lndhub / Alby / LNbits
 ---
 
 import Tabs from '@theme/Tabs';

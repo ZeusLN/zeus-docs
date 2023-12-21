@@ -1,5 +1,5 @@
 ---
-title: Connect with Umbrel
+title: Umbrel
 ---
 
 import Tabs from '@theme/Tabs';
