@@ -12,8 +12,8 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'for-users/getting-started/lightning-node-setup',
-        'for-users/getting-started/lightning-node-connect',
+        'for-users/getting-started/before-using-zeus',
+        'for-users/getting-started/remote-or-embedded',
       ],
     },
     {
