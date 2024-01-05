@@ -11,7 +11,7 @@ Also to mention that each account works independently, no matter if is using Tor
 ![zeus-accounts](../../../static/img/zeus-accounts.jpg)
 
 ## Operations
-1. Create a new connection, by clicking on **+ Add new node**. You will redirected to a new screen where you can fill the details or simply scan the node QR URI code and will be filled out automatically. Put a nick name your connection to be easily identified later. Then select the node interface (LND, CLN, lndhub etc). Don't forget to select **Use Tor** if your node is running on Tor network. See more connection examples in the chapter [Connecting to ZEUS](../getting-started/lightning-node-connect.md).
+1. Create a new connection, by clicking on **+ Add new node**. You will redirected to a new screen where you can fill the details or simply scan the node QR URI code and will be filled out automatically. Put a nick name your connection to be easily identified later. Then select the node interface (LND, CLN, lndhub etc). Don't forget to select **Use Tor** if your node is running on Tor network. See more connection examples in the chapter [Connecting to ZEUS](https://docs.zeusln.app/for-users/getting-started/lightning-node-connect).
 
 ![node-config](../../../static/img/node-config.jpg)
 
