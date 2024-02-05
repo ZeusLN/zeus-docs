@@ -46,7 +46,7 @@ You can open a channel in ZEUS by going to the `Channels` view by clicking the c
 
 There is a button on the `Open Channel` view you can press to populate the required fields to open a channel to [OLYMPUS by ZEUS](https://amboss.space/node/031b301307574bbe9b9ac7b79cbe1700e31e544513eae0b5d7497483083f99e581).
 
-Unlike paid LSP channels, your channel will require on-chain confirmation; it will not open instantly. You will also need to make sure that the channel is announced. We reserve announced channels for our liquidity partners to ensure that our paid LSP users have a great payments experience.
+Unlike paid LSP channels, your channel will require on-chain confirmation; it will not open instantly. You will also need to make sure that the channel is unannounced. We reserve announced channels for our liquidity partners to ensure that our paid LSP users have a great payments experience.
 
 Unlike paid LSP channels, you will not benefit from zero fee routing.
 
