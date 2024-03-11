@@ -18,8 +18,6 @@ The internet is rife with scammers posing as official support. Do not provide it
 
 The embedded node in ZEUS is based on LND and uses the <a href="https://github.com/lightningnetwork/lnd/blob/master/aezeed/README.md">aezeed</a> seed format. This is different than the typical <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP39</a> format you see in most Bitcoin wallets, although it may appear to be similar. aezeed includes some extra data including the birth date of the wallet that will help rescans during recovery happen more efficiently.
 
-The aezeed key format **should** be compatible with the following wallets: Blixt, Blue Wallet, and Breez. Note that the seed alone will be insuffienct to recover all your balances if you have open or pending closing channels
-
 ## Backing up your seed phrase
 
 ZEUS will prompt you to back up your funds on the Balance view once you have received your first payment, but you can back up your 24 word seed phrase at any point by going to Settings -> Back up wallet.
@@ -73,3 +71,30 @@ It is worth reading Lightning Labs' documentation on <a href="https://docs.light
 In complicated scenarios, <a href="https://github.com/lightninglabs/chantools">chantools</a> can prove to be a valuable tool.
 
 Remember, funds are recoverable in **most** cases. It's best to proceed calmly, and not try things blindly as some actions can make the situation worse.
+
+## Can I recover my Zeus onchain wallet into other wallet applications?
+
+The aezeed key format **should** be compatible with the following wallets: Blixt, Blue Wallet and Breez. Note that the seed alone will be insuffienct to recover all your balances if you have open or pending closing channels. But only for restoring the onchain wallet funds is enough.
+
+Another option is to use Sparrow Wallet (desktop), but are necessary some preparation steps. This method is also useful in case you want to extract the XPUB for your Zeus LND node and you want to use it as watch only (deposit-only) in another app. Sparrow will display it in the wallet details.
+
+- Go to <a href="https://guggero.github.io/cryptography-toolkit/#!/aezeed">Cryptography Toolkit</a> and download the HTML file onto your computer.
+- Open that HTML file in "offline mode" (no internet) and select "aezeed Cipher Seed Scheme" from Tools. Then go to the 2nd tab "Decode Mnemonic".
+- Paste your 24 words into the "Mnemonic" field.
+
+![zeus-toolkit](/static/img/zeus-decode-toolkit.png)
+
+- Select format BIP84 native segwit and wait a bit to be decoded.
+- Copy the zprv displayed into the field "HD node root base 58"
+- Open (already downloaded) Sparrow wallet app and select "new wallet"
+- In the "Keystores" select "new imported software wallet"
+- In the next window that will open, select "Master Private Key BIP32" and paste that zprv key you get it from the cryptography tool and click "import". It will show you that is a m/86'/0'/0 derivation path (as it should be, to restore all your addresses and txs used previously in Umbrel). But if you used Taproot addresses, then when you restore it in Sparrow, choose the derivation path m/86'/0'/0.
+- Click on "Import Keystore" and it will go back to main window of the wallet app where you can see all the wallet config. Click on "apply" and will prompt you to set a password to encrypt your local wallet file.
+- In the wallet settings tab, select “Taproot” script, if you know that you used taproot addresses. Otherwise leave it as it is. Can be changed also later, in case you do not see your old txs history. Also be sure the derivation path is m/86'/0'/0'
+
+![zeus-toolkit](/static/img/zeus-sparrow-taproot.png)
+
+- Sparrow app will start scanning all your keys and txs and it will be displayed after a while in the "Transactions" tab. Patience, it will take some time.
+- For a faster, secure and private connection is better to connect your Sparrow wallet app to your node (via Electrum server or directly to a Bitcoin Core RPC)
+
+And done, now you can manage your Zeus LND onchain wallet from Sparrow.
