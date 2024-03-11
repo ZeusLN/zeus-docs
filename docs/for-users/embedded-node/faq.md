@@ -112,3 +112,15 @@ First, go to `Settings` > `Network Info` and make sure there are no zombie chann
 If you have zombie channels, go to `Settings` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart. Be sure to go back to `Settings` > `Network Info` and ensure your zombie channel count is now zero.
 
 If you don't have zombie channels and are still having issues sending lightning payments, go to `Settings` -> `Embedded node` -> `Advanced` -> `Pathfinding` and press the button labeled `Reset payment routing profile`.
+
+## My channels are showing as offline. How can I get them to show as active again?
+
+This typically happens when either the blockchain headers or lightning network graph is out of sync, or the RPC server is having issues starting up. Here are some steps you can try to remedy the situation:
+
+ 1. You can pull down on the channels list to refresh it. If channels still show as offline, leave app running 10 minutes or so. Sometimes the RPC server just needs time to start up.
+
+ 2. Go to `Settings` -> `Embedded node` -> `Advanced` and press the button labeled `Stop LND and Delete Neutrino files`, then restart the app. This will resync your blockchain data.
+
+ 3. Go to `Settings` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
+
+ 4. Restarting the app to jostle the state and get it online again.
