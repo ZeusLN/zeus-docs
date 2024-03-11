@@ -82,7 +82,7 @@ Another option is to use Sparrow Wallet (desktop), but are necessary some prepar
 - Open that HTML file in "offline mode" (no internet) and select "aezeed Cipher Seed Scheme" from Tools. Then go to the 2nd tab "Decode Mnemonic".
 - Paste your 24 words into the "Mnemonic" field.
 
-![zeus-toolkit](/static/img/zeus-decode-toolkit.png)
+> zeus-toolkit image
 
 - Select format BIP84 native segwit and wait a bit to be decoded.
 - Copy the zprv displayed into the field "HD node root base 58"
@@ -92,7 +92,7 @@ Another option is to use Sparrow Wallet (desktop), but are necessary some prepar
 - Click on "Import Keystore" and it will go back to main window of the wallet app where you can see all the wallet config. Click on "apply" and will prompt you to set a password to encrypt your local wallet file.
 - In the wallet settings tab, select “Taproot” script, if you know that you used taproot addresses. Otherwise leave it as it is. Can be changed also later, in case you do not see your old txs history. Also be sure the derivation path is m/86'/0'/0'
 
-![zeus-toolkit](/static/img/zeus-sparrow-taproot.png)
+> zeus-sparrow image
 
 - Sparrow app will start scanning all your keys and txs and it will be displayed after a while in the "Transactions" tab. Patience, it will take some time.
 - For a faster, secure and private connection is better to connect your Sparrow wallet app to your node (via Electrum server or directly to a Bitcoin Core RPC)
