@@ -44,7 +44,7 @@ const sidebars = {
         'for-users/remote-connections/citadel',
         'for-users/remote-connections/raspiblitz',
         'for-users/remote-connections/mynode',
-        'for-users/remote-connections/embassy',
+        'for-users/remote-connections/startos',
         'for-users/remote-connections/nodl',
         'for-users/remote-connections/btcpay',
         'for-users/remote-connections/lndhub',
