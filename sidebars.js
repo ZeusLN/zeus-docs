@@ -14,6 +14,7 @@ const sidebars = {
       items: [
         'for-users/getting-started/before-using-zeus',
         'for-users/getting-started/remote-or-embedded',
+        'for-users/getting-started/tips',
       ],
     },
     {
