@@ -13,4 +13,4 @@ This has two benefits:
 
 Wrapped invoices uses the same preimage hash as the original invoice. This means that the LSP can't settle the payment without the final receiver completing the payment, so the LSP can't run away with the user's funds.
 
-Be sure to keep Zeus open when receiving payment as the LSP cannot settle payments on your behalf when you're offline.
+Be sure to keep ZEUS open when receiving payment as the LSP cannot settle payments on your behalf when you're offline.
