@@ -75,7 +75,7 @@ In order to use ZEUS, you must be running a Lightning node at home or in the clo
 
 Currently ZEUS is for people running [Lightning Network Daemon (LND)](https://lightning.engineering/) or [Core Lightning](https://blockstream.com/lightning/) lightning nodes.
 
-Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [Alby](https://getalby.com) can also connect to, use, and manage their nodes from ZEUS. Users of [LNDHub](https://bluewallet.io/lndhub/) and [Nayuta Core](https://nayuta.co/core/) can also connect to and use ZEUS.
+Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [Alby](https://getalby.com) can also connect to, use, and manage their nodes from ZEUS. Users of [LNDHub](https://bluewallet.io/lndhub/) can also connect to and use ZEUS.
 
 Starting in v0.8, ZEUS will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a [built-in mobile Lightning node](https://docs.zeusln.app/category/embedded-node) with an integrated [lightning service provider (LSP)](lsp/intro).
 
