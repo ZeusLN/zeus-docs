@@ -2,7 +2,7 @@
 
 ---
 
-# ZEUS PAY Fees
+# ZEUS Pay Fees
 
 Our self-custodial lightning address incurs the following fees:
 

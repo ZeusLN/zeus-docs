@@ -18,7 +18,7 @@ Also note that zero fee forwarding is only applied to purchased 0-conf channels.
 
 Learn more about channel fees [here](https://docs.lightning.engineering/lightning-network-tools/lnd/channel-fees).
 
-## ZEUS PAY
+## ZEUS Pay
 
 Our self-custodial lightning address incurs the following fees:
 

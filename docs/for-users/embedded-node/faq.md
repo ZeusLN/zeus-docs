@@ -53,13 +53,13 @@ Simple Taproot Channels offer up better on-chain privacy and lower fees on chann
 1. They are new, and there still may be bugs in LND when using them.
 2. Your counterparty doesn't support them. Even LND nodes have to explicitly opt into them, for now.
 
-## Why do I have to enter in my Nostr nsec key when setting up a ZEUS PAY account?
+## Why do I have to enter in my Nostr nsec key when setting up a ZEUS Pay account?
 
 You don't **have** to use your own Nostr key, but it does allow you, and people paying you, to reap the benefits of [Zaplocker attestation scheme](https://github.com/supertestnet/zaplocker#four-problems-zaplocker-solves).
 
 The key will be used to sign:
 
-- All of the hashes sent to the ZEUS PAY service
+- All of the hashes sent to the ZEUS Pay service
 - The list of relays you provide to the service
 
 When the sender attempts to pay you from a Zaplocker compatible wallet, like ZEUS, they will be able to the see if the payment request they are being served up is attached to the associated Nostr profile.
@@ -68,7 +68,7 @@ When the sender attempts to pay you from a Zaplocker compatible wallet, like ZEU
 
 Once paid, the sender will then use the relay list to broadcast the attestation. You'll be able to check it in ZEUS by clicking the Nostrich icon next to your payments.
 
-Lastly, you can also opt to receive your ZEUS PAY notifications via Nostr DM, instead of push notifications. They will be sent to the Nostr account of the nsec you profile.
+Lastly, you can also opt to receive your ZEUS Pay notifications via Nostr DM, instead of push notifications. They will be sent to the Nostr account of the nsec you profile.
 
 The nsec will never leave your ZEUS wallet.
 
