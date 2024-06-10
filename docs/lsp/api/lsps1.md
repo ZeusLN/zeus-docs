@@ -4,6 +4,8 @@
 
 # Purchase channels in advance API
 
+Get channels ahead of time, using the LSPS1 spec
+
 ## NOTE
 
 The purchase channels in advance service is in closed testing. Please reach out if you'd like an access key for mainnet.
