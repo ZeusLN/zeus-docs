@@ -4,7 +4,9 @@
 
 # Fees
 
-Our LSP currently charges the following fees, in low fee environments:
+## Just-in-time channels service
+
+Our 0-conf channel service currently charges the following fees, in low fee environments:
 
 | Event                                      | Fee           |
 | -----------------------------------------  | ------------- |

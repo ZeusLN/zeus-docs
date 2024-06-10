@@ -68,7 +68,18 @@ const sidebars = {
     'lsp/intro',
     'lsp/wrapped-invoices',
     'lsp/fees',
-    'lsp/api',
+    {
+      type: 'category',
+      label: 'APIs',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: true,
+      items: [
+         'lsp/api/flow',
+         'lsp/api/lsps1'
+      ],
+    },
   ],
   lightningAddress: [
     'lightning-address/intro',
