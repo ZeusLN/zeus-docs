@@ -29,4 +29,32 @@ At the left hand side, we can see the the inputs and its corresponding outpoints
 
 Anchor outputs are additional outputs added to a commitment transaction in a channel, with each party having one output. These outputs are encumbered with a CSV condition, acting as timelocks, allowing parties to bump fees using Child Pays for Parent (CPFP) to facilitate transaction confirmation. This mechanism enables users to set fees for closing transactions, enhancing flexibility and security within the Lightning Network. 
 
-Anchor outputs address the challenge of delayed confirmation due to preset transaction fees at the time of crafting commitment transactions. By allowing parties to adjust fees post-transaction creation, anchor outputs empower users to adapt to changing fee dynamics, ensuring timely and efficient transaction processing. 
+Anchor outputs address the challenge of delayed confirmation due to preset transaction fees at the time of crafting commitment transactions. By allowing parties to adjust fees post-transaction creation, anchor outputs empower users to adapt to changing fee dynamics, ensuring timely and efficient transaction processing.
+
+# What is a Neutrino peer ?
+
+Neutrino is a lightweight Bitcoin Core client (that was implemented with [BIP157](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki)) which enable our Bitcoin node to serve block data to remote LND nodes in a private P2P mode and with minimum data storage needed (almost insignificant), ideal for mobile LN nodes like Zeus.
+
+More Neutrino nodes, well distributed across the world, will help a lot the use of mobile LN nodes like Zeus, with a more decentralized distribution of neutrino peers. A lower response time (ping) it means that is closer to your location and will reduce drastically the sync issues of your Zeus node. A higher response time (in ms) it means you are too far to the neutrino peer and the communication could have a serious impact onto your Zeus sync.
+
+This can be useful if we are already running a fully synced Bitcoin node somewhere and want to use it for one or multiple remote instances of LND. If we have the additional bandwidth and storage available, we might also want to make our existing Bitcoin node available to the public as a free service. 
+
+Easily available public Neutrino instances help the network grow more robust and remove bottlenecks. Such services are a prerequisite to light clients, which do not have a copy of the Bitcoin Blockchain available locally.
+
+If you run a full Bitcoin Core node you can connect your Zeus embedded node with it by amend your Core node bitcoin.conf, add the following paramenters:
+```
+blockfilterindex=1
+peerblockfilters=1
+```
+
+Once you restart your node, it will resync the Blockchain and build the blockfilterindex. This may take a while depending on your node’s available memory and computing power.
+
+As soon as Bitcoin Core is running, it will now advertise itself to the network if you have set this in your configuration. To disable discovery, you may set `discover=0` in your bitcoin.conf.
+
+Connect from your Zeus embedded node:
+
+This option is good in case you are connecting from a location where the default Neutrino peers provided in Zeus will have a high latency that could not provide a good sync time. So connecting directly to your local node will improve a lot the use of Zeus.
+
+Go to Zeus `Settings --> Embedded Node --> Peers --> Neutrino peers` then add your Bitcoin Neutrino node IP (or FQDN if you have one). It must be delivered over clearnet.
+
+If your Bitcoin node operate only over Tor network it will not serve too much for this purpose, due to high latency offeered over Tor and will not offer more privacy anyways (Neutrino already offer enough privacy).
