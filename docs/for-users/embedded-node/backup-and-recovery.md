@@ -72,11 +72,11 @@ In complicated scenarios, <a href="https://github.com/lightninglabs/chantools">c
 
 Remember, funds are recoverable in **most** cases. It's best to proceed calmly, and not try things blindly as some actions can make the situation worse.
 
-## Can I recover my Zeus onchain wallet into other wallet applications?
+## Can I recover my ZEUS onchain wallet into other wallet applications?
 
 The aezeed key format **should** be compatible with the following wallets: Blixt, Blue Wallet and Breez. Note that the seed alone will be insuffienct to recover all your balances if you have open or pending closing channels. But only for restoring the onchain wallet funds is enough.
 
-Another option is to use Sparrow Wallet (desktop), but are necessary some preparation steps. This method is also useful in case you want to extract the XPUB for your Zeus LND node and you want to use it as watch only (deposit-only) in another app. Sparrow will display it in the wallet details.
+Another option is to use Sparrow Wallet (desktop), but are necessary some preparation steps. This method is also useful in case you want to extract the XPUB for your ZEUS LND node and you want to use it as watch only (deposit-only) in another app. Sparrow will display it in the wallet details.
 
 - Go to <a href="https://guggero.github.io/cryptography-toolkit/#!/aezeed">Cryptography Toolkit</a> and download the HTML file onto your computer.
 - Open that HTML file in "offline mode" (no internet) and select "aezeed Cipher Seed Scheme" from Tools. Then go to the 2nd tab "Decode Mnemonic".
@@ -97,4 +97,4 @@ Another option is to use Sparrow Wallet (desktop), but are necessary some prepar
 - Sparrow app will start scanning all your keys and txs and it will be displayed after a while in the "Transactions" tab. Patience, it will take some time.
 - For a faster, secure and private connection is better to connect your Sparrow wallet app to your node (via Electrum server or directly to a Bitcoin Core RPC)
 
-And done, now you can manage your Zeus LND onchain wallet from Sparrow.
+And done, now you can manage your ZEUS LND onchain wallet from Sparrow.

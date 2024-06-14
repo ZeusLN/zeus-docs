@@ -56,7 +56,7 @@ Here is a list of resources that will explain in detail what is, how it works, w
 - [Raspibolt Lightning Node Manual](https://raspibolt.org/guide/lightning/) (docs) - by the Raspibolt Team
 - [myNodeBTC Documentation](https://mynodebtc.github.io/intro/introduction.html) - by the myNode Team
 - [Umbrel Documentation Guides](https://community.getumbrel.com/c/guides/) - by DarthCoin (most of them)
-- [Embassy Start9 Documentation](https://start9.com/latest/user-manual/) - by the Start9 Team
+- [Start9 Documentation](https://start9.com/latest/user-manual/) - by the Start9 Team
 - [nodl Documentation](https://docs.nodl.it/) - by the nodl Team
 - [BTCPay Server Documentation](https://docs.btcpayserver.org/) - by the BTCPay Team
 - [LNbits Documentation](https://github.com/cryptoteun/awesome-lnbits) - by the LNbits Team

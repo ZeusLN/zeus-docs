@@ -14,6 +14,7 @@ const sidebars = {
       items: [
         'for-users/getting-started/before-using-zeus',
         'for-users/getting-started/remote-or-embedded',
+        'for-users/getting-started/tips',
       ],
     },
     {
@@ -44,7 +45,7 @@ const sidebars = {
         'for-users/remote-connections/citadel',
         'for-users/remote-connections/raspiblitz',
         'for-users/remote-connections/mynode',
-        'for-users/remote-connections/embassy',
+        'for-users/remote-connections/startos',
         'for-users/remote-connections/nodl',
         'for-users/remote-connections/btcpay',
         'for-users/remote-connections/lndhub',
@@ -67,7 +68,18 @@ const sidebars = {
     'lsp/intro',
     'lsp/wrapped-invoices',
     'lsp/fees',
-    'lsp/api',
+    {
+      type: 'category',
+      label: 'APIs',
+      link: {
+        type: 'generated-index',
+      },
+      collapsed: true,
+      items: [
+         'lsp/api/flow',
+         'lsp/api/lsps1'
+      ],
+    },
   ],
   lightningAddress: [
     'lightning-address/intro',

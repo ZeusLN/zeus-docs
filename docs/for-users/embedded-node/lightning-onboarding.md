@@ -26,7 +26,7 @@ All you have to do is pay the invoice generated for you in ZEUS with another lig
 
 [Fees](https://docs.zeusln.app/lsp/fees) for the service start at 10,000 per channel but tend to rise when the blockchain finds itself in a high fee environment.
 
-Another benefit of paying for a channel is zero fee routing. That means when routing payments, the first hop through OLYMPUS by ZEUS incurs no routing fees. Note, that hops beyond OLYMPUS by ZEUS will still charge you.
+Another benefit of paying for a channel is cheaper routing fees.
 
 ### Other LSPs
 
@@ -48,7 +48,7 @@ There is a button on the `Open Channel` view you can press to populate the requi
 
 Unlike paid LSP channels, your channel will require on-chain confirmation; it will not open instantly. You will also need to make sure that the channel is unannounced. We reserve announced channels for our liquidity partners to ensure that our paid LSP users have a great payments experience.
 
-Unlike paid LSP channels, you will not benefit from zero fee routing.
+Unlike paid LSP channels, you will not benefit from reduced routing fees.
 
 ### Opening a channel to other nodes
 

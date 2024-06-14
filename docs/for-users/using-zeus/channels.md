@@ -19,7 +19,7 @@ In this section, you could manage your Lightning node channels. As you can see i
 
 ![zeus-routing-fees](../../../static/img/zeus-routing-fees.jpg)
 
-As you can see in the following examples, Zeus displays a lot of information about the channel status, organized in three parts:
+As you can see in the following examples, ZEUSdisplays a lot of information about the channel status, organized in three parts:
 
 ### Channel General Information
 
@@ -28,7 +28,7 @@ As you can see in the following examples, Zeus displays a lot of information abo
 - The peer node alias and its nodeID
 - Channel balance (local and remote)
 - Channel Status (active, if it is online, disabled, if it is offline)
-- Channel type: Private (unannounced) or Public (announced on the public graph). Usually mobile LN nodes use private channels by default, but you can also open private channels from your desktop node, using Zeus, depending of your use.
+- Channel type: Private (unannounced) or Public (announced on the public graph). Usually mobile LN nodes use private channels by default, but you can also open private channels from your desktop node, using ZEUS, depending of your use.
 - Total usage of the channel (send / receive)
 - Capacity of the channel in sats
 - Commit fees, that can vary in time. Read more here: [commit fee Q1](https://old.reddit.com/r/lightningnetwork/comments/cjtbjt/question_regarding_commit_fee/) | [commit fee Q2](https://bitcoin.stackexchange.com/questions/89232/why-is-my-spendable-msat-much-lower-than-msatoshi-to-us/89235#89235) | [Lightning fees](https://lightningwiki.net/index.php/Fees)
