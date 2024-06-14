@@ -110,7 +110,7 @@ These ones works better with users from North American continent:
 - noad.sathoarder.com
 - bb1.breez.technology | bb2.breez.technology
  
-These one works better with users from European continent:
+This one works better with users from European continent:
 - node.blixtwallet.com
 
 If you want to look for some closer to your loceation, here is a full live list of4 Bitcoin neds with Neutrino activated (remember that these could change or disappear in time so review your neutrino peers ping if you notice issues and switch to better ones):
