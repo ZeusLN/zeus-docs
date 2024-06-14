@@ -97,13 +97,33 @@ First, you should try doing a rescan by going to `Settings` -> `Embedded node` -
 
 If rescan fails to correct the balance, you'll likely have to add some more Neutrino peers, especially if the LND logs display messages about peer connection timeouts.
 
+Why this could happen? Because from your location, your internet conenction have a high latency to the neutrino peer. Neutrino needs a better time response in order to be able to sync faster the blocks information. So if you will have a ping of 300ms from your device to the neutrino peer, is likely to not be able to sync well. So it is recommended to switch to another server that is closer to your location. Remember, this have nothing to do with your internet speed. Time response is not speed, is distance.
+
 To add more Neutrino peers got to `Settings` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. Then uncheck `Connect only to the specified peers`, restart the app, and try another rescan. This will allow your ZEUS wallet node to find new peers to connect to automatically.
+
+You can also have a preferred list of peers if you like. Here are some well known public neutrino peers that you can switch to from the default one.
+
+These ones works better with users from North American continent:
+- btcd1.lnolymp.us | btcd2.lnolymp.us
+- btcd-mainnet.lightning.computer
+- node.eldamar.icu
+- noad.sathoarder.com
+- bb1.breez.technology | bb2.breez.technology
+ 
+This one works better with users from European continent:
+- node.blixtwallet.com
+
+If you want to look for some closer to your loceation, here is a full live list of4 Bitcoin neds with Neutrino activated (remember that these could change or disappear in time so review your neutrino peers ping if you notice issues and switch to better ones):
+- [https://bitnodes.io/nodes/?q=NODE_COMPACT_FILTERS](https://bitnodes.io/nodes/?q=NODE_COMPACT_FILTERS)
+
+Keep in mind that this list of public neutrino peers might not exist in the future or servers name will be changed or relocated. Also there's a new Neutrino code release in the pipeline that will improve drastically the sync issues and more tolerant to high response time. In any case, faster is better.
 
 If you have your own remote node, you may also want manually add it in the Peers list. You can [use this guide to enabled 'Neutrino mode' in Bitcoin Core](https://docs.lightning.engineering/lightning-network-tools/lnd/enable-neutrino-mode-in-bitcoin-core). BTCD has Neutrino on by default.
 
 #### If it's lightning funds that have gone missing
 
-Go to the Channels view by hitting the icon in the bottom right corner of the main view then, hit the header at the top of the Channels view to toggle between open, pending, and closed channels. Mutually closed channels should return to your on-chain balance once they settle on-chain. Force closed channels can take up to two weeks to return to your on-chain wallet. These channels will appear in the pending channels list until settled.
+Go to the Channels view by hitting the icon in the bottom right corner of the main view then, and first thing try to refresh the screen by swiping down, few times.
+If still do not appear online, hit the header at the top of the Channels view to toggle between open, pending, and closed channels. Mutually closed channels should return to your on-chain balance once they settle on-chain. Force closed channels can take up to two weeks to return to your on-chain wallet. These channels will appear in the pending channels list until settled.
 
 ## I'm having payments sending lightning payments with ZEUS
 
