@@ -101,13 +101,20 @@ Why this could happen? Because from your location, your internet conenction have
 
 To add more Neutrino peers got to `Settings` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. Then uncheck `Connect only to the specified peers`, restart the app, and try another rescan. This will allow your ZEUS wallet node to find new peers to connect to automatically.
 
-You can also have a preferred list of peers if you like. Here are some well known public neutrino peers that you can switch to from the default one:
-- btcd1.lnolymp.us | btcd2.lnolymp.us (works better with users from North American continent)
-- btcd-mainnet.lightning.computer (works better with users from North American continent)
-- node.blixtwallet.com (works better with users from European continent)
-- node.eldamar.icu (works better with users from North American continent)
-- noad.sathoarder.com (works better with users from North American continent)
-- bb1.breez.technology | bb2.breez.technology (works better with users from North American continent)
+You can also have a preferred list of peers if you like. Here are some well known public neutrino peers that you can switch to from the default one.
+
+These ones works better with users from North American continent:
+- btcd1.lnolymp.us | btcd2.lnolymp.us
+- btcd-mainnet.lightning.computer
+- node.eldamar.icu
+- noad.sathoarder.com
+- bb1.breez.technology | bb2.breez.technology
+ 
+These one works better with users from European continent:
+- node.blixtwallet.com
+
+If you want to look for some closer to your loceation, here is a full live list of4 Bitcoin neds with Neutrino activated (remember that these could change or disappear in time so review your neutrino peers ping if you notice issues and switch to better ones):
+- [https://bitnodes.io/nodes/?q=NODE_COMPACT_FILTERS](https://bitnodes.io/nodes/?q=NODE_COMPACT_FILTERS)
 
 Keep in mind that this list of public neutrino peers might not exist in the future or servers name will be changed or relocated. Also there's a new Neutrino code release in the pipeline that will improve drastically the sync issues and more tolerant to high response time. In any case, faster is better.
 
