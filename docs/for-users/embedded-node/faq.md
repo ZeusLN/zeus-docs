@@ -101,13 +101,15 @@ Why this could happen? Because from your location, your internet conenction have
 
 To add more Neutrino peers got to `Settings` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. Then uncheck `Connect only to the specified peers`, restart the app, and try another rescan. This will allow your ZEUS wallet node to find new peers to connect to automatically.
 
-Here are some well known public neutrino peers that you can switch to from the default one:
-- btcd1.lnolymp.us | btcd2.lnolymp.us
-- btcd-mainnet.lightning.computer
-- node.blixtwallet.com
-- node.eldamar.icu
-- noad.sathoarder.com
-- bb1.breez.technology | bb2.breez.technology
+You can also have a preferred list of peers if you like. Here are some well known public neutrino peers that you can switch to from the default one:
+- btcd1.lnolymp.us | btcd2.lnolymp.us (works better with users from North American continent)
+- btcd-mainnet.lightning.computer (works better with users from North American continent)
+- node.blixtwallet.com (works better with users from European continent)
+- node.eldamar.icu (works better with users from North American continent)
+- noad.sathoarder.com (works better with users from North American continent)
+- bb1.breez.technology | bb2.breez.technology (works better with users from North American continent)
+
+Keep in mind that this list of public neutrino peers might not exist in the future or servers name will be changed or relocated. Also there's a new Neutrino code release in the pipeline that will improve drastically the sync issues and more tolerant to high response time. In any case, faster is better.
 
 If you have your own remote node, you may also want manually add it in the Peers list. You can [use this guide to enabled 'Neutrino mode' in Bitcoin Core](https://docs.lightning.engineering/lightning-network-tools/lnd/enable-neutrino-mode-in-bitcoin-core). BTCD has Neutrino on by default.
 
