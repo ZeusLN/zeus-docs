@@ -20,13 +20,13 @@ The LSP is on by default, but users can choose to opt out of it. It is currently
 
 ## Simple Taproot Channels
 
-ZEUS v0.8.0 is the first mobile wallet to include support for Simple Taproot Channels. When closing these channels, users are incur less fees and are given more privacy as they appear to like any other Taproot spend when examining their on-chain footprint.
+ZEUS v0.8.0 is the first mobile wallet to include support for Simple Taproot Channels. When closing these channels, users incur less fees and are given more privacy as they appear to be identical to any other Taproot spend when examining their on-chain footprint.
 
 Simple Taproot Channels can also be requested from our LSP, OLYMPUS by ZEUS.
 
 ## Neutrino block filters
 
-When checking your addresses balances, many Bitcoin wallets leak those addresses and balances to wallet provider or another third party. ZEUS doesn't.
+When checking your addresses' balances, many Bitcoin wallets leak those addresses and balances to wallet providers, or another third party. ZEUS doesn't.
 
 Block sync with ZEUS' embedded node is done using block filters and the Neutrino protocol so we are given no information about our users' on-chain funds.
 
