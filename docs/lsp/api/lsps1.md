@@ -47,20 +47,18 @@ Mutinynet: https://mutinynet-lsps1.lnolymp.us
 
 ```
 {
-    "options": {
-        "max_channel_balance_sat": "10000000",
-        "max_channel_expiry_blocks": 13000,
-        "max_initial_client_balance_sat": "0",
-        "max_initial_lsp_balance_sat": "10000000",
-        "min_channel_balance_sat": "100000",
-        "min_funding_confirms_within_blocks": 6,
-        "min_initial_client_balance_sat": "0",
-        "min_initial_lsp_balance_sat": "100000",
-        "min_onchain_payment_confirmations": null,
-        "min_onchain_payment_size_sat": null,
-        "min_required_channel_confirmations": 6,
-        "supports_zero_channel_reserve": false
-    },
+    "max_channel_balance_sat": "10000000",
+    "max_channel_expiry_blocks": 13000,
+    "max_initial_client_balance_sat": "0",
+    "max_initial_lsp_balance_sat": "10000000",
+    "min_channel_balance_sat": "100000",
+    "min_funding_confirms_within_blocks": 6,
+    "min_initial_client_balance_sat": "0",
+    "min_initial_lsp_balance_sat": "100000",
+    "min_onchain_payment_confirmations": null,
+    "min_onchain_payment_size_sat": null,
+    "min_required_channel_confirmations": 6,
+    "supports_zero_channel_reserve": false
     "uris": [
         "031b301307574bbe9b9ac7b79cbe1700e31e544513eae0b5d7497483083f99e581@45.79.192.236:9735",
         "031b301307574bbe9b9ac7b79cbe1700e31e544513eae0b5d7497483083f99e581@r46dwvxcdri754hf6n3rwexmc53h5x4natg5g6hidnxfzejm5xrqn2id.onion:9735"
@@ -107,20 +105,18 @@ params (body):
     "client_balance_sat": "0",
     "funding_confirms_within_blocks": 6,
     "created_at": "2024-06-10T03:43:11.542Z",
-    "expires_at": "2024-06-10T04:43:11.542Z",
     "lsp_balance_sat": "10000000",
     "order_id": "030fbe24220d35b9789a152bf3ada51b",
     "order_state": "CREATED",
     "payment": {
-        "fee_total_sat": "81961",
-        "bolt11_invoice": "lntbs819610n1pnxvajwpp580gpd5r9v49sju3h3cz9kp773d3af6dheudrawzp4xdt3j5lkewqdyzgd5xzmnwv4kzqvpwxycrqvpsxqcrqgr5dusryvpjxsknqwfdxqu9gvfs8gerxw33xqhrsvfktgszsvpnxpnxyefjxseryvryxv6kywfh8qukzvf4xf3xvvmpv3sn2vtz9ycqzzsxqrrsssp53j80yq9srjgatu6rdghulwlup7yt2yq024erjrkdc6jcm9xckwmq9qyyssqlxdrprrqkggrpt6m0cnyl0kdpszpjt5ywdu4wzh4rak8j5x2v3xqrh5yr2pqsykmun5l7yqn6gp5vvckn77sxqm52sdlj2s534gps2gpt547pu",
-        "lightning_invoice": "lntbs819610n1pnxvajwpp580gpd5r9v49sju3h3cz9kp773d3af6dheudrawzp4xdt3j5lkewqdyzgd5xzmnwv4kzqvpwxycrqvpsxqcrqgr5dusryvpjxsknqwfdxqu9gvfs8gerxw33xqhrsvfktgszsvpnxpnxyefjxseryvryxv6kywfh8qukzvf4xf3xvvmpv3sn2vtz9ycqzzsxqrrsssp53j80yq9srjgatu6rdghulwlup7yt2yq024erjrkdc6jcm9xckwmq9qyyssqlxdrprrqkggrpt6m0cnyl0kdpszpjt5ywdu4wzh4rak8j5x2v3xqrh5yr2pqsykmun5l7yqn6gp5vvckn77sxqm52sdlj2s534gps2gpt547pu",
-        "min_fee_for_0conf": null,
-        "min_onchain_payment_confirmations": null,
-        "onchain_address": null,
-        "onchain_payment": null,
-        "order_total_sat": "81961",
-        "state": "EXPECT_PAYMENT"
+        "bolt11": {
+            "order_total_sat": "81961",
+            "fee_total_sat": "81961",
+            "invoice": 
+                "lntbs819610n1pnxvajwpp580gpd5r9v49sju3h3cz9kp773d3af6dheudrawzp4xdt3j5lkewqdyzgd5xzmnwv4kzqvpwxycrqvpsxqcrqgr5dusryvpjxsknqwfdxqu9gvfs8gerxw33xqhrsvfktgszsvpnxpnxyefjxseryvryxv6kywfh8qukzvf4xf3xvvmpv3sn2vtz9ycqzzsxqrrsssp53j80yq9srjgatu6rdghulwlup7yt2yq024erjrkdc6jcm9xckwmq9qyyssqlxdrprrqkggrpt6m0cnyl0kdpszpjt5ywdu4wzh4rak8j5x2v3xqrh5yr2pqsykmun5l7yqn6gp5vvckn77sxqm52sdlj2s534gps2gpt547pu",
+            "state": "EXPECT_PAYMENT",
+            "expires_at": "2024-06-10T04:43:11.542Z"
+        }
     },
     "token": ""
 }
@@ -152,20 +148,18 @@ GET `/api/v1/get_order?order_id=030fbe24220d35b9789a152bf3ada51b`
     "client_balance_sat": "0",
     "funding_confirms_within_blocks": 6,
     "created_at": "2024-06-10T03:43:12.059Z",
-    "expires_at": "2024-06-10T04:43:11.542Z",
     "lsp_balance_sat": "10000000",
     "order_id": "030fbe24220d35b9789a152bf3ada51b",
     "order_state": "CREATED",
     "payment": {
-        "fee_total_sat": "81961",
-        "bolt11_invoice": "lntbs819610n1pnxvajwpp580gpd5r9v49sju3h3cz9kp773d3af6dheudrawzp4xdt3j5lkewqdyzgd5xzmnwv4kzqvpwxycrqvpsxqcrqgr5dusryvpjxsknqwfdxqu9gvfs8gerxw33xqhrsvfktgszsvpnxpnxyefjxseryvryxv6kywfh8qukzvf4xf3xvvmpv3sn2vtz9ycqzzsxqrrsssp53j80yq9srjgatu6rdghulwlup7yt2yq024erjrkdc6jcm9xckwmq9qyyssqlxdrprrqkggrpt6m0cnyl0kdpszpjt5ywdu4wzh4rak8j5x2v3xqrh5yr2pqsykmun5l7yqn6gp5vvckn77sxqm52sdlj2s534gps2gpt547pu",
-        "lightning_invoice": "lntbs819610n1pnxvajwpp580gpd5r9v49sju3h3cz9kp773d3af6dheudrawzp4xdt3j5lkewqdyzgd5xzmnwv4kzqvpwxycrqvpsxqcrqgr5dusryvpjxsknqwfdxqu9gvfs8gerxw33xqhrsvfktgszsvpnxpnxyefjxseryvryxv6kywfh8qukzvf4xf3xvvmpv3sn2vtz9ycqzzsxqrrsssp53j80yq9srjgatu6rdghulwlup7yt2yq024erjrkdc6jcm9xckwmq9qyyssqlxdrprrqkggrpt6m0cnyl0kdpszpjt5ywdu4wzh4rak8j5x2v3xqrh5yr2pqsykmun5l7yqn6gp5vvckn77sxqm52sdlj2s534gps2gpt547pu",
-        "min_fee_for_0conf": null,
-        "min_onchain_payment_confirmations": null,
-        "onchain_address": null,
-        "onchain_payment": null,
-        "order_total_sat": "81961",
-        "state": "EXPECT_PAYMENT"
+        "bolt11": {
+            "order_total_sat": "81961",
+            "fee_total_sat": "81961",
+            "invoice": 
+                "lntbs819610n1pnxvajwpp580gpd5r9v49sju3h3cz9kp773d3af6dheudrawzp4xdt3j5lkewqdyzgd5xzmnwv4kzqvpwxycrqvpsxqcrqgr5dusryvpjxsknqwfdxqu9gvfs8gerxw33xqhrsvfktgszsvpnxpnxyefjxseryvryxv6kywfh8qukzvf4xf3xvvmpv3sn2vtz9ycqzzsxqrrsssp53j80yq9srjgatu6rdghulwlup7yt2yq024erjrkdc6jcm9xckwmq9qyyssqlxdrprrqkggrpt6m0cnyl0kdpszpjt5ywdu4wzh4rak8j5x2v3xqrh5yr2pqsykmun5l7yqn6gp5vvckn77sxqm52sdlj2s534gps2gpt547pu",
+            "state": "EXPECT_PAYMENT",
+            "expires_at": "2024-06-10T04:43:11.542Z"
+        }
     },
     "token": ""
 }
