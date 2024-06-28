@@ -123,4 +123,4 @@ This typically happens when either the blockchain headers or lightning network g
 
  3. Go to `Settings` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
 
- 4. Restarting the app to jostle the state and get it online again.
+ 4. If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Settings` -> `Embedded node` -> `LND Logs`. Looks for logs with text 'Rescanning through' and 'Rescanned through'.
