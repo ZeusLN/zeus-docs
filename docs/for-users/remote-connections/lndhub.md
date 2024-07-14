@@ -32,19 +32,3 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 8. Enable **Use Tor** if your LNbits is running behind Tor.
 9. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
 10. You can now use your LNbits account as a LN wallet with ZEUS.
-
-### Connect LNTipBot account
-
-[LNtipBot](https://t.me/LightningTipBot) is using LNDhub interface for accounts and is a custodial service bot for Telegram.
-
-Keep in mind that lndhub interfaces will not provide any on-chain bitcoin address, only Lightning use.
-
-1. In your Telegram chat with @LightningTipBot, type /link to get your lndhub QR code.
-2. Open ZEUS app and go to **Settings -> Connect a node -> +**.
-3. Click on **Node interface** and select **LNDHUB**.
-4. Scroll down and press **SCAN LNDHUB QR**.
-5. Scan the lndhub QR code.
-6. Disable **Certificate Verification**.
-7. Enable **Use Tor** if you would like (but not recommended)
-8. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
-9. You can now use your LNtipBot accountwallet with ZEUS, as any other LN wallet.
