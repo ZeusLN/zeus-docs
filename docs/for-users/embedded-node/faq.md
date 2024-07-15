@@ -105,7 +105,7 @@ If you have your own remote node, you may also want manually add it in the Peers
 
 Go to the Channels view by hitting the icon in the bottom right corner of the main view then, hit the header at the top of the Channels view to toggle between open, pending, and closed channels. Mutually closed channels should return to your on-chain balance once they settle on-chain. Force closed channels can take up to two weeks to return to your on-chain wallet. These channels will appear in the pending channels list until settled.
 
-## I'm having payments sending lightning payments with ZEUS
+## I'm having problems sending lightning payments with ZEUS
 
 First, go to `Settings` > `Network Info` and make sure there are no zombie channels. Zombie channels are channels that are most likely dead but are still around, but with the embedded node sometimes we get false positives.
 
