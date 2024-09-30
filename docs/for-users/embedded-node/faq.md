@@ -125,8 +125,8 @@ This typically happens when either the blockchain headers or lightning network g
 
  4. If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Menu` -> `Embedded node` -> `LND Logs`. Looks for logs with text 'Rescanning through' and 'Rescanned through'.
 
- ## I'm having issues syncing. Sync is either stuck or won't start. What can I do?
+## I'm having issues syncing. Sync is either stuck or won't start. What can I do?
 
- For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`.
+For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`.
 
 If issues persist, reset the Neutrino data by pressing `Stop LND and Delete Neutrino files` under `Menu` > `Embedded Node` > `Advanced` and restart the sync from scratch.
