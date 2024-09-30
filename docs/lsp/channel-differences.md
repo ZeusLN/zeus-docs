@@ -2,7 +2,7 @@
 
 ---
 
-# Difference between on-chain funded and purchased channels
+# Differences between on-chain funded and purchased channels
 
 Depending on how you get your channel with Olympus, you'll face different policies in terms or channel lifetime and routing fees.
 
