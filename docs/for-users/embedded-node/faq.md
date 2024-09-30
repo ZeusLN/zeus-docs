@@ -8,9 +8,9 @@ Frequently asked questions
 
 ## I'm having problems making a payment / I can't find a route
 
-By default, ZEUS finds out information about the lightning network graph using P2P. This can take some time. To speed up the graph sync and improve your payment success probability, go to `Settings` -> `Embedded Node` -> `Express Graph Sync`. Enable it and restart ZEUS to take effect. You can go to `Settings` > `Network Info` at any point to see how much of the lightning network your node knows about.
+By default, ZEUS finds out information about the lightning network graph using P2P. This can take some time. To speed up the graph sync and improve your payment success probability, go to `Menu` -> `Embedded node` -> `Express Graph Sync`. Enable it and restart ZEUS to take effect. You can go to `Menu` > `Network Info` at any point to see how much of the lightning network your node knows about.
 
-If you still can't complete a payment after running Express Graph Sync, you may need to bump up your max payment fee. You can see this tucked away under 'Advanced settings' on the payment request view or under `Settings` -> `Payments`.
+If you still can't complete a payment after running Express Graph Sync, you may need to bump up your max payment fee. You can see this tucked away under 'Advanced settings' on the payment request view or under `Menu` -> `Settings` -> `Payments`.
 
 ## I'm having issues restoring my wallet
 
@@ -26,7 +26,7 @@ ZEUS currently doesn't have a swap service, but we're considering launching one 
 
 On-chain funds: You are presented with a 24 word seed phrase that you can back up at any time.
 
-LN funds: By default we send encrypted (with your seed phrase) backups to our server, you can also do manual backups to our server or to your clipboard under `Settings` -> `Embedded node` -> `Disaster recovery`.
+LN funds: By default we send encrypted (with your seed phrase) backups to our server, you can also do manual backups to our server or to your clipboard under `Menu` -> `Embedded node` -> `Disaster recovery`.
 
 Learn more on our [Backups and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery) page.
 
@@ -93,11 +93,11 @@ It is possible that your lightning channel has been closed. You will receive the
 
 #### If it's on-chain funds that have gone missing
 
-First, you should try doing a rescan by going to `Settings` -> `Embedded node` -> `Rescan` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Settings` -> `Embedded node` -> `LND Logs`.
+First, you should try doing a rescan by going to `Menu` -> `Embedded node` -> `Rescan` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Settings` -> `Embedded node` -> `LND Logs`.
 
 If rescan fails to correct the balance, you'll likely have to add some more Neutrino peers, especially if the LND logs display messages about peer connection timeouts.
 
-To add more Neutrino peers got to `Settings` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. Then uncheck `Connect only to the specified peers`, restart the app, and try another rescan. This will allow your ZEUS wallet node to find new peers to connect to automatically.
+To add more Neutrino peers got to `Menu` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. Then uncheck `Connect only to the specified peers`, restart the app, and try another rescan. This will allow your ZEUS wallet node to find new peers to connect to automatically.
 
 If you have your own remote node, you may also want manually add it in the Peers list. You can [use this guide to enabled 'Neutrino mode' in Bitcoin Core](https://docs.lightning.engineering/lightning-network-tools/lnd/enable-neutrino-mode-in-bitcoin-core). BTCD has Neutrino on by default.
 
@@ -107,11 +107,11 @@ Go to the Channels view by hitting the icon in the bottom right corner of the ma
 
 ## I'm having problems sending lightning payments with ZEUS
 
-First, go to `Settings` > `Network Info` and make sure there are no zombie channels. Zombie channels are channels that are most likely dead but are still around, but with the embedded node sometimes we get false positives.
+First, go to `Menu` > `Network Info` and make sure there are no zombie channels. Zombie channels are channels that are most likely dead but are still around, but with the embedded node sometimes we get false positives.
 
-If you have zombie channels, go to `Settings` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart. Be sure to go back to `Settings` > `Network Info` and ensure your zombie channel count is now zero.
+If you have zombie channels, go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart. Be sure to go back to `Menu` > `Network Info` and ensure your zombie channel count is now zero.
 
-If you don't have zombie channels and are still having issues sending lightning payments, go to `Settings` -> `Embedded node` -> `Advanced` -> `Pathfinding` and press the button labeled `Reset payment routing profile`.
+If you don't have zombie channels and are still having issues sending lightning payments, go to `Menu` -> `Embedded node` -> `Advanced` -> `Pathfinding` and press the button labeled `Reset payment routing profile`.
 
 ## My channels are showing as offline. How can I get them to show as active again?
 
@@ -119,14 +119,14 @@ This typically happens when either the blockchain headers or lightning network g
 
  1. You can pull down on the channels list to refresh it. If channels still show as offline, leave app running 10 minutes or so. Sometimes the RPC server just needs time to start up.
 
- 2. Go to `Settings` -> `Embedded node` -> `Advanced` and press the button labeled `Stop LND and Delete Neutrino files`, then restart the app. This will resync your blockchain data.
+ 2. Go to `Menu` -> `Embedded node` -> `Advanced` and press the button labeled `Stop LND and Delete Neutrino files`, then restart the app. This will resync your blockchain data.
 
- 3. Go to `Settings` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
+ 3. Go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
 
- 4. If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Settings` -> `Embedded node` -> `LND Logs`. Looks for logs with text 'Rescanning through' and 'Rescanned through'.
+ 4. If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Menu` -> `Embedded node` -> `LND Logs`. Looks for logs with text 'Rescanning through' and 'Rescanned through'.
 
  ## I'm having issues syncing. Sync is either stuck or won't start. What can I do?
 
- For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded Node` > `Peers` > `Neutrino`.
+ For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`.
 
-If issues persist, reset the Neutrino data by pressing `Stop LND and delete Neutrino files` under `Menu` > `Embedded Node` > `Advanced` and restart the sync from scratch.
+If issues persist, reset the Neutrino data by pressing `Stop LND and Delete Neutrino files` under `Menu` > `Embedded Node` > `Advanced` and restart the sync from scratch.
