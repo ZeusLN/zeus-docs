@@ -130,3 +130,11 @@ This typically happens when either the blockchain headers or lightning network g
 For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`.
 
 If issues persist, reset the Neutrino data by pressing `Stop LND and Delete Neutrino files` under `Menu` > `Embedded Node` > `Advanced` and restart the sync from scratch.
+
+## I restored my 24 words in ZEUS and my funds are still not showing up. Where are they?
+
+During a restore, all on-chain funds should appear after the restore process has completed. However, funds on lightning have to go through the force close process, which typically takes 3 days after the close transaction confirms on-chain.
+
+You should be able to see your pending close channels by going to the `Channels` view (the second icon from the right in the wallet navigation bar on the bottom of the main view), and tapping on the header to cycle between Open, Pending and Closed channels. If your previously open channels don't appear, go to `Menu` -> `Embedded node` -> `Disaster recovery` and trigger a recovery by pressing `Initiate disaster recovery from Olympus` or by going to `Initiate advanced disaster recovery from Olympus` and manually selecting a backup to restore from.
+
+For more details, visit our page on [Backup and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery/).
