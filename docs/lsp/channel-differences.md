@@ -22,7 +22,7 @@ Base fee: 1 sat
 
 These are channels that are opened to users instantly, when they create an invoice and don't have enough inbound capacity to accept the payment.
 
-__Channel lifetime__: Three months minimum. We may choose to leave your channel open for a longer duration.
+__Channel lifetime__: 3 months minimum. We may choose to leave your channel open for a longer duration.
 
 __Routing fees__: Reduced. 
 
@@ -30,7 +30,7 @@ __Routing fees__: Reduced.
 
 These are channels that user can purchase by pressing the `Purchase inbound channel` button in the ZEUS app or through our [LSP web portal](https://lsps1.olympusln.com/).
 
-__Channel lifetime__: Minimum is selected by the user at time of purchase. We may choose to leave your channel open for a longer duration.
+__Channel lifetime__: Minimum is selected by the user at time of purchase, up to 6 months. We may choose to leave your channel open for a longer duration.
 
 __Routing fees__: Reduced.
 
