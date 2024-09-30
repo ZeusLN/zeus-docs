@@ -80,6 +80,7 @@ const sidebars = {
          'lsp/api/lsps1'
       ],
     },
+    'lsp/channel-differences',
   ],
   lightningAddress: [
     'lightning-address/intro',
