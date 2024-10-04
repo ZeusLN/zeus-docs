@@ -109,7 +109,7 @@ Go to the Channels view by hitting the icon in the bottom right corner of the ma
 
 First, go to `Menu` > `Network Info` and make sure there are no zombie channels. Zombie channels are channels that are most likely dead but are still around, but with the embedded node sometimes we get false positives.
 
-If you have zombie channels, go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart. Be sure to go back to `Menu` > `Network Info` and ensure your zombie channel count is now zero.
+If you have zombie channels (>2000), go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart. Be sure to go back to `Menu` > `Network Info` and ensure your zombie channel count is significantly reduced.
 
 If you don't have zombie channels and are still having issues sending lightning payments, go to `Menu` -> `Embedded node` -> `Advanced` -> `Pathfinding` and press the button labeled `Reset payment routing profile`.
 
