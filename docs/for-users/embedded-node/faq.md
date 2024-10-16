@@ -138,3 +138,11 @@ During a restore, all on-chain funds should appear after the restore process has
 You should be able to see your pending close channels by going to the `Channels` view (the second icon from the right in the wallet navigation bar on the bottom of the main view), and tapping on the header to cycle between Open, Pending and Closed channels. If your previously open channels don't appear, go to `Menu` -> `Embedded node` -> `Disaster recovery` and trigger a recovery by pressing `Initiate disaster recovery from Olympus` or by going to `Initiate advanced disaster recovery from Olympus` and manually selecting a backup to restore from.
 
 For more details, visit our page on [Backup and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery/).
+
+## I'm having issues broadcasting on-chain transactions. They are either disappearing from my wallet or not showing up on a block explorer.
+
+This is indicative of a sync issue.
+
+Firstly, if you see the outgoing on-chain transaction under the `Activity` view you can press the `Raw transaction Hex` label and manually broadcast the TX by hitting `Broadcast to Mempool.space`. This will send the transaction directly to a popular block explorer. If it returns error `{"code":-25,"message":"bad-txns-inputs-missingorspent"}` - this means that you have sync issues.
+
+To remedy this, go through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`. Once you have reconfigured your peers, restart the app. To remove errant, invalid, transactions and fix any issues with your displayed balance, go to `Menu` -> `Embedded node` -> `Rescan` and restart the app. The process should take 5-10 minutes. You can follow along with the process under `Menu` -> `Embedded node` -> `LND Logs`.
