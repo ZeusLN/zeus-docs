@@ -4,11 +4,7 @@
 
 # Just-in-time channels API
 
-Get 0-conf channels, just in time, using the Flow 2.0 spec
-
-## Spec
-
-The just-in-time, 0-conf channel service currently follows the [Flow 2.0](https://docs.voltage.cloud/flow/flow-2.0) specification.
+Get 0-conf channels, just in time, without having to wait for on-chain confirmation
 
 ## Base URLs
 

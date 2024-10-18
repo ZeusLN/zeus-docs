@@ -28,14 +28,6 @@ All you have to do is pay the invoice generated for you in ZEUS with another lig
 
 Another benefit of paying for a channel is cheaper routing fees.
 
-### Other LSPs
-
-ZEUS currently has support for another LSP, [Voltage's Flow 2.0](https://docs.voltage.cloud/flow/flow-2.0).
-
-You can switch to this LSP by going to `Settings` > `Lightning service provider (LSP)` and replacing the host field with `https://lsp.voltageapi.com`.
-
-Voltage's fee structure fluctuates and will likely vary from ours.
-
 ## Manual channel open - open a channel with on-chain funds
 
 Since ZEUS also has a built-in on-chain wallet, you can open channels using on-chain funds. Read about [how channels work in ZEUS](https://docs.zeusln.app/for-users/using-zeus/channels).
