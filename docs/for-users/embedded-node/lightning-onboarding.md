@@ -14,13 +14,13 @@ ZEUS' embedded node has many different ways to get onboarded onto lightning with
 
 An LSP, or lightning service provider, helps connect users to the Lightning network by opening up payment channels to their nodes. You can [learn more about LSPs here](https://docs.zeusln.app/lsp/intro).
 
-ZEUS has its own LSP, OLYMPUS by ZEUS, that you are connected to by default, but also allows you to use other LSPs.
+ZEUS has its own LSP, Olympus by ZEUS, that you are connected to by default, but also allows you to use other LSPs.
 
-### OLYMPUS by ZEUS
+### Olympus by ZEUS
 
-By default, ZEUS will use its in-house LSP, OLYMPUS by ZEUS. Invoices you generate will be [wrapped](https://docs.zeusln.app/lsp/wrapped-invoices) and you'll be presented with the fees associated with the service if they're paid.
+By default, ZEUS will use its in-house LSP, Olympus by ZEUS. Invoices you generate will be [wrapped](https://docs.zeusln.app/lsp/wrapped-invoices) and you'll be presented with the fees associated with the service if they're paid.
 
-If you don't have inbound liquidity, OLYMPUS by ZEUS, will open up an instant channel to you, deduct the fee, and send you the remaining amount of the payment.
+If you don't have inbound liquidity, Olympus by ZEUS, will open up an instant channel to you, deduct the fee, and send you the remaining amount of the payment.
 
 All you have to do is pay the invoice generated for you in ZEUS with another lightning wallet, and you channel will open instantly.
 
@@ -32,11 +32,11 @@ Another benefit of paying for a channel is cheaper routing fees.
 
 Since ZEUS also has a built-in on-chain wallet, you can open channels using on-chain funds. Read about [how channels work in ZEUS](https://docs.zeusln.app/for-users/using-zeus/channels).
 
-### Opening a channel to OLYMPUS by ZEUS
+### Opening a channel to Olympus by ZEUS
 
 You can open a channel in ZEUS by going to the `Channels` view by clicking the channel icon in the bottom right corner of the main view, and then hitting the `+` icon in the top right corner.
 
-There is a button on the `Open Channel` view you can press to populate the required fields to open a channel to [OLYMPUS by ZEUS](https://amboss.space/node/031b301307574bbe9b9ac7b79cbe1700e31e544513eae0b5d7497483083f99e581).
+There is a button on the `Open Channel` view you can press to populate the required fields to open a channel to [Olympus by ZEUS](https://amboss.space/node/031b301307574bbe9b9ac7b79cbe1700e31e544513eae0b5d7497483083f99e581).
 
 Unlike paid LSP channels, your channel will require on-chain confirmation; it will not open instantly. You will also need to make sure that the channel is unannounced. We reserve announced channels for our liquidity partners to ensure that our paid LSP users have a great payments experience.
 

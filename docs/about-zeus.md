@@ -47,7 +47,7 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 - [Point of Sale](https://docs.zeusln.app/pos/overview)
 - Contact book
 - [Embedded LND Node](https://docs.zeusln.app/category/embedded-node)
-- [Lightning Service Provider: OLYMPUS by ZEUS](https://docs.zeusln.app/lsp/intro)
+- [Lightning Service Provider: Olympus by ZEUS](https://docs.zeusln.app/lsp/intro)
 - Taproot support
 - Simple Taproot Channels
 - Self-custodial lightning addresses (@zeuspay.com)

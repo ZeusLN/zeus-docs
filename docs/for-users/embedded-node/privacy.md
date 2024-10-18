@@ -8,7 +8,7 @@ Learn about the privacy properties of the Embedded Node + LSP
 
 ## Invoice wrapping
 
-Onboarding to lightning can be difficult and overwhelming to new users. So we've lowered the barrier to entry with a channel service from our new lightning service provider (LSP), OLYMPUS by ZEUS.
+Onboarding to lightning can be difficult and overwhelming to new users. So we've lowered the barrier to entry with a channel service from our new lightning service provider (LSP), Olympus by ZEUS.
 
 Users can generate invoices without having previously set up lightning payment channels, and have them paid and settled, nearly instantly, with our 0-conf channel service.
 
@@ -22,7 +22,7 @@ The LSP is on by default, but users can choose to opt out of it. It is currently
 
 ZEUS v0.8.0 is the first mobile wallet to include support for Simple Taproot Channels. When closing these channels, users are incur less fees and are given more privacy as they appear to like any other Taproot spend when examining their on-chain footprint.
 
-Simple Taproot Channels can also be requested from our LSP, OLYMPUS by ZEUS.
+Simple Taproot Channels can also be requested from our LSP, Olympus by ZEUS.
 
 ## Neutrino block filters
 
