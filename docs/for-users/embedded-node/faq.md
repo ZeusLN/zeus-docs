@@ -115,21 +115,21 @@ If you don't have zombie channels and are still having issues sending lightning 
 
 ## My channels are showing as offline. How can I get them to show as active again?
 
-This typically happens when either the blockchain headers or lightning network graph is out of sync, or the RPC server is having issues starting up. Here are some steps you can try to remedy the situation:
+This typically happens when either the blockchain headers or lightning network graph is out of sync, or the RPC server is having issues starting up. To resolve this, try the following steps one at a time. After each step, check if the issue is resolved before moving on to the next. Please note: None of these steps lead to loss of any data, such as payment history, notes, wallet configurations, or other settings.
 
- 1. You can pull down on the channels list to refresh it. If channels still show as offline, leave app running 10 minutes or so. Sometimes the RPC server just needs time to start up.
+ 1. Pull down on the channels list to refresh it. If channels still show as offline, leave the app running for about 10 minutes. Sometimes the RPC server just needs time to start up.
 
- 2. Go to `Menu` -> `Embedded node` -> `Advanced` and press the button labeled `Stop LND and Delete Neutrino files`, then restart the app. This will resync your blockchain data.
+ 2. Go to `Menu` -> `Embedded node` -> `Advanced` and press the button labeled `Stop LND and delete Neutrino files`, then restart the app. This will resync your blockchain data.
 
  3. Go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
 
- 4. If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Menu` -> `Embedded node` -> `LND Logs`. Looks for logs with text 'Rescanning through' and 'Rescanned through'.
+ 4. If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Menu` -> `Embedded node` -> `LND Logs`. Look for logs with text 'Rescanning through' and 'Rescanned through'.
 
 ## I'm having issues syncing. Sync is either stuck or won't start. What can I do?
 
 For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`.
 
-If issues persist, reset the Neutrino data by pressing `Stop LND and Delete Neutrino files` under `Menu` > `Embedded Node` > `Advanced` and restart the sync from scratch.
+If issues persist, reset the Neutrino data by pressing `Stop LND and delete Neutrino files` under `Menu` > `Embedded Node` > `Advanced` and restart the sync from scratch.
 
 ## I restored my 24 words in ZEUS and my funds are still not showing up. Where are they?
 
