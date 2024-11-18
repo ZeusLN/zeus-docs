@@ -51,22 +51,22 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 - Taproot support
 - Simple Taproot Channels
 - Self-custodial lightning addresses (@zeuspay.com)
-
-## Work-in-progress features
-
 - Standalone Point of Sale
 - Contact book Nostr integration
 - Watch-only accounts
-- Hidden profiles
 - Full LND coin control
 - External signer accounts
+- Batch transactions
+- Broadcast transactions
+- Partially-signed-bitcoin-transaction (PSBT) Support
+
+## Work-in-progress features
+
+- Hidden profiles
 - Vault (multisig) accounts
 - Connect a Lightning watchtower
 - Advanced security center
 - Advanced notifications
-- Batch transactions
-- Broadcast transactions
-- Partially-signed-bitcoin-transaction (PSBT) Support
 - PayJoin
 
 ## Who is ZEUS for?
