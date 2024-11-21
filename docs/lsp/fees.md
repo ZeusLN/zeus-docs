@@ -4,6 +4,12 @@
 
 # Fees
 
+## Purchase in advance channels service
+
+The formula for our pricing of purchase in advance channels service (LSPS1), is a bit more complex, but is competitively priced with our just-in-time channels.
+
+To get a quote, visit our [web portal](https://lsps1.olympusln.com/).
+
 ## Just-in-time channels service
 
 Our 0-conf channel service currently charges the following fees, in low fee environments:
@@ -22,10 +28,4 @@ Learn more about channel fees [here](https://docs.lightning.engineering/lightnin
 
 ## ZEUS Pay
 
-Our self-custodial lightning address incurs the following fees:
-
-| Amount sent to you                         | Fee           |
-| -----------------------------------------  | ------------- |
-| <= 20 sats                                 | 10%           |
-| <= 100 sats                                | 5%            |
-| > 100 sats                                 | 2.5%          |
+ZEUS Pay fees are now at zero.
