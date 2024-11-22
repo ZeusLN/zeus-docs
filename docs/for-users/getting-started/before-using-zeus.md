@@ -14,15 +14,15 @@ For those that just started with Bitcoin, we recommend you read these resources 
 ZEUS supports the LND and CLN implementations, as well as lndhub accounts. Below you will find more documentation about these LN implementations and information on running a Lightning node.
 
 ### What is a Bitcoin Lightning Network (LN) node?
-A Bitcoin node is a computer that connects to Bitcoin network and uses a peer-to-peer protocol that allows nodes to communicate with each other within the network as well as spreading information on transactions and blocks. Information is distributed among such nodes and they are what the blockchain network consists of. [See more details here](https://en.bitcoinwiki.org/wiki/Node).
+A Bitcoin node is a computer that connects to the Bitcoin network and uses a peer-to-peer protocol that allows nodes to communicate with each other within the network as well as spreading information on transactions and blocks. Information is distributed among such nodes and they are what the blockchain network consists of. [See more details here](https://en.bitcoinwiki.org/wiki/Node).
 
 The Lightning network is the additional payment protocol (Layer 2), a layer embedded on top of a blockchain to enable users to send or receive payments instantly and at almost zero cost. It involves the use of peer-to-peer payment channels that mean users can defer broadcasting their transactions to the blockchain, making it scale. It is intended to help Bitcoin to scale. [See more details here](https://en.bitcoinwiki.org/wiki/Lightning_Network).
 
 In short: 
-- Bitcoin network Layer 1 (onchain) is the base settlement network
+- Bitcoin network Layer 1 (on-chain) is the base settlement network
 - Lightning network Layer 2 (LN) is the payment network
 
-Here is a list of resources that will explain in detail what is, how it works, what you should do as a node LN operator, how to manage your LN node.
+Here is a list of resources that will explain in detail what it is, how it works, what you should do as a node LN operator, and how to manage your LN node.
 
 <Tabs>
 

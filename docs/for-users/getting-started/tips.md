@@ -9,6 +9,7 @@ import outpoint from '/static/img/outpoint.png';
 
 # What is an Outpoint?
 
+Here comes the technical stuff...
 An "outpoint" refers to a specific output of a previous transaction. Every transaction in Bitcoin consists of inputs and outputs. Inputs refer to the funds being spent. It specifies where the bitcoins being spent come from. It uses an outpoint to reference a previous unspent output on the blockchain, while outputs are the destinations where the funds are being sent. This defines who receives the bitcoins and the conditions for spending them.
 
 An outpoint is a reference to a particular output of a previous transaction. It consists of two parts:
