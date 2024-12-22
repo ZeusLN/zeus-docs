@@ -6,8 +6,9 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import outpoint from '/static/img/outpoint.png';
 
+# Concepts
 
-# What is an Outpoint?
+## What is an Outpoint?
 
 Here comes the technical stuff...
 An "outpoint" refers to a specific output of a previous transaction. Every transaction in Bitcoin consists of inputs and outputs. Inputs refer to the funds being spent. It specifies where the bitcoins being spent come from. It uses an outpoint to reference a previous unspent output on the blockchain, while outputs are the destinations where the funds are being sent. This defines who receives the bitcoins and the conditions for spending them.
@@ -26,7 +27,7 @@ Using the transaction ID above on a blockchain explorer like [mempool.space](htt
 
 At the left hand side, we can see the the inputs and its corresponding outpoints while on the right hand side we can see the output.
 
-# What are Anchor Outputs?
+## What are Anchor Outputs?
 
 Anchor outputs are additional outputs added to a commitment transaction in a channel, with each party having one output. These outputs are encumbered with a CSV condition, acting as timelocks, allowing parties to bump fees using Child Pays for Parent (CPFP) to facilitate transaction confirmation. This mechanism enables users to set fees for closing transactions, enhancing flexibility and security within the Lightning Network. 
 
