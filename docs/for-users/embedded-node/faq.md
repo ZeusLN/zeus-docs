@@ -93,7 +93,7 @@ It is possible that your lightning channel has been closed. You will receive the
 
 #### If it's on-chain funds that have gone missing
 
-First, you should try doing a rescan by going to `Menu` -> `Embedded node` -> `Rescan` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Settings` -> `Embedded node` -> `LND Logs`.
+First, you should try doing a rescan by going to `Menu` -> `Embedded node` -> `Advanced` -> `Rescan wallet` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Menu` -> `Embedded node` -> `LND Logs`.
 
 If rescan fails to correct the balance, you'll likely have to add some more Neutrino peers, especially if the LND logs display messages about peer connection timeouts.
 
