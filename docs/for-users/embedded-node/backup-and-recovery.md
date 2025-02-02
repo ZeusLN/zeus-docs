@@ -74,9 +74,14 @@ Remember, funds are recoverable in **most** cases. It's best to proceed calmly, 
 
 ## Can I recover my ZEUS onchain wallet into other wallet applications?
 
-The aezeed key format **should** be compatible with the following wallets: Blixt, Blue Wallet and Breez. Note that the seed alone will be insuffienct to recover all your balances if you have open or pending closing channels. But only for restoring the onchain wallet funds is enough.
+The aezeed key format **should** be compatible with the following wallets: Blixt, Blue Wallet and Breez. Note that the seed alone will be insufficient to recover all your balances if you have open or pending closing channels. But only for restoring the onchain wallet funds is enough.
 
 Another option is to use Sparrow Wallet (desktop), but are necessary some preparation steps. This method is also useful in case you want to extract the XPUB for your ZEUS LND node and you want to use it as watch only (deposit-only) in another app. Sparrow will display it in the wallet details.
+
+To import Zeus onchain ypriv / zpriv keys into Sparrow Wallet we have 2 options:
+PLEASE DO NOT SHARE THESE KEYS, THESE ARE FULL ACCESS TO YOUR NODE WALLET, KEEP THEM SAFE.
+OPTION A - directly from Zeus UI, go to Backup wallet - and click on the QR on top right corner. It will take few moments to extract the ypriv/zpriv and will display it in full text format and QR code. Now you can import it into Sparrow and have full access to your onchain walellet. In Sparrow keep in mind to switch between segwit and taproot addresses, depending which format you used in Zeus.
+OPTION B - Using Cryptography Toolkit by Guggero (LND dev):
 
 - Go to <a href="https://guggero.github.io/cryptography-toolkit/#!/aezeed">Cryptography Toolkit</a> and download the HTML file onto your computer.
 - Open that HTML file in "offline mode" (no internet) and select "aezeed Cipher Seed Scheme" from Tools. Then go to the 2nd tab "Decode Mnemonic".
