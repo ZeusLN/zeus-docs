@@ -8,7 +8,7 @@
 
 The formula for our pricing of purchase in advance channels service (LSPS1), is a bit more complex, but is competitively priced with our just-in-time channels.
 
-To get a quote, visit our [web portal](https://lsps1.olympusln.com/).
+To get a quote, visit our [web portal](https://channels.zeuslsp.com/).
 
 ## Just-in-time channels service
 
