@@ -1,5 +1,4 @@
 ---
-
 ---
 
 # FAQ
@@ -88,7 +87,6 @@ ZEUS uses Neutrino block filters to fetch on-chain information in private manner
 
 It is possible that your lightning channel has been closed. You will receive the funds on-chain once the channel has been closed.
 
-
 ### What should I do?
 
 #### If it's on-chain funds that have gone missing
@@ -103,7 +101,7 @@ If you have your own remote node, you may also want manually add it in the Peers
 
 #### If it's lightning funds that have gone missing
 
-Go to the Channels view by hitting the icon in the bottom right corner of the main view then, hit the header at the top of the Channels view to toggle between open, pending, and closed channels. Mutually closed channels should return to your on-chain balance once they settle on-chain. Force closed channels can take up to two weeks to return to your on-chain wallet. These channels will appear in the pending channels list until settled.
+Go to the Channels view by hitting the icon in the bottom right corner of the main view. Use the three tabs at the bottom to switch between Open, Pending, and Closed channels. Mutually closed channels should return to your on-chain balance once they settle on-chain. Force closed channels can take up to two weeks to return to your on-chain wallet. These channels will appear in the Pending channels list until settled.
 
 ## I'm having problems sending lightning payments with ZEUS
 
@@ -117,13 +115,13 @@ If you don't have zombie channels and are still having issues sending lightning 
 
 This typically happens when either the blockchain headers or lightning network graph is out of sync, or the RPC server is having issues starting up. To resolve this, try the following steps one at a time. After each step, check if the issue is resolved before moving on to the next. Please note: None of these steps lead to loss of any data, such as payment history, notes, wallet configurations, or other settings.
 
- 1. Pull down on the channels list to refresh it. If channels still show as offline, leave the app running for about 10 minutes. Sometimes the RPC server just needs time to start up.
+1.  Pull down on the channels list to refresh it. If channels still show as offline, leave the app running for about 10 minutes. Sometimes the RPC server just needs time to start up.
 
- 2. Go to `Menu` -> `Embedded node` -> `Advanced` and press the button labeled `Stop LND and delete Neutrino files`, then restart the app. This will resync your blockchain data.
+2.  Go to `Menu` -> `Embedded node` -> `Advanced` and press the button labeled `Stop LND and delete Neutrino files`, then restart the app. This will resync your blockchain data.
 
- 3. Go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
+3.  Go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
 
- 4. If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Menu` -> `Embedded node` -> `LND Logs`. Look for logs with text 'Rescanning through' and 'Rescanned through'.
+4.  If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Menu` -> `Embedded node` -> `LND Logs`. Look for logs with text 'Rescanning through' and 'Rescanned through'.
 
 ## I'm having issues syncing. Sync is either stuck or won't start. What can I do?
 
