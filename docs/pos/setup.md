@@ -1,5 +1,4 @@
 ---
-
 ---
 
 import posSetup1 from '../../static/img/pos/pos-setup-1.png';
@@ -10,15 +9,13 @@ import posSetup3 from '../../static/img/pos/pos-setup-3.png';
 
 Currently the ZEUS point of sale only supports merchants who process their payments with Square.
 
-## Revealing the Point of Sale settings
+## Accessing the Point of Sale Settings
 
-The Point of Sale section of the app and its settings are hidden away. To reveal the Point of Sale settings, go to the Settings view and press on the ZEUS version number 5 times.
-
-<img src={posSetup1} style={{width: 400}} />
-
-Once the easter egg sequence is triggered the Point of Sale settings will appear between the Display and About panes. Note to proceed to POS settings, you must have a fiat currency set. This currency must match the currency used on your Square Terminal or you will have reconciliation problems.
+The Point of Sale section can be found in the Settings view. Navigate to Settings, and you will see the Point of Sale section.
 
 <img src={posSetup2} style={{width: 400}} />
+
+Note to proceed to POS settings, you must have a fiat currency set. This currency must match the currency used on your Square Terminal or you will have reconciliation problems.
 
 ## Point of Sale settings overview
 
@@ -34,6 +31,6 @@ To get your Location ID, visit the Square developer dashboard, and retrieve your
 
 **Confirmation preferences**: As a merchant you have the option to select '0-conf' or '1-conf' for on-chain payment confirmation, or disable them entirely by selecting 'LN only'.
 
-**Disable tips**: ZEUS can prompt the user to leave a tip (it can even be denominated in the currency of the user's choosing) but you may want to disable tips. Tips marked in ZEUS *cannot* be reconciled back to the Square terminal. Merchants that don't want the extra reconciliation work can disable tips in ZEUS and adds tip or auto-gratuity as a line item on the Square terminal.
+**Disable tips**: ZEUS can prompt the user to leave a tip (it can even be denominated in the currency of the user's choosing) but you may want to disable tips. Tips marked in ZEUS _cannot_ be reconciled back to the Square terminal. Merchants that don't want the extra reconciliation work can disable tips in ZEUS and adds tip or auto-gratuity as a line item on the Square terminal.
 
 **Developer mode**: Toggle this is you are testing against Square's sandbox.
