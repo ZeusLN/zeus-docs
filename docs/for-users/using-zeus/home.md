@@ -34,13 +34,13 @@ You have two options:
 - Click on the camera button in the **bottom right corner**, scan the QR code for the **Lightning invoice** or **Bitcoin address**, and proceed to the next screen, where you can preview the payment details.
 - On the preview screen, tap on **PAY INVOICE** for a **Lightning payment** or **SEND COINS** for a **onchain transaction**, accordingly.
 
-![ZEUS send payment](../../../static/img/zeus-send.jpg)
+![ZEUS send payment](../../../static/img/scantopay.png)
 
 **2. Manual Entry**
 
 - Slide right on the payment method you want to use (Lightning or onchain) and click on **Send** icon button. You will be prompted to paste a LN invoice, bitcoin address, Lightning Address, LNURL, node public key for a keysend.
 
-![ZEUS wallet slide](../../../static/img/zeus-send-receive.jpg)
+![ZEUS wallet slide](../../../static/img/manualpay.png)
 
 ### Receive a payment
 
@@ -52,7 +52,7 @@ You have two options:
   - On-chain Address
   - Unified Invoice
 
-![ZEUS receive payment](../../../static/img/zeus-receive.jpg)
+![ZEUS receive payment](../../../static/img/receive.png)
 
 ### Transactions log
 
@@ -64,4 +64,4 @@ The Transaction log contains a record of:
 - **On-chain Transactions** – Bitcoin transactions sent or received on-chain.
 - **Invoices** – Created Lightning invoices.
 
-![ZEUS transactions log](../../../static/img/zeus-txs.jpg)
+![ZEUS transactions log](../../../static/img/zeus-tx.png)
