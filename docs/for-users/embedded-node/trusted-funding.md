@@ -13,6 +13,10 @@ There are a lot of perks to this set up. You skip on-chain fees, save on routing
 
 ## Steps
 
+Before you begin, be sure you have your Zeus running on "Persistent Mode". That will keep alive the LND service, unintrerrupted in case you switch screens or the phone goes on power saving mode. To activate "Persistent Mode", go to **Settings** - **Embedded Node** - **Advanced** - **Persistent Mode**, switch on the button. It will ask you to restart Zeus. After restart proceed with the next steps.
+
+**NOTE: Keep in mind that "Persistent mode" is available ONLY for Android OS users.**
+
 ### 1 On the remote node, enable zero-conf channels
 
 In your `lnd.conf` add the following lines:
