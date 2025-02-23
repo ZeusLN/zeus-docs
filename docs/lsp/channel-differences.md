@@ -43,7 +43,7 @@ __Routing fees__: Reduced.
 
 # Total capacity
 
-At present, users can only have a max total capacity of 15,000,000 sats across all their channels with the Olympus by ZEUS LSP node.
+At present, users can only have a max total capacity of 10,000,000 sats across all their channels with the Olympus by ZEUS LSP node.
 
 
 # I'd like to extend the lifetime of my channel. How do I do that?
