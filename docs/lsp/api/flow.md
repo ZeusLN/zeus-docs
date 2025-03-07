@@ -10,7 +10,7 @@ Get 0-conf channels, just in time, without having to wait for on-chain confirmat
 
 Mainnet: https://0conf.lnolymp.us
 
-Testnet: https://testnet-0conf.lnolymp.us
+Testnet3: https://testnet-0conf.lnolymp.us
 
 Mutinynet: https://mutinynet-flow.lnolymp.us
 

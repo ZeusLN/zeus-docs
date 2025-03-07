@@ -77,7 +77,8 @@ const sidebars = {
       collapsed: true,
       items: [
          'lsp/api/flow',
-         'lsp/api/lsps1'
+         'lsp/api/lsps1',
+         'lsp/api/lsps7'
       ],
     },
     'lsp/channel-differences',
