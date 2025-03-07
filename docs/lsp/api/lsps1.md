@@ -8,7 +8,7 @@ Get channels ahead of time, using the LSPS1 spec
 
 ## Spec
 
-The purchase channels in advance service currently follows the [LSPS1](https://github.com/BitcoinAndLightningLayerSpecs/lsp/blob/main/LSPS1/README.md) specification. Unlike the [just-in-time channel service](/lsp/api/flow), this service has the user await for confirmation before the channel opens.
+The purchase channels in advance service currently follows the [LSPS1](https://github.com/lightning/blips/blob/master/blip-0051.md) specification (bLIP-51). Unlike the [just-in-time channel service](/lsp/api/flow), this service has the user await for confirmation before the channel opens.
 
 ## Interfaces
 
