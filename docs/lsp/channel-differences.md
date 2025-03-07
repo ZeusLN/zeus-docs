@@ -48,4 +48,4 @@ At present, users can only have a max total capacity of 10,000,000 sats across a
 
 # I'd like to extend the lifetime of my channel. How do I do that?
 
-As of ZEUS v0.10.0, you can extend the lifetime of a channel by going to the single channel view and pressing the `Extend channel lease` button.
+As of ZEUS v0.10.0, you can extend the lifetime of a channel by going to the single channel view and pressing the `Extend channel lease` button. Learn [more about the service here](/lsp/services/lsps7).

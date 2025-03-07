@@ -2,19 +2,27 @@
 
 ---
 
-# Purchase channels in advance API
+# Purchase channels in advance
 
 Get channels ahead of time, using the LSPS1 spec
 
-## Spec
+## How can I use the purchase channels in advance service?
 
-The purchase channels in advance service currently follows the [LSPS1](https://github.com/lightning/blips/blob/master/blip-0051.md) specification (bLIP-51). Unlike the [just-in-time channel service](/lsp/api/flow), this service has the user await for confirmation before the channel opens.
+ZEUS users can purchase a channel in advance by going to the channels list view and pressing the button labeled `Purchase inbound channel`.
 
-## Interfaces
+You can also purchase a channel for your Lightning node through our [web portal](https://channels.zeuslsp.com/).
+
+## API
+
+### Spec
+
+The purchase channels in advance service currently follows the [LSPS1](https://github.com/lightning/blips/blob/master/blip-0051.md) specification (bLIP-51). Unlike the [just-in-time channel service](/lsp/services/flow), this service has the user await for confirmation before the channel opens.
+
+### Interfaces
 
 The purchase channels in advance service has two interfaces:
 
-1) A Lightning network peer-to-peer interface, using custom messages, as specified in the [LSPS0](https://github.com/BitcoinAndLightningLayerSpecs/lsp/blob/main/LSPS1/README.md) specification.
+1) A Lightning network peer-to-peer interface, using custom messages, as specified in the [LSPS0](https://github.com/lightning/blips/blob/master/blip-0050.md) specification (bLIP-50).
 
 2) A REST interface, with some slight modifications to the Lightning network peer-to-peer interface, specified below.
 
@@ -26,11 +34,11 @@ Testnet3: `03e84a109cd70e57864274932fc87c5e6434c59ebb8e6e7d28532219ba38f7f6df@13
 
 Mutinynet: `032ae843e4d7d177f151d021ac8044b0636ec72b1ce3ffcde5c04748db2517ab03@45.79.201.241:9735`
 
-## Lightning network custom message service calls
+### Lightning network custom message service calls
 
 The calls for the Lightning network peer-to-peer interface can be found in the [LSPS1](https://github.com/BitcoinAndLightningLayerSpecs/lsp/blob/main/LSPS1/README.md) specification.
 
-## REST interface base URLs
+### REST interface base URLs
 
 Mainnet: https://lsps1.lnolymp.us
 
@@ -38,7 +46,7 @@ Testnet3: https://testnet-lsps1.lnolymp.us
 
 Mutinynet: https://mutinynet-lsps1.lnolymp.us
 
-## REST interface calls
+### REST interface calls
 
 #### `GET /api/v1/get_info`
 

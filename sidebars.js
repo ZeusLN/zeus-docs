@@ -66,21 +66,20 @@ const sidebars = {
   ],
   lsp: [
     'lsp/intro',
-    'lsp/wrapped-invoices',
-    'lsp/fees',
     {
       type: 'category',
-      label: 'APIs',
+      label: 'Services',
       link: {
         type: 'generated-index',
       },
       collapsed: true,
       items: [
-         'lsp/api/flow',
-         'lsp/api/lsps1',
-         'lsp/api/lsps7'
+         'lsp/services/flow',
+         'lsp/services/lsps1',
+         'lsp/services/lsps7'
       ],
     },
+    'lsp/fees',
     'lsp/channel-differences',
   ],
   lightningAddress: [
