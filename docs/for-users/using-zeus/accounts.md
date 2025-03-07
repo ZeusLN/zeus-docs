@@ -2,19 +2,40 @@
 sidebar_position: 3
 ---
 
-# Accounts
+# Accounts  
 
-In this section, you can setup all your connections to various types of nodes and accounts to lndhub. As you can see in this example, you can manage a various number of nodes, without interfering each others and you can select which one can be active to use anytime.
+## Setting Up a Wallet Connection  
 
-Also to mention that each account works independently, no matter if is using Tor, clearnet, Tailscale, local IP etc. Once you switch between them, ZEUS will make the connection without restart needed. Just have patience if you switch from a clearnet connection to a Tor one, so that will take a while until Tor network is bootstraping your relays.
+To connect to a wallet, tap on **+ Add New Wallet**. You will be redirected to a new screen where you can either **manually enter the connection details** or **scan the node’s QR URI** to autofill the required fields.  
 
-![zeus-accounts](../../../static/img/zeus-accounts.jpg)
+Assign a nickname to your connection for easy identification. Tap on the circle icon next to the nickname to set a custom wallet picture. Then, choose the appropriate **wallet interface** from the available options:  
 
-## Operations
-1. Create a new connection, by clicking on **+ Add new node**. You will redirected to a new screen where you can fill the details or simply scan the node QR URI code and will be filled out automatically. Put a nick name your connection to be easily identified later. Then select the node interface (LND, CLN, lndhub etc). Don't forget to select **Use Tor** if your node is running on Tor network. See more connection examples in the chapter [Connecting to ZEUS](https://docs.zeusln.app/for-users/getting-started/lightning-node-connect).
+- **Embedded LND**  
+- **LND Rest**  
+- **LND (Lightning Node Connect)**  
+- **CLNRest**  
+- **Nostr Wallet Connect**  
+- **LNDHub**  
 
-![node-config](../../../static/img/node-config.jpg)
+If your wallet operates on the **Tor network**, ensure that you enable the **Use Tor** option.  
 
-2. Select an existing account, just by pressing it quickly. It will redirect you to the main screen, waiting for connection.
-3. Edit an existing account, by clicking on the right arrow **>** and will redirect you to the configuration menu for that account. In this screen you can also delete the account.
-4. Future option will be to save the profiles configuration into a file, to be able to restore them if you migrate to a new device.
+![wallet-config](../../../static/img/wallet-config.png)  
+
+---
+
+## Managing Wallet Connections  
+
+Once you've set up multiple **wallet connections**, you can seamlessly switch between them without interference. Each wallet functions independently, whether connected via **Tor, clearnet, Tailscale, or a local IP**. ZEUS will automatically establish the connection without requiring a restart.  
+
+However, if switching from a **clearnet** connection to **Tor**, it may take some time for the Tor network to bootstrap your relays—so a little patience may be needed.  
+
+![zeus-wallets](../../../static/img/zeus-wallets.png)  
+
+---
+
+## Operations  
+
+1. **Select an existing wallet** by tapping on it. You will be redirected to the main screen while ZEUS establishes the connection.  
+2. **Edit an existing wallet** by tapping the **settings icon (⚙️)** next to it. This will open the wallet’s configuration menu, where you can modify the settings or delete the connection.  
+3. **Rearrange wallets** by holding and dragging the **drag icon (≡)** next to each wallet. This allows you to change the order of your wallets as per your preference.  
+4. **Backup and Restore (Coming Soon):** A future update will allow saving wallet configurations to a file for easy migration to a new device.  
