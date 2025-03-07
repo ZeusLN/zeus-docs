@@ -4,12 +4,6 @@
 
 # Fees
 
-## Purchase in advance channels service
-
-The formula for our pricing of purchase in advance channels service (LSPS1), is a bit more complex, but is competitively priced with our just-in-time channels.
-
-To get a quote, visit our [web portal](https://channels.zeuslsp.com/).
-
 ## Just-in-time channels service
 
 Our 0-conf channel service currently charges the following fees, in low fee environments:
@@ -25,6 +19,12 @@ In high fee environments, channel open fees will vary based on block space deman
 Also note that zero fee forwarding is only applied to purchased 0-conf channels.
 
 Learn more about channel fees [here](https://docs.lightning.engineering/lightning-network-tools/lnd/channel-fees).
+
+## Purchase in advance channels service
+
+The formula for our pricing of purchase in advance channels service (LSPS1), is a bit more complex, but is competitively priced with our just-in-time channels.
+
+To get a quote, visit our [web portal](https://channels.zeuslsp.com/).
 
 ## ZEUS Pay
 
