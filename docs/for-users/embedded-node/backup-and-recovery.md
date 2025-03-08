@@ -78,11 +78,11 @@ The aezeed key format **should** be compatible with the following wallets: Blixt
 
 Another option is to use Sparrow Wallet (desktop), but are necessary some preparation steps. This method is also useful in case you want to extract the XPUB for your ZEUS LND node and you want to use it as watch only (deposit-only) in another app. Sparrow will display it in the wallet details.
 
-To import Zeus onchain ypriv / zpriv keys into Sparrow Wallet we have 2 options:
+To import the ZEUS on-chain ypriv / zpriv keys into Sparrow Wallet you have 2 options:
 
 PLEASE DO NOT SHARE THESE KEYS, THESE ARE FULL ACCESS TO YOUR NODE WALLET, KEEP THEM SAFE.
 
-**OPTION A** - directly from Zeus UI, go to Backup wallet - and click on the QR on top right corner. It will take few moments to extract the ypriv/zpriv and will display it in full text format and QR code. Now you can import it into Sparrow and have full access to your onchain wallet. In Sparrow keep in mind to switch between segwit P2WPKH "bc1q" (<a href="https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki">BIP84</a>) and taproot addresses P2TR "bc1p" (<a href="https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki">BIP86</a>), depending which format you used previously in Zeus. Derivation path should be used m/86'/0'/0'
+**OPTION A** - directly from the ZEUS UI, go to Backup wallet - and click on the QR on top right corner. It will take few moments to extract the ypriv/zpriv and will display it in full text format and QR code. Now you can import it into Sparrow and have full access to your onchain wallet. In Sparrow keep in mind to switch between segwit P2WPKH "bc1q" (<a href="https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki">BIP84</a>) and taproot addresses P2TR "bc1p" (<a href="https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki">BIP86</a>), depending which format you used previously in ZEUS.
 
 **OPTION B** - Using Cryptography Toolkit by Guggero (LND dev):
 
@@ -98,7 +98,7 @@ PLEASE DO NOT SHARE THESE KEYS, THESE ARE FULL ACCESS TO YOUR NODE WALLET, KEEP 
 - In the "Keystores" select "new imported software wallet"
 - In the next window that will open, select "Master Private Key BIP32" and paste that "zprv" key you get it from the cryptography tool and click "import". It will show you that is a m/84'/0'/0 derivation path. That will import only the segwit P2WPKH type of addresses. But if you used Taproot P2TR addresses, then you should change it into "m/86'/0'/0".
 - Click on "Import Keystore" and it will go back to main window of the wallet app where you can see all the wallet config. Click on "apply" and will prompt you to set a password to encrypt your local wallet file.
-- If you used both types of addresses in Zeus, we suggest to import them as two wallets in Sparrow, using the same "xprv" key but each one with a different derivation path. In this way you can avoid confusions.
+- If you used both types of addresses in ZEUS, we suggest to import them as two wallets in Sparrow, using the same "xprv" key but each one with a different derivation path. In this way you can avoid confusions.
 - You can also change between segwit and taproot an already imported wallet, by going to wallet Settings and switch the "Scrypt Type" (segwit P2WPKH or taproot P2TR) and then re-import the BIP32 xprv keys to make the switch.
 
 ![zeus-channels](../../../static/img/zeus-sparrow-taproot.png)
