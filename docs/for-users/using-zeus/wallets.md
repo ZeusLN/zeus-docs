@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Accounts  
+# Wallets  
 
 ## Setting Up a Wallet Connection  
 

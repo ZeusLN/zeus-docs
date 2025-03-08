@@ -9,7 +9,7 @@ In this section, you could configure and personalize your ZEUS, connect to vario
 ![settings-screen](../../../static/img/zeus-settings-2.jpg)
 
 ## Main options
-1. **Accounts menu** - Add or select default connection to various types (see more details in [Accounts section](accounts.md))
+1. **Wallets menu** - Add or select default connection to various types (see more details in [Wallets section](wallets.md))
 2. **Node Info** - See more details about your LN node, to which you connect ZEUS (Alias, LN version, node URI, QR URI, NFC).
 3. **Privacy menu** - set **lurker mode** to hide your mains creen balances and mempool options
 
