@@ -44,11 +44,9 @@ Force closes are more expensive than mutual closes. Force closes will also take 
 
 ## Restoring a wallet
 
-ZEUS currently only allows one embedded node wallet at a time, so if you have already initialized a wallet, you must uninstall and reinstall the app.
-
 Once you're ready to recover, go to the Settings menu in ZEUS. It is accessible from the top left corner on the main view (typically an icon of Zeus) if you have a wallet configured already, or by pressing 'Advanced set-up' on the splash screen of a new install.
 
-From there you can add a new node by pressing the top field (it will either say 'No Nodes', or the name of your active connection), and then hitting the plus (+) icon in the top right corner.
+From there you can add a new node by pressing the top field (it will either say 'No Wallets', or the name of your active connection), and then hitting the plus (+) icon in the top right corner.
 
 From there, enter your 24 word seed phrase in the field labeled 'Recovery Cipher Seed (aezeed)'. You can optionally provide a static backup string in the field labeled 'Disaster recovery data (SCB, Base64)'.
 
