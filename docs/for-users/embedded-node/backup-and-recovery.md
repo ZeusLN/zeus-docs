@@ -78,6 +78,8 @@ The aezeed key format **should** be compatible with the following wallets: Blixt
 
 Another option is to use Sparrow Wallet (desktop), but are necessary some preparation steps. This method is also useful in case you want to extract the XPUB for your ZEUS LND node and you want to use it as watch only (deposit-only) in another app. Sparrow will display it in the wallet details.
 
+### Step 1. Get the HD Keys from your ZEUS wallet
+
 To import the ZEUS on-chain ypriv / zpriv keys into Sparrow Wallet you have 2 options:
 
 PLEASE DO NOT SHARE THESE KEYS, THESE ARE FULL ACCESS TO YOUR NODE WALLET, KEEP THEM SAFE.
@@ -94,10 +96,13 @@ PLEASE DO NOT SHARE THESE KEYS, THESE ARE FULL ACCESS TO YOUR NODE WALLET, KEEP 
 
 - Select format BIP84 native segwit and wait a bit to be decoded.
 - Copy the zprv displayed into the field "HD node root base 58"
-- Open (already downloaded) Sparrow wallet app and select "new wallet"
-- In the "Keystores" select "new imported software wallet"
-- In the next window that will open, select "Master Private Key BIP32" and paste that "zprv" key you get it from the cryptography tool and click "import". It will show you that is a m/84'/0'/0 derivation path. That will import only the segwit P2WPKH type of addresses. But if you used Taproot P2TR addresses, then you should change it into "m/86'/0'/0".
-- Click on "Import Keystore" and it will go back to main window of the wallet app where you can see all the wallet config. Click on "apply" and will prompt you to set a password to encrypt your local wallet file.
+
+### Step 2. Restore the HD Keys in the Sparrow desktop wallet
+
+- Open (already downloaded) Sparrow wallet app and select "New Wallet"
+- In the "Keystores" select "New or Imported Software Wallet"
+- In the next window that will open, select "Master Private Key BIP32" and paste that "zprv" key you get it from the cryptography tool and click "Import". It will show you that is a m/84'/0'/0 derivation path. That will import only the segwit P2WPKH type of addresses. But if you used Taproot P2TR addresses, then you should change it into "m/86'/0'/0".
+- Click on "Import Keystore" and it will go back to main window of the wallet app where you can see all the wallet config. Click on "Apply" and will prompt you to set a password to encrypt your local wallet file.
 - If you used both types of addresses in ZEUS, we suggest to import them as two wallets in Sparrow, using the same "xprv" key but each one with a different derivation path. In this way you can avoid confusions.
 - You can also change between segwit and taproot an already imported wallet, by going to wallet Settings and switch the "Scrypt Type" (segwit P2WPKH or taproot P2TR) and then re-import the BIP32 xprv keys to make the switch.
 
