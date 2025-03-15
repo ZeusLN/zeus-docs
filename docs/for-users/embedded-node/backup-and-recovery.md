@@ -110,3 +110,21 @@ PLEASE DO NOT SHARE THESE KEYS, THESE ARE FULL ACCESS TO YOUR NODE WALLET, KEEP 
 - For a faster, secure and private connection is better to connect your Sparrow wallet app to your node (via Electrum server or directly to a Bitcoin Core RPC)
 
 And done, now you can manage your ZEUS LND onchain wallet from Sparrow.
+
+## chantools: sweepremoteclosed
+
+chantools is a <a href="https://github.com/lightninglabs/chantools">CLI tool</a> for recovering funds from Lightning channel when a user has unfortunately lost their channel state data.
+
+In ZEUS v0.10, we've built in the sometimes needed sweepremoteclosed command, which we've found to be invaluable when users have sync issues or have lost their channel backups.
+
+### Steps
+
+- 1) Go to `Menu` > `Embedded Node` > `Advanced` > `chantools` > `sweepremoteclosed`
+
+- 2) In the field called `Sweep address`, input an on-chain address to receive your funds to, then hit `Start Sweep`. It should take about 5-10 minutes to run.
+
+- 3) If successful you'll reach a page labeled TXHex with a QR code. Simply scroll to the bottom and hit `Broadcast TX to complete the recovery
+
+If you hit error "found 0 sweep targets with total value of 0 satoshis which is below the dust limit of 600", simply try again with `Advanced settings`: `Recovery window` increased. Try 1000, 2500, 5000 if necessary.
+
+If you hit any issues about unexpected characters, you are hitting a rate limit from one of the block explorer settings. Under Advanced settings, set 'Seconds to wait between queries' to 1 and try again. Please be patient as the process will now take a bit longer.
