@@ -12,7 +12,7 @@ This embedded ndoe is a full LND node that is using Neutrino protocol to sync th
 
 Beside the embedded node you can also run one or multiple remote nodes or additional lndhub and NWC accounts. Starting with [Zeus v.0.10.0](https://blog.zeusln.com/new-release-zeus-v0-10-0/) you can even run multiple embedded nodes (but NOT on the same time). You can switch between any of these nodes and connections very easily from the top right icon.
 
-![nwc-protocol](../../../static/img/zeus-node-phone-meme.jpg)
+insert zeus-node-phone-meme.jpg
 
 ### Main features of the Zeus embedded node
 

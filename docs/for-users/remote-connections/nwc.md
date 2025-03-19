@@ -7,7 +7,7 @@ Nostr Wallet Connect (NWC) is an open protocol to connect lightning wallets to a
 
 NWC describes a way for client apps to access a remote bitcoin lightning wallet through a standardized protocol. Wallets and apps want to implement this to allow users to seamlessly connect their own wallet accounts for native payments in apps. [Read more details about NWC here](https://nwc.dev/).
 
-![nwc-protocol](../../../static/img/nwc-protocol.png)
+insert nwc-protocol.png
 
 Now you can connect various NWC accounts from your own LN node (Alby Hub, LNbits) or custodial ones like: CoinOS.io, Cashu.me, LNwallet.app, Rizful.com etc
 

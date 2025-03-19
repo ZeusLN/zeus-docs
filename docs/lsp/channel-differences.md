@@ -54,6 +54,6 @@ As of ZEUS v0.10.0, you can extend the lifetime of a channel by going to the sin
 
 Yes is possible. If you opened a channel with Olympus LSP node directly with your onchain funds and you want to "convert" it into a leased LSP channel you just have to go the details of the active channel you want to convert and click on the red button saying `Purchase Channel Lease` as in the following example.
 
-![purchase-lease](../../../static/img/zeus-purchase-lease.jpg)
+insert zeus-purchase-lease.jpg
 
 You will be asked to pay a LN invoice representing the lease cost and done, your channel from now on will have all the features and advantages of a LSP channel.
