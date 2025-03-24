@@ -23,16 +23,27 @@ insert zeus-node-phone-meme.jpg
 5. **Integrated LSP** - Olympus is the new LSP node for Zeus. Users can receive sats over LN straight away, without having previously set up LN channels. Simply will have to create a LN invoice and pay from any other LN wallet, with Zeus 0-conf channel service. Read more about Zeus LSP here. The LSP also provides added privacy to our users by providing them with wrapped invoices that conceal their nodes public keys from payers.
 
 **NOTE**: LSP = Liquidity Service Provider, [read more here](https://docs.zeusln.app/lsp/intro).
+
 6. **Channels Management** - apart from [easy onboarding on Lightning](https://docs.zeusln.app/for-users/embedded-node/lightning-onboarding) you can open various LN channels with any other LN node you want. But keep in mind - this embedded node it meant to be a "private" node with unannounced channels. You can open channels with funds from your Zeus onchain wallet or with any other LSP by buying [JiT (just-in-time) channels](https://docs.zeusln.app/lsp/services/flow).
 
 **NOTE**: just for a personal mobile node like Zeus embedded is not really necessary to have open too many LN channels. One channel with [Olympus LSP](https://docs.zeusln.app/for-users/embedded-node/lightning-onboarding) plus 2-3 more with other good LSPs will be more than enough. You can see more "vouched" peers for your Zeus node [here](https://docs.zeusln.app/for-users/embedded-node/lightning-onboarding). Size wisely your channels, do not open too small channels, like 50-100k sats, but enough big to cover your regular payments.
+
 7. **Contacts Book** - you can save manually contacts or import from NOSTR, for easy send payments to your regular destinations.
+
 8. **Full support for LNURL, LN Address send and receive** - now you can setup your own self-custodial LN Address with @zeuspay.com. Reminder: You can also use Zeus for LN-auth on sites where you can login with a LN authentication. Is very handy.
+
+**NOTE**: Zeus also supports [NameDesc bLIP-11](https://github.com/lightning/blips/blob/master/blip-0011.md) which offer the option to add a "receiver nname" in your invoices. Is quite handy and useful for shops that are generating invoices and want to add their shop name in the invoice automatically. So the payer will always have a record history of his payments to this particular shop / destination. This feature is OPTIONAL (not enforced) and can be set from "Settings" - "Invoices" - "Receiver name". Once is set, will be attached to all your LN invoices you create.
+
 9. **Point of Sale** - Now merchant users can setup their own product items and sell directly from Zeus, with integrated PoS. For the moment contain basic needs but in the future will contain extended features.
-10. **LND logs** - user can read in real time the LND service logs and use them to debug possible issues (mainly for bad connections)
+
+10. **LND logs** - user can read in real time the LND service logs and use them to debug possible issues (mainly for bad connections).
+
 11. **Chantools Sweep** - advanced command used to recover funds from closed channels. [More details here](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery#chantools-sweepremoteclosed).
+
 12. **Developer Tools** - advanced CLI commands that can be run directly in your embedded node to debug, test, obtain more information from your LND node.
+
 13. **Speed-up transaction** - in case you were opening / closing a channel or doing a simple onchain TX and the mempool fees were spiking up, you have the option to increase the fee for your tx with this easy integrated tool.
+
 14. **Automated Backups** - the LN node channels are automatically back up on the Olympus server. This automated backup is encrypted with your node wallet seed (without the seed is totally useless). User also can export manually a SCB (static channels backup) for a disaster recovery.
 
 **NOTE**: In the `Backup` section you could also export your Zeus embedded node xpriv/zpriv. For what is this useful? In case you want to restore your Zeus onchain wallet into Sparrow wallet, in case of disaster (your phone was robbed or broken) or you want to extract the xpub keys for using it as an "watch-only wallet. This is a very useful good feature for advanced users.
