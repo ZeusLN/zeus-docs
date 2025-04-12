@@ -69,7 +69,7 @@ Cashu keys are derived from the Embedded LND wallet keys, so if the user backs t
 We've choosen to add Cashu to ZEUS for the following reasons:
 
 1. New users can start off with amounts that are uneconomical to take on-chain, or too low to purchase a Lightning channel with. They can get a Cashu-powered Lightning address from ZEUS Pay and start participating in the Bitcoin economy immediately.
-2. While starting amounts to self-custody may seem low to people in developed countries, they can be significant to people in developing countries. We want to the Bitcoin economy to take hold worldwide.
+2. While starting amounts to self-custody may seem low to people in developed countries, they can be significant to people in developing countries. We want the Bitcoin economy to take hold worldwide.
 3. The users targeted here are likely to use custodial wallets to begin with anyway, but ZEUS has the opportunity and incentives to educate and guide users to self-custody. Most custodial wallets don't have the right incentives to encourage users to graduate to self-custody.
 4. Users who are already using Bitcoin self-custodial can benefit with the newly added ability to sweep Cashu tokens directly to their self-custodial Lightning wallets.
 
