@@ -66,6 +66,7 @@ const sidebars = {
         "for-users/using-zeus/channels",
       ],
     },
+    "self-custody"
   ],
   lsp: [
     "lsp/intro",
