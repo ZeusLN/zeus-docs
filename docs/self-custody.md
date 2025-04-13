@@ -10,13 +10,13 @@ Bitcoin was created to enable **peer-to-peer money**—value transfer without in
 | **Who controls the coins?** | The custodian (you rely on them to act honestly) | You (only you can move the coins) |
 | **Risk of loss or seizure** | High – subject to hacks, fraud, or government intervention | Lower – only vulnerable if you mismanage your own keys |
 | **Censorship resistance** | Weak – withdrawals can be blocked or delayed | Strong – no one can stop you from transacting |
-| **User responsibility** | Low (except in [some cases](#the-illusion-of-self-custodial-custody)) | High – you must manage backups, avoid phishing, etc. |
+| **User responsibility** | Low (except in [some cases](#ious--keys-the-illusion-of-self-custody-in-custodial-systems)) | High – you must manage backups, avoid phishing, etc. |
 
 Self-custody is the **only** way to fully benefit from Bitcoin's properties: **sovereignty, censorship-resistance, and permissionless use**.
 
 ---
 
-## The Illusion of Self-Custodial Custody
+## IOUs + Keys: The Illusion of Self-Custody in Custodial Systems
 
 Some systems claim to give you the best of both worlds: faster transactions, lower fees, and “you still hold your keys.” Examples include:
 
@@ -62,7 +62,7 @@ But in return, you gain:
 
 ## Custodial ecash in ZEUS
 
-ZEUS has long allowed users to use Bitcoin custodially with some remote connection types. As of ZEUS v0.11, users of the local Embedded LND wallet (AKA the node in the phone) have the option of using ecash using the Cashu protocol.
+As of ZEUS v0.11, users of the local Embedded LND wallet (AKA the node in the phone) have the option of using ecash using the Cashu protocol.
 
 Cashu keys are derived from the Embedded LND wallet keys, so if the user backs those up, they can restore the funds after adding the mints they used, back into the app - providing the mint is still operating and hasn't exited with user funds.
 
