@@ -74,6 +74,8 @@ Mutinynet: https://mutinynet-flow.lnolymp.us
 }
 ```
 
+Client ***SHOULD*** connect as a peer via any of the connection methods provided from the `info` endpoint, otherwise the LSP will be unable to open a channel to them.
+
 #### `POST /api/v1/fee`
 
 *Request*
