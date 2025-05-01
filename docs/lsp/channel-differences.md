@@ -36,7 +36,7 @@ These are channels that user can purchase by pressing the `Purchase inbound chan
 
 __Channel size__: 100,000 - 10,000,000 sats
 
-__Channel lifetime__: Minimum is selected by the user at time of purchase, up to 6 months. We may choose to leave your channel open for a longer duration.
+__Channel lifetime__: Selected by the user at time of purchase: as little as 2 weeks up to 12 months. We may choose to leave your channel open for a longer duration.
 
 __Routing fees__: Reduced.
 
