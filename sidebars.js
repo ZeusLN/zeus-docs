@@ -25,9 +25,10 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        "for-users/embedded-node/backup-and-recovery",
-        "for-users/embedded-node/lightning-onboarding",
+        "for-users/embedded-node/overview",
         "for-users/embedded-node/privacy",
+        "for-users/embedded-node/lightning-onboarding",
+        "for-users/embedded-node/backup-and-recovery",
         "for-users/embedded-node/open-channel-to-embedded-node",
         "for-users/embedded-node/trusted-funding",
         "for-users/embedded-node/faq",
@@ -49,6 +50,7 @@ const sidebars = {
         "for-users/remote-connections/nodl",
         "for-users/remote-connections/btcpay",
         "for-users/remote-connections/lndhub",
+        "for-users/remote-connections/nwc",
       ],
     },
     {

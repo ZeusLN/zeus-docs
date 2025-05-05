@@ -3,7 +3,7 @@
 ---
 
 # Overview
-ZEUS is an advanced app designed to give you an easy access to your Bitcoin Lightning Nodes and lndhub accounts. 
+ZEUS is an advanced app designed to give you an easy access to your Bitcoin Lightning Nodes, NWC wallets and lndhub accounts. 
 
 You could configure ZEUS with multiple nodes and accounts, switching between them, instantly without restarting the app.
 

@@ -49,3 +49,11 @@ At present, users can only have a max total capacity of 10,000,000 sats across a
 # I'd like to extend the lifetime of my channel. How do I do that?
 
 As of ZEUS v0.10.0, you can extend the lifetime of a channel by going to the single channel view and pressing the `Extend channel lease` button. Learn [more about the service here](/lsp/services/lsps7).
+
+# Can I convert a standard channel into a LSP channel ?
+
+Yes is possible. If you opened a channel with Olympus LSP node directly with your onchain funds and you want to "convert" it into a leased LSP channel you just have to go the details of the active channel you want to convert and click on the red button saying `Purchase Channel Lease` as in the following example.
+
+insert zeus-purchase-lease.jpg
+
+You will be asked to pay a LN invoice representing the lease cost and done, your channel from now on will have all the features and advantages of a LSP channel.
