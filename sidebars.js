@@ -82,6 +82,10 @@ const sidebars = {
     "lsp/fees",
     "lsp/channel-differences",
   ],
+  swaps: [
+    "swaps/intro",
+    "swaps/api",
+  ],
   lightningAddress: ["lightning-address/intro", "lightning-address/fees"],
   pos: ["pos/overview", "pos/setup", "pos/checkout"],
   contribute: [
