@@ -85,6 +85,7 @@ const sidebars = {
   ],
   swaps: [
     "swaps/intro",
+    "swaps/api",
   ],
   lightningAddress: ["lightning-address/intro", "lightning-address/fees"],
   pos: ["pos/overview", "pos/setup", "pos/checkout"],
