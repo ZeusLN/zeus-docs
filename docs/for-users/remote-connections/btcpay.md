@@ -13,7 +13,7 @@ BTCPay Server is a payment processor system and could connect to ZEUS in two mod
 
 1. In your your BTCPay instance, go to services and select ZEUS. It will show you a QR code to scan.
 2. Open the ZEUS app and go to **Settings -> Connect a node -> +**.
-3. Click on **Node interface** and select **LND** or **C-lightning REST**.
+3. Click on **Node interface** and select **LND** or **c-lightning-REST**.
 4. Scroll down and press **SCAN BTCPAY config QR**. Scan the lnd/cln QR code from your BTCPay Server config.
 5. Disable **Certificate Verification**.
 6. Enable **Use Tor** if your BTCPay is running behind Tor.

@@ -13,9 +13,9 @@ Another new type of connection is through LNC (Lightning Node Connect), a kind o
 ### Using Tor or clearnet (domain/IP) network
 
 1. Open ZEUS and go to **Settings -> Connect a node -> +**.
-2. Click on **Node interface** and select **LND** or **C-Lightning REST**.
+2. Click on **Node interface** and select **LND** or **c-lightning-REST**.
 3. Scroll down and press **SCAN LND node QR**.
-4. Open your StartOS dashboard and go to **Services -> CLN/LND -> Properties - C-lightning REST/lndconnect REST URL**.
+4. Open your StartOS dashboard and go to **Services -> CLN/LND -> Properties - c-lightning-REST/lndconnect REST URL**.
 5. Scan the QR Code.
 6. Enable **Use Tor**.
 7. Click on **SAVE NODE CONFIG**.
