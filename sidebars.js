@@ -41,6 +41,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
+        "for-users/remote-connections/alby-hub",
         "for-users/remote-connections/umbrel",
         "for-users/remote-connections/citadel",
         "for-users/remote-connections/raspiblitz",
