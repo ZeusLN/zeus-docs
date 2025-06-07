@@ -67,6 +67,7 @@ const sidebars = {
         "for-users/using-zeus/channels",
       ],
     },
+    "cashu",
     "self-custody"
   ],
   lsp: [
