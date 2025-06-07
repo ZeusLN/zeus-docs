@@ -63,12 +63,12 @@ const sidebars = {
         "for-users/using-zeus/overview",
         "for-users/using-zeus/home",
         "for-users/using-zeus/wallets",
-        "for-users/using-zeus/profiles",
+        "for-users/using-zeus/menu",
         "for-users/using-zeus/channels",
       ],
     },
     "cashu",
-    "self-custody"
+    "self-custody",
   ],
   lsp: [
     "lsp/intro",
