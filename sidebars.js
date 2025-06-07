@@ -41,6 +41,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
+        "for-users/remote-connections/alby-hub",
         "for-users/remote-connections/umbrel",
         "for-users/remote-connections/citadel",
         "for-users/remote-connections/raspiblitz",
@@ -66,6 +67,7 @@ const sidebars = {
         "for-users/using-zeus/channels",
       ],
     },
+    "cashu",
     "self-custody",
   ],
   lsp: [
@@ -81,6 +83,10 @@ const sidebars = {
     },
     "lsp/fees",
     "lsp/channel-differences",
+  ],
+  swaps: [
+    "swaps/intro",
+    "swaps/api",
   ],
   lightningAddress: ["lightning-address/intro", "lightning-address/fees"],
   pos: ["pos/overview", "pos/setup", "pos/checkout"],

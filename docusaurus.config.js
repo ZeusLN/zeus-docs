@@ -72,6 +72,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'swaps/intro',
+            position: 'left',
+            label: 'Swaps',
+          },
+          {
+            type: 'doc',
             docId: 'lightning-address/intro',
             position: 'left',
             label: 'Lightning Address',

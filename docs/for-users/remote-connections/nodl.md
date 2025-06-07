@@ -46,7 +46,7 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 2. Install Tailscale app in nodl and login with that Tailscale account you just created. In your Tailscale account you would see all your devices connected and each one will have a dedicated private IP.
 3. Install Tailscale in your mobile device and login with that same created account. Immediately you will see in the app the IP of your node. Will be a private IP, not a public one. Copy it.
 4. Open ZEUS and go to **Settings -> Connect a node -> +**.
-5. Click on **Node interface** and select **LND** or **C-lightning REST**(depending on which LN implementation you run your node).
+5. Click on **Node interface** and select **LND** or **c-lightning-REST**(depending on which LN implementation you run your node).
 6. Scroll down and press **SCAN LN node QR**.
 7. Open your nodl dashboard and go to **LND tile -> Select your wallet -> Zeus**.
 8. Scan the QR Code.

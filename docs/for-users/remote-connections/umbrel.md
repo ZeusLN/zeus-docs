@@ -13,13 +13,27 @@ Another new type of connection is through LNC (Lightning Node Connect), a kind o
 ### Using Tor or clearnet (domain/IP) network
 
 1. Open ZEUS and go to **Settings -> Connect a node -> +**.
-2. Click on **Node interface** and select **LND** or **C-lightning REST** (depending on which LN implementation you run your node).
+2. Click on **Node interface** and select **LND** or **c-lightning-REST** (depending on which LN implementation you run your node).
 3. Scroll down and press **SCAN LN node QR**.
 4. Open your Umbrel dashboard and go to **Connect Wallet -> Select your wallet -> Zeus**.
 5. Scan the QR Code.
 6. Enable **Use Tor** only if you Umbrel is running only on Tor network.
 7. Click on **SAVE NODE CONFIG**.
 8. ZEUS is now connected to your Umbrel and you can use it manage your node and make payments.
+
+:::note
+
+Core Lightning users should note that c-lightning-REST has been removed in ZEUS v0.10, in favor of CLNRest. In order to use ZEUS with your Umbrel, you must use ZEUS v0.9.7 or earlier.
+
+Please consider asking Umbrel to add support for CLNRest.
+
+:::
+
+### Using Nostr Wallet Connect
+
+1. Make sure you have Alby Hub installed on your node.
+2. Go to the App Store in the Alby Hub web interface and scroll down until you see ZEUS.
+3. Press 'Connect' and follow the on-screen instructions.
 
 ### Using Lightning Node Connect
 
@@ -46,7 +60,7 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 2. Install Tailscale app in Umbrel (see App Store) and login with that Tailscale account you just created. In your Tailscale account you would see all your devices connected and each one will have a dedicated private IP.
 3. Install Tailscale in your mobile device and login with that same created account. Immediately you will see in the app the IP of your node. Will be a private IP, not a public one. Copy it.
 4. Open ZEUS and go to **Settings -> Connect a node -> +**.
-5. Click on **Node interface** and select **LND** or **C-lightning REST**(depending on which LN implementation you run your node).
+5. Click on **Node interface** and select **LND** or **c-lightning-REST**(depending on which LN implementation you run your node).
 6. Scroll down and press **SCAN LN node QR**.
 7. Open your Umbrel dashboard and go to **Connect Wallet -> Select your wallet -> Zeus**.
 8. Scan the QR Code.
