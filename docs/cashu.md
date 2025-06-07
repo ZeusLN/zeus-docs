@@ -21,7 +21,7 @@ This error indicates an inconsistency in the wallets database. Follow the troubl
 
 ## Troubleshooting
 
-1) Bump the wallet counter several times under `Menu` > `Tools` > `Cashu`. This will move the counter along, which is used for deterministically restoring the wallet.
+1) Bump the wallet counter several times under `Menu` > `Tools` > `Cashu Tools`. This will move the counter along, which is used for deterministically restoring the wallet.
 
 2) If issues persist, remove and re-add your mint. You can access the mints list by tapping or swiping the Ecash balance row in the main balance view in the app (you can get here by hitting the temple icon at the bottom of the main view of the app, it's the first icon on the left). 
 
