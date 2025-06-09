@@ -88,7 +88,13 @@ const sidebars = {
     "swaps/intro",
     "swaps/api",
   ],
-  lightningAddress: ["lightning-address/intro", "lightning-address/fees"],
+  lightningAddress: [
+    "lightning-address/intro",
+    "lightning-address/zaplocker",
+    "lightning-address/cashu",
+    "lightning-address/nwc",
+    "lightning-address/plus",
+  ],
   pos: ["pos/overview", "pos/setup", "pos/checkout"],
   contribute: [
     "contribute/how-you-can-contribute",
