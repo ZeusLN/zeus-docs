@@ -13,6 +13,7 @@ ZEUS Pay+, is our premium Lightning address service. For 80,000 sats/year, you g
 - Early access to new features
 - A monstrous 20% off of all our LSP channel lease services
 - Access to exclusive merch, coming soon
-- We're looking forward to offering up more features as we iterate on the service and rewarding our subscribers in fun and unique ways.
+
+We're looking forward to offering up more features as we iterate on the service and rewarding our subscribers in fun and unique ways.
 
 To subscribe to ZEUS Pay+, in the ZEUS mobile wallet, set up a Lightning address, then press `Subscribe to ZEUS Pay+` on the Lightning address view. You can navigate there by going to `Menu` > `Lightning address`.
