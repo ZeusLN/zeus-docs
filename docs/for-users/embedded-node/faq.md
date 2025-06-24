@@ -91,13 +91,32 @@ It is possible that your lightning channel has been closed. You will receive the
 
 #### If it's on-chain funds that have gone missing
 
-First, you should try doing a rescan by going to `Menu` -> `Embedded node` -> `Advanced` -> `Rescan wallet` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Menu` -> `Embedded node` -> `LND Logs`.
+First let's audit the Neutrino peers ZEUS connects to to get block filter data. To check your Neutrino peers, go to `Menu` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. You can hit the stopwatch icon next to each peer to check its ping time. Lower is better. Ideally your peers have a ping time under 200ms. Under 1000ms should still also be acceptable. You should have at least two good Neutrino peers.
 
-If rescan fails to correct the balance, you'll likely have to add some more Neutrino peers, especially if the LND logs display messages about peer connection timeouts.
+If you're looking for a Neutrino peer. Here are some we have vetted, in different regions:
 
-To add more Neutrino peers got to `Menu` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. Then uncheck `Connect only to the specified peers`, restart the app, and try another rescan. This will allow your ZEUS wallet node to find new peers to connect to automatically.
+```
+btcd1.lnolymp.us | btcd2.lnolymp.us - US region
+btcd-mainnet.lightning.computer - US region
+uswest.blixtwallet.com (Seattle) - US region
+node.eldamar.icu - US region
+noad.sathoarder.com - US region
+bb1.breez.technology | bb2.breez.technology - US region
+neutrino.shock.network - US region
+europe.blixtwallet.com (Germany) - for EU region
+sg.lnolymp.us - Asia region
+asia.blixtwallet.com - Asia region
+```
+
+More Neutrino nodes can be found on [Bitnodes.io](https://bitnodes.io/nodes/?q=NODE_COMPACT_FILTERS) marked with feature `NODE_COMPACT_FILTERS`.
+
+Another approach is to uncheck `Connect only to the specified peers`, restart the app, and try another rescan. This will allow your ZEUS wallet node to find new peers to connect to automatically.
 
 If you have your own remote node, you may also want manually add it in the Peers list. You can [use this guide to enabled 'Neutrino mode' in Bitcoin Core](https://docs.lightning.engineering/lightning-network-tools/lnd/enable-neutrino-mode-in-bitcoin-core). BTCD has Neutrino on by default.
+
+If changing your Neutrino peers and restarting the app fails to correct the balance, you should try doing a rescan by going to `Menu` -> `Embedded node` -> `Advanced` -> `Rescan wallet` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Menu` -> `Embedded node` -> `LND Logs`.
+
+As a last resort, you can always pull your on-chain wallet into the [Sparrow](https://sparrowwallet.com/) desktop wallet, [using these instructions](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery#can-i-recover-my-zeus-onchain-wallet-into-other-wallet-applications).
 
 #### If it's lightning funds that have gone missing
 

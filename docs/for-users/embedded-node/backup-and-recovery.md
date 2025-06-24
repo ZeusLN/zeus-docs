@@ -74,7 +74,7 @@ Remember, funds are recoverable in **most** cases. It's best to proceed calmly, 
 
 The aezeed key format **should** be compatible with the following wallets: Blixt, Blue Wallet and Breez. Note that the seed alone will be insufficient to recover all your balances if you have open or pending closing channels. But only for restoring the onchain wallet funds is enough.
 
-Another option is to use Sparrow Wallet (desktop), but are necessary some preparation steps. This method is also useful in case you want to extract the XPUB for your ZEUS LND node and you want to use it as watch only (deposit-only) in another app. Sparrow will display it in the wallet details.
+Another option is to use [Sparrow Wallet](https://sparrowwallet.com/) (desktop), but are necessary some preparation steps. This method is also useful in case you want to extract the XPUB for your ZEUS LND node and you want to use it as watch only (deposit-only) in another app. Sparrow will display it in the wallet details.
 
 ### Step 1. Get the HD Keys from your ZEUS wallet
 
