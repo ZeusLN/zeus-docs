@@ -29,4 +29,6 @@ Press the info circle `(i)` to see the mint details, then press the `Remove mint
 
 Then on the Mints list view, hit the `+` icon in the top right corner and press `Add mint` after populating the `Mint URL` field. On the following screen, be sure to toggle `Check for existing balances` before pressing the `Add mint` button at the bottom of the screen. From here your funds will be deterministically restored (as long as the mint is still fully operational). This process might take a few minutes. Progress should be reflected at the top of this view.
 
-3) If you continue to have issues, please [contact ZEUS support](email:support@zeusln.com) or file an issue on [our GitHub page](https://github.com/ZeusLN/zeus/issues).
+3) As a last resort you can get your Cashu seed from under `Menu` > `Tools` > `Cashu Tools` > `BIP-39` and import it into another Cashu wallet like [Cashu.me](https://wallet.cashu.me/) (`Menu` > `Settings` > `Restore ecash` in their wallet).
+
+4) If you continue to have issues, please [contact ZEUS support](email:support@zeusln.com) or file an issue on [our GitHub page](https://github.com/ZeusLN/zeus/issues). Note that ZEUS cannot attest to the reliability of any mints (we do not run our own or custody any funds), or guarantee the recovery of any funds, as Cashu is custodial. 
