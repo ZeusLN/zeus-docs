@@ -8,11 +8,10 @@
 
 ZEUS Pay+, is our premium Lightning address service. For 80,000 sats/year, you get access to the following features:
 
-- Custom Lightning address handles (unpaid users have auto-generated handles)
-- Access to our new web-based Point of Sale
+- 20% off of all LSP channel lease services
+- Custom Lightning address handles
 - Early access to new features
-- A monstrous 20% off of all our LSP channel lease services
-- Access to exclusive merch, coming soon
+- Access to [exclusive merch](https://store.zeusln.com/product-category/zeus-pay-exclusives/)
 
 We're looking forward to offering up more features as we iterate on the service and rewarding our subscribers in fun and unique ways.
 
