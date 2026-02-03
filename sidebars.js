@@ -65,6 +65,7 @@ const sidebars = {
         "for-users/using-zeus/wallets",
         "for-users/using-zeus/menu",
         "for-users/using-zeus/channels",
+        "for-users/using-zeus/pending-balances",
       ],
     },
     "cashu",
