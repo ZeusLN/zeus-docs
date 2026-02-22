@@ -133,7 +133,7 @@ const config = {
             items: [
               {
                 label: 'Nostr',
-                href: 'https://iris.to/zeus@zeusln.app',
+                href: 'https://iris.to/npub1xnf02f60r9v0e5kty33a404dm79zr7z2eepyrk5gsq3m7pwvsz2sazlpr5',
               },
               {
                 label: 'Telegram',
