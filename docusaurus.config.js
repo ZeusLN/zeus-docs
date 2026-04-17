@@ -1,7 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const {execSync} = require('child_process');
 const {themes} = require('prism-react-renderer');
+const commitHash = execSync('git rev-parse --short HEAD').toString().trim();
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
@@ -164,7 +166,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Atlas 21 Inc. Content released under AGPL v3 license. `,
+        copyright: `Copyright © ${new Date().getFullYear()} Atlas 21 Inc. Content released under AGPL v3 license. Build ${commitHash}`,
       },
       prism: {
         theme: lightCodeTheme,
