@@ -144,7 +144,7 @@ This typically happens when either the blockchain headers or lightning network g
 
 ## I'm having issues syncing. Sync is either stuck or won't start. What can I do?
 
-For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`.
+For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. &lt;200ms is optimal. &lt;1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`.
 
 If issues persist, reset the Neutrino data by pressing `Stop LND and delete Neutrino files` under `Menu` > `Embedded Node` > `Advanced` and restart the sync from scratch.
 
@@ -162,4 +162,4 @@ This is indicative of a sync issue.
 
 Firstly, if you see the outgoing on-chain transaction under the `Activity` view you can press the `Raw transaction Hex` label and manually broadcast the TX by hitting `Broadcast to Mempool.space`. This will send the transaction directly to a popular block explorer. If it returns error `{"code":-25,"message":"bad-txns-inputs-missingorspent"}` - this means that you have sync issues.
 
-To remedy this, go through your Neutrino peer list and removing all the peers with high ping times. <200ms is optimal. <1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`. Once you have reconfigured your peers, restart the app. To remove errant, invalid, transactions and fix any issues with your displayed balance, go to `Menu` -> `Embedded node` -> `Rescan` and restart the app. The process should take 5-10 minutes. You can follow along with the process under `Menu` -> `Embedded node` -> `LND Logs`.
+To remedy this, go through your Neutrino peer list and removing all the peers with high ping times. &lt;200ms is optimal. &lt;1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`. Once you have reconfigured your peers, restart the app. To remove errant, invalid, transactions and fix any issues with your displayed balance, go to `Menu` -> `Embedded node` -> `Rescan` and restart the app. The process should take 5-10 minutes. You can follow along with the process under `Menu` -> `Embedded node` -> `LND Logs`.
