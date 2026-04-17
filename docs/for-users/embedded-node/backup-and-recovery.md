@@ -42,7 +42,23 @@ Restoring a wallet in ZEUS will trigger a force close of all your existing chann
 
 Force closes are more expensive than mutual closes. Force closes will also take longer for you to reclaim your funds: up to two weeks. If possible, it is recommended to first close out all your existing channels on your old device before restoring your seed phrase on a new device.
 
+Nevertheless here we propose some procedures to follow:
+- Option A - cooperatively close the channels and recover in onchain
+- Option B - force close the channels in the moment of forcibly recover with SCB
+- Option C - smooth migration of the channels funds into a new device.
+
 ## Restoring a wallet
+### Option A
+This procedure is to be used when your Zeus embedded node is still functional and your channels are still online. You just want to take all the funds in onchain and move them to another wallet or another device with Zeus. This is the less "painful" procedure.
+
+Go to your Zeus channels section and close them one by one, cooperatively closing, NOT force closing. That way in few minutes all the funds remaining inn those channnels will go back to your onchain wallet.
+
+Once all that is done, check again your wallet 24 seed words and proceeed with inserting them into your new device with Zeus. If you just want to move the funds to another wallet, just wait for 6 confirmations and then send them normally in an onchain transaction to your other wallet. If you just want to keep this wallet only for onchain transactions, you can also use the Sparrow procedure (<a href="https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery#can-i-recover-my-zeus-onchain-wallet-into-other-wallet-applications">see here the details about this procedure</a>)
+
+### Option B
+This procedure is for when your old device with Zeus is not available, broken or the app cannnot start in a normal mode.
+
+IMPORTANT NOTE: if your Zeus app do not start normally is NOT a reason to panic and try an instant recovery! Please consider to read first <a href="https://docs.zeusln.app/for-users/embedded-node/faq#help-my-wallet-balance-has-disappeared">all the procedures described in the FAQ section</a> about this case. Recovery procedure is your last last option to be connsidered.
 
 Once you're ready to recover, go to the Settings menu in ZEUS. It is accessible from the top left corner on the main view (typically an icon of Zeus) if you have a wallet configured already, or by pressing 'Advanced set-up' on the splash screen of a new install.
 
@@ -53,6 +69,20 @@ From there, enter your 24 word seed phrase in the field labeled 'Recovery Cipher
 Then press 'Restore mainnet wallet' if you're dealing with real funds or 'Restore testnet wallet' if you're using Bitcoin's test network.
 
 Please leave ZEUS running the first time you restore the seed. It has to go through the recovery process to restore your balance. It is not uncommon for this to take over 10 minutes, especially if you have a heavily used wallet. You may want to temporarily turn off any screen timeouts and energy saving options in your phone's settings, so that ZEUS doesn't go into the background and pause LND during the process.
+
+### Option C
+This procedure is to be used when you want to migrate your Zeus node from an old device to a new one and the node is still functional.
+
+- On the new device, install and create a new Zeus embedded node, save the seed and also note your nodeID.
+- Go to channels and buy an inbound channel from Olympus LSP. Set the amount of the channel according to how many sats you want to move from your old Zeus node + 10-25% more
+- From the old Zeus node, with online channels, pay the LSP invoice in the new Zeus. In few moments the new channel will be ready to receive the sats from your old node.
+- In the new Zeus, create an invoice for the amount you have have available in your old Zeus channels. Keep in mind that you will not be able to send absolutely all sats, <a href="https://github.com/lightningnetwork/lnd/blob/6dea86428d031171af30119e3f6599820dc5454a/lnwallet/channel.go#L3803-L3815">due the limits of channel buffer</a>. Always send like max 90-95% and then after few minutes send the again a 90% of the remaining balance. Keep also in mind that when you close the channels you will get back in onchain the channels reserve sats, so is not really necessary to empty 100% your channels. I would recommend also to have at least 1UTXO in your old Zeus onchain wallet, that will be used as anchor reserves, in case the fees are spiking and be able to pay the closing tx.
+- Go to your old Zeus node and pay that sweeping channels invoice to the new Zeus node.
+- Now you can start the cooperatively closing channels operation. Do not do force closing! Put your old Zeus node in persistent mode before you start the closing operation tot avoid any possible inconvenient during the closing. The persistent mode is keeping the LND service alive even if you close the app.
+- Once the channels are closed and funds coming back to your onchain wallet, you can move them to your new Zeus node, in one UTXO and keep that one as anchor channel reserve. Optional, when you close the channels you can indicate an onchain address of the new Zeus node but is more complex step if you do not know exactly what are you doing.
+- Now you can remove your old Zeus app from the old device.
+
+In this way you start fresh with a new nodeID and a smooth transition to a new device. Sometimes is better to start fresh.
 
 ## Having issues recovering a wallet?
 
@@ -126,5 +156,6 @@ In ZEUS v0.10, we've built in the sometimes needed sweepremoteclosed command, wh
 - 3) If successful you'll reach a page labeled TXHex with a QR code. Simply scroll to the bottom and hit `Broadcast TX to complete the recovery
 
 If you hit error "found 0 sweep targets with total value of 0 satoshis which is below the dust limit of 600", simply try again with `Advanced settings`: `Recovery window` increased. Try 1000, 2500, 5000 if necessary.
+
 
 If you hit any issues about unexpected characters, you are hitting a rate limit from one of the block explorer settings. Under Advanced settings, set 'Seconds to wait between queries' to 1 and try again. Please be patient as the process will now take a bit longer.
