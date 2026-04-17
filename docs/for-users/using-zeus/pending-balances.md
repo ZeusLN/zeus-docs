@@ -31,7 +31,7 @@ When you tap the clock icon, you'll see: **"This balance is pending confirmation
 
 ### Confirmation Times
 
-- **First confirmation**: Usually within 10-20 minutes
+- **First confirmation**: Usually within 10-20 minutes (depends on network traffic and fees)
 - **Channel operations**: Require 6-8 confirmations (approximately 1-1.5 hours) before the channel is fully operational or closed
 
 Your on-chain balance updates once the transaction receives its first confirmation. For channel operations, the channel won't be usable (for opens) or funds won't be available (for closes) until the required confirmations are reached.
