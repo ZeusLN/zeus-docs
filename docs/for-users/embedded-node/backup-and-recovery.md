@@ -119,7 +119,7 @@ In ZEUS v0.10, we've built in the sometimes needed sweepremoteclosed command, wh
 
 ### Steps
 
-- 1) Go to `Menu` > `Embedded Node` > `Advanced` > `chantools` > `sweepremoteclosed`
+- 1) Go to `Menu` > `Settings` > `Embedded Node` > `Advanced` > `chantools` > `sweepremoteclosed`
 
 - 2) In the field called `Sweep address`, input an on-chain address to receive your funds to, then hit `Start Sweep`. It should take about 5-10 minutes to run.
 

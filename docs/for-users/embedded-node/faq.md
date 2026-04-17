@@ -7,7 +7,7 @@ Frequently asked questions
 
 ## I'm having problems making a payment / I can't find a route
 
-By default, ZEUS finds out information about the lightning network graph using P2P. This can take some time. To speed up the graph sync and improve your payment success probability, go to `Menu` -> `Embedded node` -> `Express Graph Sync`. Enable it and restart ZEUS to take effect. You can go to `Menu` > `Network Info` at any point to see how much of the lightning network your node knows about.
+By default, ZEUS finds out information about the lightning network graph using P2P. This can take some time. To speed up the graph sync and improve your payment success probability, go to `Menu` > `Settings` > `Embedded Node` > `Express Graph Sync`. Enable it and restart ZEUS to take effect. You can go to `Menu` > `Network Info` at any point to see how much of the lightning network your node knows about.
 
 If you still can't complete a payment after running Express Graph Sync, you may need to bump up your max payment fee. You can see this tucked away under 'Advanced settings' on the payment request view or under `Menu` -> `Settings` -> `Payments`.
 
@@ -25,7 +25,7 @@ ZEUS currently doesn't have a swap service, but we're considering launching one 
 
 On-chain funds: You are presented with a 24 word seed phrase that you can back up at any time.
 
-LN funds: By default we send encrypted (with your seed phrase) backups to our server, you can also do manual backups to our server or to your clipboard under `Menu` -> `Embedded node` -> `Disaster recovery`.
+LN funds: By default we send encrypted (with your seed phrase) backups to our server, you can also do manual backups to our server or to your clipboard under `Menu` > `Settings` > `Embedded Node` > `Disaster recovery`.
 
 Learn more on our [Backups and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery) page.
 
@@ -91,7 +91,7 @@ It is possible that your lightning channel has been closed. You will receive the
 
 #### If it's on-chain funds that have gone missing
 
-First let's audit the Neutrino peers ZEUS connects to to get block filter data. To check your Neutrino peers, go to `Menu` -> `Embedded node` -> `Peers` -> `Neutrino Peers`. You can hit the stopwatch icon next to each peer to check its ping time. Lower is better. Ideally your peers have a ping time under 200ms. Under 1000ms should still also be acceptable. You should have at least two good Neutrino peers.
+First let's audit the Neutrino peers ZEUS connects to to get block filter data. To check your Neutrino peers, go to `Menu` > `Settings` > `Embedded Node` > `Peers` > `Neutrino Peers`. You can hit the stopwatch icon next to each peer to check its ping time. Lower is better. Ideally your peers have a ping time under 200ms. Under 1000ms should still also be acceptable. You should have at least two good Neutrino peers.
 
 If you're looking for a Neutrino peer. Here are some we have vetted, in different regions:
 
@@ -114,7 +114,7 @@ Another approach is to uncheck `Connect only to the specified peers`, restart th
 
 If you have your own remote node, you may also want manually add it in the Peers list. You can [use this guide to enabled 'Neutrino mode' in Bitcoin Core](https://docs.lightning.engineering/lightning-network-tools/lnd/enable-neutrino-mode-in-bitcoin-core). BTCD has Neutrino on by default.
 
-If changing your Neutrino peers and restarting the app fails to correct the balance, you should try doing a rescan by going to `Menu` -> `Embedded node` -> `Advanced` -> `Rescan wallet` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Menu` -> `Embedded node` -> `LND Logs`.
+If changing your Neutrino peers and restarting the app fails to correct the balance, you should try doing a rescan by going to `Menu` > `Settings` > `Embedded Node` > `Advanced` > `Rescan wallet` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Menu` > `Settings` > `Embedded Node` > `LND Logs`.
 
 As a last resort, you can always pull your on-chain wallet into the [Sparrow](https://sparrowwallet.com/) desktop wallet, [using these instructions](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery#can-i-recover-my-zeus-onchain-wallet-into-other-wallet-applications).
 
@@ -126,9 +126,9 @@ Go to the Channels view by hitting the icon in the bottom right corner of the ma
 
 First, go to `Menu` > `Network Info` and make sure there are no zombie channels. Zombie channels are channels that are most likely dead but are still around, but with the embedded node sometimes we get false positives.
 
-If you have zombie channels (>2000), go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart. Be sure to go back to `Menu` > `Network Info` and ensure your zombie channel count is significantly reduced.
+If you have zombie channels (>2000), go to `Menu` > `Settings` > `Embedded Node` > `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart. Be sure to go back to `Menu` > `Network Info` and ensure your zombie channel count is significantly reduced.
 
-If you don't have zombie channels and are still having issues sending lightning payments, go to `Menu` -> `Embedded node` -> `Advanced` -> `Pathfinding` and press the button labeled `Reset payment routing profile`.
+If you don't have zombie channels and are still having issues sending lightning payments, go to `Menu` > `Settings` > `Embedded Node` > `Advanced` > `Pathfinding` and press the button labeled `Reset payment routing profile`.
 
 ## My channels are showing as offline. How can I get them to show as active again?
 
@@ -136,23 +136,23 @@ This typically happens when either the blockchain headers or lightning network g
 
 1.  Pull down on the channels list to refresh it. If channels still show as offline, leave the app running for about 10 minutes. Sometimes the RPC server just needs time to start up.
 
-2.  Go to `Menu` -> `Embedded node` -> `Advanced` and press the button labeled `Stop LND and delete Neutrino files`, then restart the app. This will resync your blockchain data.
+2.  Go to `Menu` > `Settings` > `Embedded Node` > `Advanced` and press the button labeled `Stop LND and delete Neutrino files`, then restart the app. This will resync your blockchain data.
 
-3.  Go to `Menu` -> `Embedded node` -> `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
+3.  Go to `Menu` > `Settings` > `Embedded Node` > `Express Graph Sync` and enable the second toggle labeled `Reset express graph sync on startup`, then restart the app. This will resync your lightning network graph data.
 
-4.  If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Menu` -> `Embedded node` -> `LND Logs`. Look for logs with text 'Rescanning through' and 'Rescanned through'.
+4.  If your channels are still not showing as online after performing steps 1-3, your wallet may be rescanning. You can follow progress under `Menu` > `Settings` > `Embedded Node` > `LND Logs`. Look for logs with text 'Rescanning through' and 'Rescanned through'.
 
 ## I'm having issues syncing. Sync is either stuck or won't start. What can I do?
 
-For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. &lt;200ms is optimal. &lt;1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`.
+For sync issues we recommended going through your Neutrino peer list and removing all the peers with high ping times. &lt;200ms is optimal. &lt;1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Settings` > `Embedded Node` > `Peers` > `Neutrino`.
 
-If issues persist, reset the Neutrino data by pressing `Stop LND and delete Neutrino files` under `Menu` > `Embedded Node` > `Advanced` and restart the sync from scratch.
+If issues persist, reset the Neutrino data by pressing `Stop LND and delete Neutrino files` under `Menu` > `Settings` > `Embedded Node` > `Advanced` and restart the sync from scratch.
 
 ## I restored my 24 words in ZEUS and my funds are still not showing up. Where are they?
 
 During a restore, all on-chain funds should appear after the restore process has completed. However, funds on lightning have to go through the force close process, which typically takes 3 days after the close transaction confirms on-chain.
 
-You should be able to see your pending close channels by going to the `Channels` view (the second icon from the right in the wallet navigation bar on the bottom of the main view), and tapping on the header to cycle between Open, Pending and Closed channels. If your previously open channels don't appear, go to `Menu` -> `Embedded node` -> `Disaster recovery` and trigger a recovery by pressing `Initiate disaster recovery from Olympus` or by going to `Initiate advanced disaster recovery from Olympus` and manually selecting a backup to restore from.
+You should be able to see your pending close channels by going to the `Channels` view (the second icon from the right in the wallet navigation bar on the bottom of the main view), and tapping on the header to cycle between Open, Pending and Closed channels. If your previously open channels don't appear, go to `Menu` > `Settings` > `Embedded Node` > `Disaster recovery` and trigger a recovery by pressing `Initiate disaster recovery from Olympus` or by going to `Initiate advanced disaster recovery from Olympus` and manually selecting a backup to restore from.
 
 For more details, visit our page on [Backup and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery/).
 
@@ -162,4 +162,4 @@ This is indicative of a sync issue.
 
 Firstly, if you see the outgoing on-chain transaction under the `Activity` view you can press the `Raw transaction Hex` label and manually broadcast the TX by hitting `Broadcast to Mempool.space`. This will send the transaction directly to a popular block explorer. If it returns error `{"code":-25,"message":"bad-txns-inputs-missingorspent"}` - this means that you have sync issues.
 
-To remedy this, go through your Neutrino peer list and removing all the peers with high ping times. &lt;200ms is optimal. &lt;1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Embedded node` > `Peers` > `Neutrino`. Once you have reconfigured your peers, restart the app. To remove errant, invalid, transactions and fix any issues with your displayed balance, go to `Menu` -> `Embedded node` -> `Rescan` and restart the app. The process should take 5-10 minutes. You can follow along with the process under `Menu` -> `Embedded node` -> `LND Logs`.
+To remedy this, go through your Neutrino peer list and removing all the peers with high ping times. &lt;200ms is optimal. &lt;1000ms should still work. To access the Neutrino peers list, go to `Menu` > `Settings` > `Embedded Node` > `Peers` > `Neutrino`. Once you have reconfigured your peers, restart the app. To remove errant, invalid, transactions and fix any issues with your displayed balance, go to `Menu` > `Settings` > `Embedded Node` > `Rescan` and restart the app. The process should take 5-10 minutes. You can follow along with the process under `Menu` > `Settings` > `Embedded Node` > `LND Logs`.
