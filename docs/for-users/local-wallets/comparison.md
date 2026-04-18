@@ -16,6 +16,9 @@ A comparison of the two local wallet implementations available in ZEUS.
 | - export to file | ✅ | ❌ |
 | - to remote server | Manually | Automatically |
 | Can migrate to a full remote node? | ✅ | ❌ |
+| Lightning address | | |
+| - Zaplocker | ✅ | ❌ |
+| - Cashu | ✅ | ✅ |
 | BOLT12 offers (receive / withdraw) | ❌ | ✅ |
 | Blinded paths | via BOLT11 | via BOLT12 |
 | MPP - Multi path payment | ✅ | ✅ |
