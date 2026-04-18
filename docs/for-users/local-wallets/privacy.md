@@ -6,6 +6,14 @@
 
 Learn about the privacy properties of the Embedded Node + LSP
 
+## Client-side path finding
+
+Client-side path finding: ZEUS constructs users' lightning payment paths on their devices, so we don't know the final destinations of our users' payments, even when they're forwarded through our channels.
+
+Not only do we not want to know how you're using your money, but we're building things in a way that we can't.
+
+Not all wallets can say the same.
+
 ## Invoice wrapping
 
 Onboarding to lightning can be difficult and overwhelming to new users. So we've lowered the barrier to entry with a channel service from our new lightning service provider (LSP), Olympus by ZEUS.
@@ -24,6 +32,8 @@ ZEUS v0.8.0 is the first mobile wallet to include support for Simple Taproot Cha
 
 Simple Taproot Channels can also be requested from our LSP, Olympus by ZEUS.
 
+Simple Taproot Channels are only supported with Embedded LND wallets. Expect full Taproot channel support in both LND and LDK wallets in future releases.
+
 ## Neutrino block filters
 
 When checking your addresses' balances, many Bitcoin wallets leak those addresses and balances to wallet providers, or another third party. ZEUS doesn't.
@@ -32,14 +42,5 @@ Block sync with ZEUS' embedded node is done using block filters and the Neutrino
 
 You can get a great technical resources on block filters over at [Bitcoin Optech](https://bitcoinops.org/en/topics/compact-block-filters/), and a more digestable overview over at [Bitcoin Magazine](https://bitcoinmagazine.com/technical/why-bitcoin-wallets-need-block-filters).
 
-## Client-side path finding
+Neutrino block filters are only supported with Embedded LND wallets. LDK Node wallet users can point to their own Esplora node for additional on-chain privacy.
 
-Client-side path finding: ZEUS constructs users' lightning payment paths on their devices, so we don't know the final destinations of our users' payments, even when they're forwarded through our channels.
-
-Not only do we not want to know how you're using your money, but we're building things in a way that we can't.
-
-Not all wallets can say the same.
-
-## How does ZEUS stack up against other lightning wallets?
-
-![Lightning wallet privacy comparison](../../../static/img/lightning-wallet-privacy.png)
