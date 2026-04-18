@@ -20,7 +20,7 @@ The embedded node in ZEUS is based on LND and uses the <a href="https://github.c
 
 ## Backing up your seed phrase
 
-ZEUS will prompt you to back up your funds on the Balance view once you have received your first payment, but you can back up your 24 word seed phrase at any point by going to Settings -> Back up wallet.
+ZEUS will prompt you to back up your funds on the Balance view once you have received your first payment, but you can back up your 24 word seed phrase at any point by going to Menu -> Back up wallet.
 
 Tap each pane, one at a time to reveal each word in the seed phrase. You must back up each word, in order, to be able to recover your funds. Make sure you copy all 24; you may need to scroll down on the Back up wallet view to see them all if you have a phone with a lower resolution.
 
@@ -90,7 +90,7 @@ PLEASE DO NOT SHARE THESE KEYS, THESE ARE FULL ACCESS TO YOUR NODE WALLET, KEEP 
 - Open that HTML file in "offline mode" (no internet) and select "aezeed Cipher Seed Scheme" from Tools. Then go to the 2nd tab "Decode Mnemonic".
 - Paste your 24 words into the "Mnemonic" field.
 
-![zeus-channels](../../../static/img/zeus-decode-toolkit.png)
+![zeus-channels](../../../../static/img/zeus-decode-toolkit.png)
 
 - Select format BIP84 native segwit and wait a bit to be decoded.
 - Copy the zprv displayed into the field "HD node root base 58"
@@ -104,7 +104,7 @@ PLEASE DO NOT SHARE THESE KEYS, THESE ARE FULL ACCESS TO YOUR NODE WALLET, KEEP 
 - If you used both types of addresses in ZEUS, we suggest to import them as two wallets in Sparrow, using the same "xprv" key but each one with a different derivation path. In this way you can avoid confusions.
 - You can also change between segwit and taproot an already imported wallet, by going to wallet Settings and switch the "Scrypt Type" (segwit P2WPKH or taproot P2TR) and then re-import the BIP32 xprv keys to make the switch.
 
-![zeus-channels](../../../static/img/zeus-sparrow-taproot.png)
+![zeus-channels](../../../../static/img/zeus-sparrow-taproot.png)
 
 - Sparrow app will start scanning all your keys and txs and it will be displayed after a while in the "Transactions" tab. Patience, it will take some time.
 - For a faster, secure and private connection is better to connect your Sparrow wallet app to your node (via Electrum server or directly to a Bitcoin Core RPC)
@@ -123,8 +123,14 @@ In ZEUS v0.10, we've built in the sometimes needed sweepremoteclosed command, wh
 
 - 2) In the field called `Sweep address`, input an on-chain address to receive your funds to, then hit `Start Sweep`. It should take about 5-10 minutes to run.
 
-- 3) If successful you'll reach a page labeled TXHex with a QR code. Simply scroll to the bottom and hit `Broadcast TX to complete the recovery
+- 3) If successful you'll reach a page labeled TXHex with a QR code. Simply scroll to the bottom and hit `Broadcast TX` to complete the recovery
 
 If you hit error "found 0 sweep targets with total value of 0 satoshis which is below the dust limit of 600", simply try again with `Advanced settings`: `Recovery window` increased. Try 1000, 2500, 5000 if necessary.
 
 If you hit any issues about unexpected characters, you are hitting a rate limit from one of the block explorer settings. Under Advanced settings, set 'Seconds to wait between queries' to 1 and try again. Please be patient as the process will now take a bit longer.
+
+## Ecash
+
+As of ZEUS v13, your selected ecash mints are encrypted and backed up to Nostr. Upon restoring from seed, your mints and ecash balances should be restored automatically.
+
+The backup is encrypted using <a href="https://nips.nostr.com/44">NIP-44</a> and the ecash token backup format follows <a href="https://cashubtc.github.io/nuts/27/">NUT-27</a>. This format is compatible with <a href="https://wallet.cashu.me/">Cashu.me</a>, so you can also recover your ecash there if needed.

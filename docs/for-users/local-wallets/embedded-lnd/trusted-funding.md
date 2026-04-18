@@ -35,13 +35,13 @@ In the Open Channel view, you will now see two tabs in the header: **Open Channe
 
 From the Connect Peer tab, you will see a Peer input field with a dropdown. By default, it is set to OLYMPUS BY ZEUS, you need to tap on it and select Custom to manually enter the values. Once set to Custom, enter the remote node's pubkey and host, then press the Connect Peer button. If successful, ZEUS will return a message confirming that you've successfully connected to your peer.
 
-![zeus-screen1](../../../static/img/zeus-connect-peer.png)
+![zeus-screen1](../../../../static/img/zeus-connect-peer.png)
 
 ### 3. Add your remote node as a zero conf peer
 
 Navigate to `Settings` > `Embedded Node` > `Peers` > `Zero conf Peers`, and add your remote node's public key to the Zero conf peers list.
 
-![zeus-screen2](../../../static/img/zeus-screen-zeroconf.png)
+![zeus-screen2](../../../../static/img/zeus-screen-zeroconf.png)
 
 ### 4. From the remote node, open up a trusted funding channel using Balance of Satoshis (BOS)
 

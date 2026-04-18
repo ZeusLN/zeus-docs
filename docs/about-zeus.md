@@ -46,7 +46,7 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 - Multi-theme
 - [Point of Sale](https://docs.zeusln.app/pos/overview)
 - Contact book
-- [Embedded LND Node](https://docs.zeusln.app/category/embedded-node)
+- [Embedded LND Node](https://docs.zeusln.app/category/local-wallets)
 - [Lightning Service Provider: Olympus by ZEUS](https://docs.zeusln.app/lsp/intro)
 - Taproot support
 - Simple Taproot Channels
@@ -77,7 +77,7 @@ Currently ZEUS is for people running [Lightning Network Daemon (LND)](https://li
 
 Merchants using [BTCPay](https://btcpayserver.org/) or [LNBits](https://lnbits.com/) or [Alby](https://getalby.com) can also connect to, use, and manage their nodes from ZEUS. Users of [LNDHub](https://bluewallet.io/lndhub/) can also connect to and use ZEUS.
 
-Starting in v0.8, ZEUS will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a [built-in mobile Lightning node](https://docs.zeusln.app/category/embedded-node) with an integrated [lightning service provider (LSP)](lsp/intro).
+Starting in v0.8, ZEUS will start catering to average users who just want a simple way to make fast, cheap bitcoin payments from their mobile device by having a [built-in mobile Lightning node](https://docs.zeusln.app/category/local-wallets) with an integrated [lightning service provider (LSP)](lsp/intro).
 
 ## Supporters
 

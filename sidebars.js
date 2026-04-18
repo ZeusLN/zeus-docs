@@ -14,23 +14,44 @@ const sidebars = {
       items: [
         "for-users/getting-started/before-using-zeus",
         "for-users/getting-started/remote-or-embedded",
+        "for-users/getting-started/lightning-onboarding",
         "for-users/getting-started/tips",
       ],
     },
     {
       type: "category",
-      label: "Embedded Node",
+      label: "Local wallets",
       link: {
         type: "generated-index",
       },
       collapsed: true,
       items: [
-        "for-users/embedded-node/backup-and-recovery",
-        "for-users/embedded-node/lightning-onboarding",
-        "for-users/embedded-node/privacy",
-        "for-users/embedded-node/open-channel-to-embedded-node",
-        "for-users/embedded-node/trusted-funding",
-        "for-users/embedded-node/faq",
+        "for-users/local-wallets/privacy",
+        {
+          type: "category",
+          label: "Embedded LND",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "for-users/local-wallets/embedded-lnd/backup-and-recovery",
+            "for-users/local-wallets/embedded-lnd/open-channel-to-embedded-node",
+            "for-users/local-wallets/embedded-lnd/trusted-funding",
+            "for-users/local-wallets/embedded-lnd/faq",
+          ],
+        },
+        {
+          type: "category",
+          label: "LDK Node",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "for-users/local-wallets/ldk-node/backup-and-recovery",
+          ],
+        },
       ],
     },
     {

@@ -11,7 +11,7 @@ ZEUS is a mobile Bitcoin wallet that can both run a node and wallet locally on y
 
 # Embedded node
 
-If you don't have a remote node or account to connect to, you can also use our [embedded node](/category/embedded-node), which will run on your phone. This is the simpler path that most people will choose.
+If you don't have a remote node or account to connect to, you can also use our [local wallet](/category/local-wallets), which will run on your phone. This is the simpler path that most people will choose.
 
 # Remote connections
 

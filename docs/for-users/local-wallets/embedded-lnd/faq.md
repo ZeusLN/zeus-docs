@@ -13,7 +13,7 @@ If you still can't complete a payment after running Express Graph Sync, you may 
 
 ## I'm having issues restoring my wallet
 
-Read our documentation on [Backup and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery#restoring-a-wallet). Please be patient and leave ZEUS running for at least 10 minutes after going through the restore process.
+Read our documentation on [Backup and Recovery](https://docs.zeusln.app/for-users/local-wallets/embedded-lnd/backup-and-recovery#restoring-a-wallet). Please be patient and leave ZEUS running for at least 10 minutes after going through the restore process.
 
 ## Can I move on-chain funds to lightning or vice versa?
 
@@ -27,7 +27,7 @@ On-chain funds: You are presented with a 24 word seed phrase that you can back u
 
 LN funds: By default we send encrypted (with your seed phrase) backups to our server, you can also do manual backups to our server or to your clipboard under `Menu` > `Settings` > `Embedded Node` > `Disaster recovery`.
 
-Learn more on our [Backups and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery) page.
+Learn more on our [Backups and Recovery](https://docs.zeusln.app/for-users/local-wallets/embedded-lnd/backup-and-recovery) page.
 
 ## Where can I read more about Neutrino and the privacy that block filters provide when syncing ZEUS to the blockchain?
 
@@ -43,7 +43,7 @@ There's a fixed routing budget and it can be tricky trying to redeem small amoun
 
 ## How do I open up a channel to the embedded node? The hostname isn't shown.
 
-Please read our document on how to [Open a channel to the embedded LND node](https://docs.zeusln.app/for-users/embedded-node/open-channel-to-embedded-node).
+Please read our document on how to [Open a channel to the embedded LND node](https://docs.zeusln.app/for-users/local-wallets/embedded-lnd/open-channel-to-embedded-node).
 
 ## Simple Taproot Channels sound great. Is there any reason to not use them?
 
@@ -63,7 +63,7 @@ The key will be used to sign:
 
 When the sender attempts to pay you from a Zaplocker compatible wallet, like ZEUS, they will be able to the see if the payment request they are being served up is attached to the associated Nostr profile.
 
-![ 500](../../../static/img/zaplocker-verification.png)
+![ 500](../../../../static/img/zaplocker-verification.png)
 
 Once paid, the sender will then use the relay list to broadcast the attestation. You'll be able to check it in ZEUS by clicking the Nostrich icon next to your payments.
 
@@ -116,7 +116,7 @@ If you have your own remote node, you may also want manually add it in the Peers
 
 If changing your Neutrino peers and restarting the app fails to correct the balance, you should try doing a rescan by going to `Menu` > `Settings` > `Embedded Node` > `Advanced` > `Rescan wallet` and restarting the app. Please leave the app running in the foreground for up to 15 minutes to complete the process. During the rescan process you will not be able to full use the app - for example, you will not be able to generate invoices. You can follow the rescan process by following the LND logs at `Menu` > `Settings` > `Embedded Node` > `LND Logs`.
 
-As a last resort, you can always pull your on-chain wallet into the [Sparrow](https://sparrowwallet.com/) desktop wallet, [using these instructions](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery#can-i-recover-my-zeus-onchain-wallet-into-other-wallet-applications).
+As a last resort, you can always pull your on-chain wallet into the [Sparrow](https://sparrowwallet.com/) desktop wallet, [using these instructions](https://docs.zeusln.app/for-users/local-wallets/embedded-lnd/backup-and-recovery#can-i-recover-my-zeus-onchain-wallet-into-other-wallet-applications).
 
 #### If it's lightning funds that have gone missing
 
@@ -154,7 +154,7 @@ During a restore, all on-chain funds should appear after the restore process has
 
 You should be able to see your pending close channels by going to the `Channels` view (the second icon from the right in the wallet navigation bar on the bottom of the main view), and tapping on the header to cycle between Open, Pending and Closed channels. If your previously open channels don't appear, go to `Menu` > `Settings` > `Embedded Node` > `Disaster recovery` and trigger a recovery by pressing `Initiate disaster recovery from Olympus` or by going to `Initiate advanced disaster recovery from Olympus` and manually selecting a backup to restore from.
 
-For more details, visit our page on [Backup and Recovery](https://docs.zeusln.app/for-users/embedded-node/backup-and-recovery/).
+For more details, visit our page on [Backup and Recovery](https://docs.zeusln.app/for-users/local-wallets/embedded-lnd/backup-and-recovery/).
 
 ## I'm having issues broadcasting on-chain transactions. They are either disappearing from my wallet or not showing up on a block explorer.
 
