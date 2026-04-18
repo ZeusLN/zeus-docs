@@ -26,6 +26,7 @@ const sidebars = {
       },
       collapsed: true,
       items: [
+        "for-users/local-wallets/comparison",
         "for-users/local-wallets/privacy",
         {
           type: "category",
