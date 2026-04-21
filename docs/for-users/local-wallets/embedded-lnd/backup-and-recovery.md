@@ -1,5 +1,4 @@
 ---
-
 ---
 
 # Backup and recovery
@@ -10,7 +9,7 @@ There are a few catches, so please read this entire document before trying to re
 
 ## BEWARE OF SCAMMERS
 
-### **ZEUS TEAM MEMBERS WILL NEVER ASK YOU FOR YOUR 24 WORD SEED PHRASE**. 
+### **ZEUS TEAM MEMBERS WILL NEVER ASK YOU FOR YOUR 24 WORD SEED PHRASE**.
 
 The internet is rife with scammers posing as official support. Do not provide it to anyone. Giving your 24 word seed phrase to others can result in theft of funds.
 
@@ -26,21 +25,62 @@ Tap each pane, one at a time to reveal each word in the seed phrase. You must ba
 
 ## Backing up your lightning state (disaster recovery data)
 
-The seed phrase alone will be insuffienct to recover all your balances if you have open or pending closing channels.
+The seed phrase alone will be insufficient to recover all your balances if you have open or pending closing channels.
 
 ZEUS will automatically back up your disaster recovery data to our OLYMPUS servers by default. They are encrypted using your 24 word seed phrase, so we are unable to read them.
 
 You can also manually back up the disaster recovery data by going to Settings -> Embedded Node -> Export recovery data to clipboard. If you choose to back your data up manual, we recommend doing after every new channel open.
 
+> Disaster recovery data lets you reclaim on-chain funds by **force-closing** your channels on recovery. If you want your channels to stay open when moving to a new device, use the [channel migration flow](#migrating-channels-to-a-new-device) instead.
+
 ## Multiple devices
 
-You <b>CANNOT</b> currently use the embedded node wallet on multiple devices. 
+You cannot use the embedded node wallet on **multiple devices simultaneously**. If you want to move to a new device, see [Migrating channels to a new device](#migrating-channels-to-a-new-device).
+
+## Migrating channels to a new device
+
+The seed phrase plus the automatic disaster recovery data above is enough to reclaim on-chain funds, but restoring that way will **force-close** every existing channel. Force closes are more expensive and you will have to wait out the CSV timelock (up to two weeks) before you can sweep your funds.
+
+If you want to move your embedded LND wallet to a new device while keeping your channels **live**, ZEUS provides a channel migration flow. It takes a full snapshot of your channel state, transfers it to the new device and brings the wallet back up from that snapshot so your channels stay open and usable.
+
+**This flow is only available for wallets using the embedded node (LND).**
+
+### Before you start
+
+- Once the export finishes successfully the wallet is put into a **locked state** on the source device, most Tools and normal wallet actions are disabled there so you cannot accidentally diverge from the snapshot you just took. Treat the exported backup as the single source of truth and **stop using the old device**.
+- OLYMPUS uploads are encrypted with your 24 word seed phrase, so nobody, not even the ZEUS team, can read your backup data. The local file option is not encrypted, so store it somewhere safe.
+- The OLYMPUS upload option is available for wallets running on the **SQLite** database. Wallets on the **bolt** database can export a local file only.
+
+### Exporting the backup
+
+There are two entry points for the export:
+
+- **Menu → Tools → Export channel backup** (visible only when the wallet has any channels: open, pending or closed).
+- The **Seed backup** screen. After revealing all 24 words, if the wallet has any channels (open, pending or closed) ZEUS will prompt you to export the channel backup before finishing.
+
+When you start the export, ZEUS will ask you to choose between two destinations:
+
+- **OLYMPUS**: the backup is encrypted with your seed phrase and uploaded to the ZEUS backup service. If a previous backup already exists for this wallet, ZEUS will show you its timestamp and ask you to confirm the replacement before uploading.
+- **Local file**: the backup is saved to your device. On Android it lands in the `Downloads` folder; on iOS the share sheet opens so you can save it to Files, AirDrop it, send it to iCloud, etc.
+
+ZEUS shows a progress modal while the backup is being prepared. Once it finishes you will see a success alert with a **Restart** button. Tap it to restart the app; after the restart the wallet is in the locked state described above and the node no longer runs, so **do not try to use the old wallet any further**, any new activity would not be included in the backup you just took.
+
+### Importing on the new device
+
+On the new device, go through the normal "Restore wallet" flow described below. When you enter your seed phrase ZEUS will ask how you want to restore channel state and give you three options:
+
+- **Check OLYMPUS**: fetches the latest uploaded backup for your seed. If none is found, ZEUS will let you know and you can pick a different option.
+- **Import file**: opens the file picker so you can select the backup file you exported earlier.
+- **Continue without backup**: skips the channel migration and falls back to a plain seed restore. This will force-close any channels, so only pick this if you have lost the backup.
+
+Leave the app in the foreground until the restore finishes.
 
 ## Preparing to restore a wallet
 
-Restoring a wallet in ZEUS will trigger a force close of all your existing channels, providing that you're using our channel backup service (on by default) or if you input a static channel backup string during the restore process.
+There are two different ways to recover an embedded LND wallet, and the outcome depends on which one applies to you:
 
-Force closes are more expensive than mutual closes. Force closes will also take longer for you to reclaim your funds: up to two weeks. If possible, it is recommended to first close out all your existing channels on your old device before restoring your seed phrase on a new device.
+- **Channel migration backup** (recommended if you planned the move ahead of time): if you exported a channel backup from the old device, the new device will pick up where the old one left off and your channels stay **live**. See [Migrating channels to a new device](#migrating-channels-to-a-new-device) above.
+- **Disaster recovery (SCB) only**: if all you have is the seed phrase and the automatic disaster recovery data, restoring will trigger a **force close** of every existing channel to recover the on-chain funds. Force closes are more expensive than mutual closes and you will have to wait out the timelock (up to two weeks) before you can sweep. If possible, close your channels on the old device first, or export a channel migration backup instead.
 
 ## Restoring a wallet
 
@@ -48,9 +88,11 @@ Once you're ready to recover, go to the Settings menu in ZEUS. It is accessible 
 
 From there you can add a new node by pressing the top field (it will either say 'No Wallets', or the name of your active connection), and then hitting the plus (+) icon in the top right corner.
 
-From there, enter your 24 word seed phrase in the field labeled 'Recovery Cipher Seed (aezeed)'. You can optionally provide a static backup string in the field labeled 'Disaster recovery data (SCB, Base64)'.
+From there, enter your 24 word seed phrase in the field labeled 'Recovery Cipher Seed (aezeed)'. You can optionally provide a static backup string in the field labeled 'Disaster recovery data (SCB, Base64)'. If you plan to use the OLYMPUS or Import file option in the next step, you can leave this field blank.
 
 Then press 'Restore mainnet wallet' if you're dealing with real funds or 'Restore testnet wallet' if you're using Bitcoin's test network.
+
+Before the wallet is created, ZEUS will ask you how to restore your channels and show the three options described in [Importing on the new device](#importing-on-the-new-device): **Check OLYMPUS**, **Import file**, or **Continue without backup**. Pick the one that matches how you saved the backup on the old device, or choose _Continue without backup_ to fall back to an SCB-only restore.
 
 Please leave ZEUS running the first time you restore the seed. It has to go through the recovery process to restore your balance. It is not uncommon for this to take over 10 minutes, especially if you have a heavily used wallet. You may want to temporarily turn off any screen timeouts and energy saving options in your phone's settings, so that ZEUS doesn't go into the background and pause LND during the process.
 
@@ -119,11 +161,11 @@ In ZEUS v0.10, we've built in the sometimes needed sweepremoteclosed command, wh
 
 ### Steps
 
-- 1) Go to `Menu` > `Settings` > `Embedded Node` > `Advanced` > `chantools` > `sweepremoteclosed`
+- 1. Go to `Menu` > `Settings` > `Embedded Node` > `Advanced` > `chantools` > `sweepremoteclosed`
 
-- 2) In the field called `Sweep address`, input an on-chain address to receive your funds to, then hit `Start Sweep`. It should take about 5-10 minutes to run.
+- 2. In the field called `Sweep address`, input an on-chain address to receive your funds to, then hit `Start Sweep`. It should take about 5-10 minutes to run.
 
-- 3) If successful you'll reach a page labeled TXHex with a QR code. Simply scroll to the bottom and hit `Broadcast TX` to complete the recovery
+- 3. If successful you'll reach a page labeled TXHex with a QR code. Simply scroll to the bottom and hit `Broadcast TX` to complete the recovery
 
 If you hit error "found 0 sweep targets with total value of 0 satoshis which is below the dust limit of 600", simply try again with `Advanced settings`: `Recovery window` increased. Try 1000, 2500, 5000 if necessary.
 
