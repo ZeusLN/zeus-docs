@@ -98,3 +98,7 @@ As you can see in the following examples, ZEUS displays a lot of information abo
 #### Close Channel
 
 When you tap the **Close Channel** button, you can initiate a force close, or you can cooperatively close the channel by setting up a custom fee, or specify an external address for your funds before confirming the closure.
+
+## Migrating channels to a new device (embedded LND)
+
+If you are running the embedded LND node and want to move your wallet to a new device without force-closing your channels, ZEUS can export the full channel database and import it on the new device so your channels stay live. See [Migrating channels to a new device](../local-wallets/embedded-lnd/backup-and-recovery.md#migrating-channels-to-a-new-device) for the complete flow.
