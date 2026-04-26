@@ -1,4 +1,5 @@
 ---
+
 ---
 
 # Backup and recovery
@@ -9,7 +10,7 @@ There are a few catches, so please read this entire document before trying to re
 
 ## BEWARE OF SCAMMERS
 
-### **ZEUS TEAM MEMBERS WILL NEVER ASK YOU FOR YOUR 24 WORD SEED PHRASE**.
+### **ZEUS TEAM MEMBERS WILL NEVER ASK YOU FOR YOUR 24 WORD SEED PHRASE**. 
 
 The internet is rife with scammers posing as official support. Do not provide it to anyone. Giving your 24 word seed phrase to others can result in theft of funds.
 
@@ -29,7 +30,7 @@ The seed phrase alone will be insufficient to recover all your balances if you h
 
 ZEUS will automatically back up your disaster recovery data to our OLYMPUS servers by default. They are encrypted using your 24 word seed phrase, so we are unable to read them.
 
-You can also manually back up the disaster recovery data by going to Settings -> Embedded Node -> Export recovery data to clipboard. If you choose to back your data up manual, we recommend doing after every new channel open.
+You can also manually back up the disaster recovery data by going to Settings -> Embedded Node -> Export recovery data to clipboard. If you choose to back your data up manually, we recommend doing after every new channel open.
 
 > Disaster recovery data lets you reclaim on-chain funds by **force-closing** your channels on recovery. If you want your channels to stay open when moving to a new device, use the [channel migration flow](#migrating-channels-to-a-new-device) instead.
 
@@ -47,7 +48,7 @@ If you want to move your embedded LND wallet to a new device while keeping your 
 
 ### Before you start
 
-- Once the export finishes successfully the wallet is put into a **locked state** on the source device, most Tools and normal wallet actions are disabled there so you cannot accidentally diverge from the snapshot you just took. Treat the exported backup as the single source of truth and **stop using the old device**.
+- Once the export finishes successfully the wallet is put into a **locked state** on the source device, most tools and normal wallet actions are disabled there so you cannot accidentally diverge from the snapshot you just took. Treat the exported backup as the single source of truth and **stop using the old device**.
 - OLYMPUS uploads are encrypted with your 24 word seed phrase, so nobody, not even the ZEUS team, can read your backup data. The local file option is not encrypted, so store it somewhere safe.
 - The OLYMPUS upload option is available for wallets running on the **SQLite** database. Wallets on the **bolt** database can export a local file only.
 
@@ -55,21 +56,36 @@ If you want to move your embedded LND wallet to a new device while keeping your 
 
 There are two entry points for the export:
 
+<div style={{display: 'flex', gap: '20px', marginBottom: '24px'}}>
+  <img src="/img/Backup_Entrypoint1.png" alt="Backup entry point from Tools" width="250" />
+  <img src="/img/Backup_Entrypoint2.png" alt="Backup entry point from Seed backup" width="250" />
+</div>
+
 - **Menu → Tools → Export channel backup** (visible only when the wallet has any channels: open, pending or closed).
 - The **Seed backup** screen. After revealing all 24 words, if the wallet has any channels (open, pending or closed) ZEUS will prompt you to export the channel backup before finishing.
 
-When you start the export, ZEUS will ask you to choose between two destinations:
+When you start the export, ZEUS will ask you to choose between two destinations. The **OLYMPUS** option is only available for SQLite database wallets; bolt database wallets can only export a local file.
+
+<div style={{display: 'flex', gap: '20px', marginBottom: '24px'}}>
+  <img src="/img/Backup_sqlitedb.png" alt="Export options for SQLite wallet" width="250" />
+  <img src="/img/Backup_boltdb.png" alt="Export options for bolt wallet" width="250" />
+</div>
 
 - **OLYMPUS**: the backup is encrypted with your seed phrase and uploaded to the ZEUS backup service. If a previous backup already exists for this wallet, ZEUS will show you its timestamp and ask you to confirm the replacement before uploading.
 - **Local file**: the backup is saved to your device. On Android it lands in the `Downloads` folder; on iOS the share sheet opens so you can save it to Files, AirDrop it, send it to iCloud, etc.
 
-ZEUS shows a progress modal while the backup is being prepared. Once it finishes you will see a success alert with a **Restart** button. Tap it to restart the app; after the restart the wallet is in the locked state described above and the node no longer runs, so **do not try to use the old wallet any further**, any new activity would not be included in the backup you just took.
+
+ZEUS shows a progress modal while the backup is being prepared. Once it finishes you will see a success alert with a **Restart** button. Tap it to restart the app; after the restart the wallet is in the locked state and the node no longer runs, so **do not try to use the old wallet any further**, any new activity would not be included in the backup you just took.
+
+<img src="/img/lockedwallet.png" alt="Wallet in locked state after export" width="250" />
 
 ### Importing on the new device
 
-On the new device, go through the normal "Restore wallet" flow described below. When you enter your seed phrase ZEUS will ask how you want to restore channel state and give you three options:
+On the new device, go through the normal [Restore wallet](#restoring-a-wallet) flow described below. When you enter your seed phrase ZEUS will ask how you want to restore channel state and give you three options:
 
-- **Check OLYMPUS**: fetches the latest uploaded backup for your seed. If none is found, ZEUS will let you know and you can pick a different option.
+<img src="/img/restorewallet.png" alt="Channel restore options during wallet recovery" width="250" style={{marginBottom: '24px'}} />
+
+- **Check OLYMPUS**: fetches the latest uploaded backup for your seed phrase. If none is found, ZEUS will let you know and you can proceed with the 'Continue without backup' option.
 - **Import file**: opens the file picker so you can select the backup file you exported earlier.
 - **Continue without backup**: skips the channel migration and falls back to a plain seed restore. This will force-close any channels, so only pick this if you have lost the backup.
 
@@ -92,7 +108,7 @@ From there, enter your 24 word seed phrase in the field labeled 'Recovery Cipher
 
 Then press 'Restore mainnet wallet' if you're dealing with real funds or 'Restore testnet wallet' if you're using Bitcoin's test network.
 
-Before the wallet is created, ZEUS will ask you how to restore your channels and show the three options described in [Importing on the new device](#importing-on-the-new-device): **Check OLYMPUS**, **Import file**, or **Continue without backup**. Pick the one that matches how you saved the backup on the old device, or choose _Continue without backup_ to fall back to an SCB-only restore.
+Before the wallet is created, ZEUS will ask you how to restore your channels and show the three options described in [Importing on the new device](#importing-on-the-new-device). Pick the one that matches how you saved the backup on the old device, or choose _Continue without backup_ to fall back to an SCB-only restore.
 
 Please leave ZEUS running the first time you restore the seed. It has to go through the recovery process to restore your balance. It is not uncommon for this to take over 10 minutes, especially if you have a heavily used wallet. You may want to temporarily turn off any screen timeouts and energy saving options in your phone's settings, so that ZEUS doesn't go into the background and pause LND during the process.
 
