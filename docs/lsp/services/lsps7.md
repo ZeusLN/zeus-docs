@@ -12,6 +12,10 @@ Using this service, you can extend channels leases you've purchased through both
 
 You can also upgrade channels you've opened to the LSP node with on-chain funds, to guarantee the lifetime of the channel and benefit from lower routing fees.
 
+## Redeeming a discount code
+
+If you have a discount code, you can apply it when renewing a channel on the ZEUS app. Enter your code in the `Discount code` field when creating an order.
+
 ## API
 
 ### Spec
