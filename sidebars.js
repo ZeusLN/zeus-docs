@@ -91,6 +91,20 @@ const sidebars = {
       ],
     },
     "cashu",
+    {
+      type: "category",
+      label: "Nostr Wallet Connect",
+      link: {
+        type: "doc",
+        id: "nostr-wallet-connect/intro",
+      },
+      collapsed: true,
+      items: [
+        "nostr-wallet-connect/connections",
+        "nostr-wallet-connect/background",
+        "nostr-wallet-connect/client",
+      ],
+    },
     "self-custody",
   ],
   lsp: [
