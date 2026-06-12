@@ -33,6 +33,8 @@ If you are having trouble using ZEUS, would like to contribute to the project, o
 - Connect over Tor
 - Connect to your own Lightning node
 - Connect LNDHub instances
+- [Nostr Wallet Connect service](nostr-wallet-connect/intro#nwc-service--zeus-as-the-wallet)
+- [Nostr Wallet Connect client](nostr-wallet-connect/client)
 - Lighting channel management
 - Detailed routing reports
 - Manage routing fees
