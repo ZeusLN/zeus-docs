@@ -12,6 +12,10 @@ ZEUS users can purchase a channel in advance by going to the channels list view 
 
 You can also purchase a channel for your Lightning node through our [web portal](https://channels.zeuslsp.com/).
 
+## Redeeming a discount code
+
+If you have a discount code, you can apply it when purchasing a channel — both on the ZEUS app and through the [web portal](https://channels.zeuslsp.com/). Enter your code in the `Discount code` field when creating an order.
+
 ## API
 
 ### Spec
