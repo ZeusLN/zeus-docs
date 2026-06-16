@@ -34,7 +34,7 @@ You create named **connections** and share a QR code or a `nostr+walletconnect:/
 
 Cashu is also supported as an optional routing layer. You can enable it in NWC settings to route all NWC payments and invoices through your Cashu wallet instead of Lightning channels.
 
-**Next steps:** [Managing connections →](./connections) · [Keeping it running in the background →](./background)
+**Next steps:** [Managing connections →](/nostr-wallet-connect/connections) · [Keeping it running in the background →](/nostr-wallet-connect/background)
 
 ---
 
@@ -44,7 +44,7 @@ If you have a wallet elsewhere that speaks NWC — Alby Hub is the most common e
 
 Go to `Menu` > `Settings`, tap **Add wallet**, choose **Nostr Wallet Connect**, and paste your `nostr+walletconnect://` connection string. You can also scan a QR code or tap a link to fill it in. After you save, select the wallet and ZEUS will connect to it.
 
-Read more: [Using NWC as your wallet backend →](./client) · [Setting up wallets in ZEUS →](/for-users/using-zeus/wallets)
+Read more: [Using NWC as your wallet backend →](/nostr-wallet-connect/client) · [Setting up wallets in ZEUS →](/for-users/using-zeus/wallets)
 
 ---
 
@@ -83,4 +83,4 @@ Any app that supports [NIP-47](https://nips.nostr.com/47) — Damus, Amethyst, a
 
 **Is NWC safe?**
 
-Each connection has its own secret, permissions, and optional spending cap. You decide what each app can access. See [Managing connections](./connections) for permissions and budgets.
+Each connection has its own secret, permissions, and optional spending cap. You decide what each app can access. See [Managing connections](/nostr-wallet-connect/connections) for permissions and budgets.
