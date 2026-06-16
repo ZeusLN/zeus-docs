@@ -120,8 +120,8 @@ Tap the gear icon on the connections list.
 | --- | --- |
 | **Switch to Cashu wallet** | Routes pay and make-invoice through Cashu instead of Lightning. Only shown if Cashu is enabled. |
 | **Include Lightning Address** | Adds your ZEUS Pay address to new connection URLs. Some Nostr clients use this for your profile. |
-| **Persistent Mode** | Android only — keeps NWC running in the background. See [background](./background). |
-| **Background Audio** | iOS only — ambient track for background relay connections. See [background](./background). |
+| **Persistent Mode** | Android only — keeps NWC running in the background. See [background](/nostr-wallet-connect/background). |
+| **Background Audio** | iOS only — ambient track for background relay connections. See [background](/nostr-wallet-connect/background). |
 | **Learn more** | Opens the full NWC guide at docs.zeusln.app. |
 
 ---
