@@ -15,6 +15,12 @@ In ZEUS, NWC works in two completely different directions:
 
 You can use either mode on its own. They don't conflict with each other as long as you're running the NWC service on a local wallet (Embedded LND, LDK Node, or a remote LND/CLN connection). If ZEUS itself is configured as an NWC *client*, it can't also run the NWC *service*.
 
+## Guides
+
+- [Managing connections](/nostr-wallet-connect/connections) — create connections, set permissions, and share pairing links with apps
+- [Background service](/nostr-wallet-connect/background) — keep NWC running on iOS and Android when the app is in the background
+- [Using NWC as a wallet backend](/nostr-wallet-connect/client) — connect ZEUS to Alby Hub, LNbits, and other remote NWC wallets
+
 ---
 
 ## NWC service — ZEUS as the wallet

@@ -96,7 +96,7 @@ const sidebars = {
       label: "Nostr Wallet Connect",
       link: {
         type: "doc",
-        id: "nostr-wallet-connect/intro",
+        id: "nostr-wallet-connect/index",
       },
       collapsed: true,
       items: [
