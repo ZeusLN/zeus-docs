@@ -1,6 +1,6 @@
 # Nostr Wallet Connect screenshots
 
-Images for [NWC docs](/nostr-wallet-connect/intro). Add new screenshots here and reference them from the matching doc page.
+Images for [NWC docs](/nostr-wallet-connect). Add new screenshots here and reference them from the matching doc page.
 
 | File | Doc page | Screen |
 | --- | --- | --- |
