@@ -44,11 +44,11 @@ The just-in-time channels advance service only has one interface: a REST interfa
 
 ### Base URLs
 
-Mainnet: https://0conf.lnolymp.us
+Mainnet: https://flow.zeuslsp.com
 
-Testnet3: https://testnet-0conf.lnolymp.us
+Testnet3: https://flow.testnet.zeuslsp.com
 
-Mutinynet: https://mutinynet-flow.lnolymp.us
+Mutinynet: https://flow.mutinynet.zeuslsp.com
 
 ### Calls
 
