@@ -44,11 +44,11 @@ The calls for the Lightning network peer-to-peer interface can be found in the [
 
 ### REST interface base URLs
 
-Mainnet: https://lsps1.lnolymp.us
+Mainnet: https://lsps1.zeuslsp.com
 
-Testnet3: https://testnet-lsps1.lnolymp.us
+Testnet3: https://lsps1.testnet.zeuslsp.com
 
-Mutinynet: https://mutinynet-lsps1.lnolymp.us
+Mutinynet: https://lsps1.mutinynet.zeuslsp.com
 
 ### REST interface calls
 
