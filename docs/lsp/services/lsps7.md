@@ -32,9 +32,7 @@ It does not have a REST interface like the purchase channels in advance or 0-con
 
 Mainnet: `031b301307574bbe9b9ac7b79cbe1700e31e544513eae0b5d7497483083f99e581@45.79.192.236:9735`
 
-Testnet3: `03e84a109cd70e57864274932fc87c5e6434c59ebb8e6e7d28532219ba38f7f6df@139.144.22.237:9735`
-
-Mutinynet: `032ae843e4d7d177f151d021ac8044b0636ec72b1ce3ffcde5c04748db2517ab03@45.79.201.241:9735`
+Testnet3 and Mutinynet endpoint access is available for integrators upon request.
 
 ### Lightning network custom message service calls
 
