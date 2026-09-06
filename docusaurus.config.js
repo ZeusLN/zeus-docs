@@ -35,6 +35,8 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [require.resolve('./plugins/llms-txt')],
+
   presets: [
     [
       'classic',
@@ -132,6 +134,10 @@ const config = {
               {
                 label: 'Contribute',
                 to: 'contribute/how-you-can-contribute',
+              },
+              {
+                label: 'Docs for LLMs',
+                href: 'pathname:///llms.txt',
               },
             ],
           },
