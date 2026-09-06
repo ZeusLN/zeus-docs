@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.zeusln.app/sitemap.xml
+
+# Documentation for LLM agents, per https://llmstxt.org
+# Index:     https://docs.zeusln.app/llms.txt
+# Full text: https://docs.zeusln.app/llms-full.txt
