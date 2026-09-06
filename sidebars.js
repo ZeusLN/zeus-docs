@@ -51,6 +51,7 @@ const sidebars = {
           collapsed: true,
           items: [
             "for-users/local-wallets/ldk-node/backup-and-recovery",
+            "for-users/local-wallets/ldk-node/faq",
           ],
         },
       ],
