@@ -42,7 +42,7 @@ The calls for the Lightning network peer-to-peer interface can be found in the [
 
 Mainnet: https://lsps1.zeuslsp.com
 
-Testnet3 and Mutinynet endpoint access is available for integrators upon request.
+Mutinynet endpoint access is available for integrators upon request.
 
 ### REST interface calls
 
