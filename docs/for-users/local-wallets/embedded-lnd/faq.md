@@ -29,9 +29,15 @@ Read our documentation on [Backup and Recovery](https://docs.zeusln.app/for-user
 
 ## Can I move on-chain funds to lightning or vice versa?
 
-You can move on-chain funds to lightning by opening up a channel and move lightning funds on-chain by closing a channel.
+Yes, and you have two options.
 
-ZEUS currently doesn't have a swap service, but we're considering launching one in the future.
+The easiest is a **swap**, which moves funds between on-chain and lightning without opening or closing a channel. Go to `Menu` > `Swaps`. A **submarine swap** moves on-chain funds to lightning, and a **reverse swap** moves lightning funds on-chain. Swaps are performed without custody or counterparty risk.
+
+The first time you use the service, ZEUS will have you create or import a 12 word **rescue key**. Back it up. It is what lets you recover funds from a swap that doesn't complete if you lose access to your device. Your swap history, along with refunds for swaps that didn't go through, lives under `Menu` > `Swaps`.
+
+Swaps carry a service fee and an on-chain network fee, both shown before you confirm, and the provider sets a minimum and maximum swap amount. See our [Swaps](../../../swaps/intro.md) documentation for more, including our [swaps web portal](https://swaps.zeuslsp.com).
+
+Alternatively, you can move on-chain funds to lightning by opening up a channel, and move lightning funds on-chain by closing a channel. This makes sense when you want the liquidity to persist as a channel rather than just moving a one-off amount.
 
 ## How are backups handled?
 
