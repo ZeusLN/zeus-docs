@@ -46,7 +46,7 @@ The just-in-time channels advance service only has one interface: a REST interfa
 
 Mainnet: https://flow.zeuslsp.com
 
-Testnet3 and Mutinynet endpoint access is available for integrators upon request.
+Mutinynet endpoint access is available for integrators upon request.
 
 ### Calls
 
