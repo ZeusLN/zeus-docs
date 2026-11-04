@@ -41,8 +41,9 @@ Here is a list of resources that will explain in detail what it is, how it works
 
 - [Explain LN - The Airport analogy](https://twitter.com/CoinCornerDanny/status/1584628950588076032) - by Danny Scott
 - [An Overview of Lightning Network Implementations](https://medium.com/@fulgur.ventures/an-overview-of-lightning-network-implementations-d670255a6cfa) - by Fulgur Ventures
-- [Lightning Network Resources, LN complete library](https://lightning.how/) - by Jamesson Lopp
+- [Lightning Network Resources, LN complete library](https://www.lopp.net/lightning-information.html) - by Jameson Lopp
 - [Beginners Lightning Guide](https://bitcoiner.guide/lightning/) – by Bitcoin Q&A
+- [Lightning Routing](https://www.learnbitcoin.com/rabbit-hole/lightning-routing) - by LearnBitcoin, how payments find a path and why they fail
 - [Lightning Network Dev Curriculum](https://github.com/chaincodelabs/lightning-curriculum/) – by Chaincode Labs, very good resources
 
 </TabItem>
