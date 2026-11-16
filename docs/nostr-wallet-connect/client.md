@@ -31,7 +31,7 @@ Your wallet software will generate this for you, usually as a QR code or a copya
 Not familiar with adding wallets in ZEUS? See the [wallet setup guide](/for-users/using-zeus/wallets) first.
 
 1. Go to `Menu` > `Settings` and tap **Add wallet** (or edit an existing wallet).
-2. Set **Implementation** to **Nostr Wallet Connect**.
+2. Set **Wallet interface** to **Nostr Wallet Connect**.
 3. Paste your `nostr+walletconnect://` connection string, or scan the QR code from your wallet app.
 4. Tap **Save**, then select the wallet to connect.
 
@@ -53,7 +53,7 @@ A few things to know:
 
 ## Switching away from NWC
 
-To switch to a different wallet backend, go to `Settings`, tap the wallet, and change the Implementation. Your ZEUS Pay setup and other settings are preserved.
+To switch to a different wallet backend, go to `Settings`, tap the wallet, and change the wallet interface. Your ZEUS Pay setup and other settings are preserved.
 
 ---
 
@@ -91,4 +91,4 @@ Not quite. ZEUS sends payment requests to the remote wallet over Nostr. You trus
 
 **How do I switch back to a normal node wallet?**
 
-Go to `Menu` > `Settings`, tap the wallet, and change **Implementation** to your preferred backend. Your other ZEUS settings are kept.
+Go to `Menu` > `Settings`, tap the wallet, and change **Wallet interface** to your preferred backend. Your other ZEUS settings are kept.

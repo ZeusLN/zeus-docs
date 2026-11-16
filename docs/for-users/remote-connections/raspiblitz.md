@@ -14,25 +14,23 @@ Being quite similar in construction (RaspiBlitz and RaspiBolt), [here are the in
 
 ### Using Tor or clearnet (domain/IP) network
 
-1. Open ZEUS and go to **Settings -> Connect a node -> +**.
-2. Click on **Node interface** and select **LND** or **c-lightning-REST** (depending on which LN implementation you run your node).
-3. Scroll down and press **SCAN LN node QR**.
-4. Go to Raspiblitz dashboard, **Connect menu/ Mobile – Connect Mobile wallet / Zeus Android/ Continue/**
-5. Scan the QR Code.
-6. Enable **Use Tor** only if you Raspiblitz is running only on Tor network.
-7. Click on **SAVE NODE CONFIG**.
-8. ZEUS is now connected to your Raspiblitz and you can use it manage your node and make payments.
+1. In the RaspiBlitz menu, go to **Connect -> Mobile** and select **Zeus to LND** if you run LND, or **Zeus to CLNrest** if you run Core Lightning. Continue until the QR code is shown.
+2. Open ZEUS and go to **Settings -> Wallets -> +**, press the scan icon in the top-right corner, and scan the QR code.
+3. ZEUS will pre-fill a new wallet config with **LND (REST)** or **Core Lightning (CLNRest)** as the wallet interface.
+4. Enable **Use Tor** only if the scanned address is a `.onion` address.
+5. Click on **Save Wallet Config**.
+6. ZEUS is now connected to your RaspiBlitz and you can use it to manage your node and make payments.
+
+ZEUS no longer supports the older c-lightning-REST interface. Core Lightning connections use CLNRest.
 
 ### Using Lightning Node Connect
 
 1. Make sure you have Lightning Terminal (litd) installed on your node.
 2. Go to the Lightning Terminal web interface and go to the Connect page.
 3. Generate a new session with Admin permissions, then click the QR icon.
-4. Open ZEUS and go to **Settings -> Connect a node -> add +**.
-5. Click on **Node interface** and select **LNC (Lightning Node Connect)** as your implementation.
-6. Press **Scan QR from Lightning Terminal** and scan the QR presented to you after step 3
-7. Click on **SAVE NODE CONFIG**.
-8. ZEUS is now connected to your RaspiBlitz and you can use it manage your node and make payments.
+4. Open ZEUS and go to **Settings -> Wallets -> +**, press the scan icon in the top-right corner, and scan the QR code presented to you after step 3.
+5. ZEUS will pre-fill a new wallet config with **LND (Lightning Node Connect)** as the wallet interface. Click on **Save Wallet Config**.
+6. ZEUS is now connected to your RaspiBlitz and you can use it to manage your node and make payments.
 
 ### Using Tailscale network
 
@@ -47,12 +45,8 @@ The connection through Tailscale will be much faster and stable than Tor, encryp
 1. Go to [Tailscale.com](https://tailscale.com) and create an account. No need to use real identity.
 2. Install Tailscale app in RaspiBlitz and login with that Tailscale account you just created. In your Tailscale account you would see all your devices connected and each one will have a dedicated private IP.
 3. Install Tailscale in your mobile device and login with that same created account. Immediately you will see in the app the IP of your node. Will be a private IP, not a public one. Copy it.
-4. Open ZEUS and go to **Settings -> Connect a node -> +**.
-5. Click on **Node interface** and select **LND** or **c-lightning-REST**(depending on which LN implementation you run your node).
-6. Scroll down and press **SCAN LN node QR**.
-7. Go to Raspiblitz dashboard, **Connect menu/ Mobile – Connect Mobile wallet / Zeus Android/ Continue/**
-8. Scan the QR Code.
-9. Before hit save config, remove the **Use Tor** option and replace all the onion address with that Tailscale IP of your node (see point 2).
-10. Click on **SAVE NODE CONFIG** and you will connect in few moments. ZEUS is now connected to your RaspiBlitz and you can use it manage your node and make payments.
+4. Connect ZEUS to your node as described above.
+5. Before you hit save, disable the **Use Tor** option and replace the host in **Server address** with the Tailscale IP of your node (see point 2), keeping the `https://` prefix.
+6. Click on **Save Wallet Config** and you will connect in few moments. ZEUS is now connected to your RaspiBlitz and you can use it to manage your node and make payments.
 
 Optional: if you do not want to use Tailscale, the alternative is [ZeroTier.com](https://zerotier.com) (works the same as Tailscale) or [WireGuard](https://wireguard.com) (more advanced).

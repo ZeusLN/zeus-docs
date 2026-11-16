@@ -24,11 +24,9 @@ Keep in mind that lndhub interfaces will not provide any on-chain bitcoin addres
 
 1. In your your LNbits instance, go to LNDhub extension and select the wallet you want to connect in ZEUS (if you have many).
 2. You could use two types of accounts: "invoice only" (only receive) or "admin" (send/receive).
-3. Open ZEUS app and go to **Settings -> Connect a node -> +**.
-4. Click on **Node interface** and select **LNDHUB**.
-5. Scroll down and press **SCAN LNDHUB QR**. 
-6. Scan the lndhub QR code from your LNbits lndhub extension, **admin mode** (if you want full access) or **invoice mode** (if you want restricted access, only to receive).
-7. Disable **Certificate Verification**.
-8. Enable **Use Tor** if your LNbits is running behind Tor.
-9. Click on **SAVE NODE CONFIG**. It will popup an alert about certificate validation, just click "I understand".
-10. You can now use your LNbits account as a LN wallet with ZEUS.
+3. Display the lndhub QR code from your LNbits lndhub extension, **admin mode** (if you want full access) or **invoice mode** (if you want restricted access, only to receive).
+4. Open ZEUS and go to **Settings -> Wallets -> +**, press the scan icon in the top-right corner, and scan the QR code.
+5. ZEUS will pre-fill a new wallet config with **LNDHub** as the wallet interface.
+6. Enable **Use Tor** if your LNbits is running behind Tor.
+7. Click on **Save Wallet Config**.
+8. You can now use your LNbits account as a LN wallet with ZEUS.

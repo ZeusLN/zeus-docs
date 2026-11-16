@@ -27,12 +27,11 @@ The connection QR code contains your admin macaroon (LND) or rune (CLN). Anyone 
 
 1. Open your StartOS dashboard and go to **Services -> LND**, then open the **REST** interface.
 2. Pick the address you want to connect through (see the table above) and display its QR code.
-3. Open ZEUS and go to **Settings -> Wallets -> +**.
-4. Click on **Wallet interface** and select **LND (REST)**.
-5. Scroll down and press **Scan lndconnect config**, then scan the QR code.
-6. For a LAN, VPN or clearnet address, leave **Use Tor** off and **Certificate Verification** on. For a `.onion` address, enable **Use Tor** and turn **Certificate Verification** off.
-7. Click on **Save Wallet Config**.
-8. ZEUS is now connected to your StartOS node and you can use it to manage your node and make payments.
+3. Open ZEUS and go to **Settings -> Wallets -> +**, press the scan icon in the top-right corner, and scan the QR code.
+4. ZEUS will pre-fill a new wallet config with **LND (REST)** as the wallet interface.
+5. For a LAN, VPN or clearnet address, leave **Use Tor** off and **Certificate Verification** on. For a `.onion` address, enable **Use Tor** and turn **Certificate Verification** off.
+6. Click on **Save Wallet Config**.
+7. ZEUS is now connected to your StartOS node and you can use it to manage your node and make payments.
 
 ### Core Lightning
 
@@ -80,8 +79,6 @@ Tor is not built in to StartOS 0.4.x. It is a separate service.
 1. Make sure you have Lightning Terminal (litd) installed on your node.
 2. Go to the Lightning Terminal web interface and go to the Connect page.
 3. Generate a new session with Admin permissions, then click the QR icon.
-4. Open ZEUS and go to **Settings -> Wallets -> +**.
-5. Click on **Wallet interface** and select **LND (Lightning Node Connect)** as your implementation.
-6. Press **Scan LNC QR from Lightning Terminal** and scan the QR presented to you after step 3.
-7. Click on **Save Wallet Config**.
-8. ZEUS is now connected to your StartOS node and you can use it to manage your node and make payments.
+4. Open ZEUS and go to **Settings -> Wallets -> +**, press the scan icon in the top-right corner, and scan the QR code presented to you after step 3.
+5. ZEUS will pre-fill a new wallet config with **LND (Lightning Node Connect)** as the wallet interface. Click on **Save Wallet Config**.
+6. ZEUS is now connected to your StartOS node and you can use it to manage your node and make payments.
