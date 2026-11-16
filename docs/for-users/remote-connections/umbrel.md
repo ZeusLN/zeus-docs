@@ -12,14 +12,12 @@ Another type of connection is through LNC (Lightning Node Connect), a kind of pr
 
 ### LND: using Tor or clearnet (domain/IP) network
 
-1. Open ZEUS and go to **Settings -> Wallets -> +**.
-2. Click on **Wallet interface** and select **LND (REST)**.
-3. Scroll down and press **Scan lndconnect config**.
-4. Open your Umbrel dashboard and go to **Connect Wallet -> Select your wallet -> Zeus**.
-5. Scan the QR Code.
-6. Enable **Use Tor** only if your Umbrel is running only on Tor network.
-7. Click on **Save Wallet Config**.
-8. ZEUS is now connected to your Umbrel and you can use it to manage your node and make payments.
+1. Open your Umbrel dashboard and go to **Connect Wallet -> Select your wallet -> Zeus**.
+2. Open ZEUS and go to **Settings -> Wallets -> +**, press the scan icon in the top-right corner, and scan the QR code.
+3. ZEUS will pre-fill a new wallet config with **LND (REST)** as the wallet interface.
+4. Enable **Use Tor** only if your Umbrel is running only on Tor network.
+5. Click on **Save Wallet Config**.
+6. ZEUS is now connected to your Umbrel and you can use it to manage your node and make payments.
 
 ### Core Lightning: using CLNRest
 
@@ -49,11 +47,9 @@ If the connection fails on clearnet, your phone may not be able to resolve the `
 1. Make sure you have Lightning Terminal (litd) installed on your node.
 2. Go to the Lightning Terminal web interface and go to the Connect page.
 3. Generate a new session with Admin permissions, then click the QR icon.
-4. Open ZEUS and go to **Settings -> Wallets -> +**.
-5. Click on **Wallet interface** and select **LND (Lightning Node Connect)** as your implementation.
-6. Press **Scan LNC QR from Lightning Terminal** and scan the QR presented to you after step 3.
-7. Click on **Save Wallet Config**.
-8. ZEUS is now connected to your Umbrel and you can use it to manage your node and make payments.
+4. Open ZEUS and go to **Settings -> Wallets -> +**, press the scan icon in the top-right corner, and scan the QR code presented to you after step 3.
+5. ZEUS will pre-fill a new wallet config with **LND (Lightning Node Connect)** as the wallet interface. Click on **Save Wallet Config**.
+6. ZEUS is now connected to your Umbrel and you can use it to manage your node and make payments.
 
 ### Using Tailscale network
 
